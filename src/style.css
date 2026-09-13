@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-verde: #046a38;
+  --color-vermelho: #da291c;
+  --color-ouro: #ffcd00;
+  --font-sans: "Nunito", ui-sans-serif, system-ui, "Segoe UI", sans-serif;
+}
+
+@utility card {
+  @apply rounded-2xl bg-white shadow-sm ring-1 ring-stone-200 dark:bg-stone-900 dark:ring-stone-800;
+}
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 font-bold transition active:scale-95 disabled:opacity-40 disabled:active:scale-100;
+}
+@utility btn-primary {
+  @apply btn bg-verde text-white shadow-[0_4px_0_#034d28] hover:brightness-110 active:translate-y-1 active:shadow-none;
+}
+@utility btn-ghost {
+  @apply btn bg-stone-100 text-stone-700 hover:bg-stone-200 dark:bg-stone-800 dark:text-stone-200 dark:hover:bg-stone-700;
+}
+@utility btn-danger {
+  @apply btn bg-vermelho text-white shadow-[0_4px_0_#9b1d13] active:translate-y-1 active:shadow-none;
+}
+@utility input {
+  @apply w-full rounded-xl border-2 border-stone-200 bg-white px-3 py-2 text-lg outline-none focus:border-verde dark:border-stone-700 dark:bg-stone-900;
+}
+@utility chip {
+  @apply rounded-xl border-2 border-b-4 border-stone-200 bg-white px-3 py-2 font-semibold transition hover:bg-stone-50 active:translate-y-0.5 dark:border-stone-700 dark:bg-stone-900 dark:hover:bg-stone-800;
+}
+@utility en {
+  @apply text-sm text-stone-500 italic dark:text-stone-400;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-stone-50 text-stone-800 dark:bg-stone-950 dark:text-stone-100; }
+}
+
+.en-tap .en { filter: blur(4px); cursor: pointer; user-select: none; transition: filter .2s; }
+.en-tap .en:hover { filter: none; }
+.en-hide .en { display: none; }
+
+@keyframes pop { 0% { transform: scale(.9); opacity: 0 } 100% { transform: scale(1); opacity: 1 } }
+.pop { animation: pop .25s ease-out; }
+@keyframes shake { 0%,100% { transform: translateX(0) } 25% { transform: translateX(-6px) } 75% { transform: translateX(6px) } }
+.shake { animation: shake .3s; }

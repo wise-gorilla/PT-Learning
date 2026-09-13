@@ -1,0 +1,309 @@
+node types carrying UNREAD fields: 61   unread fields: 236
+excluded as NOT TRANSMITTED (schema xmt=0, XtFile_Schema.cpp:141-143): 233 (node,field) pairs
+schemas on disk: 102   (0_15 .. 37102)
+corpus: 217 models, 25 schema families (10004 .. 37102), 1 CDI
+
+SURFACE_DATA               43/44 unread   analytic_form analytic_form_type associated_curve associated_surface blend_form blend_form_type bx construction convexity extended_u_end extended_u_start extended_uint extended_v_end extended_v_start extended_vint normal_bx original_u_end original_u_range original_u_start original_uint original_v_end original_v_range original_v_start original_vint safe_u_range safe_v_range self_int spun_form spun_form_type swept_form swept_form_type u_continuity u_end u_parameter_scale u_start u_tangent_half_angle uint v_continuity v_end v_parameter_scale v_start v_tangent_half_angle vint
+BODY                       21/40 unread   approx_geom_count attribute_chains boundary_lattice boundary_mesh boundary_pline boundary_polyline child highest_node_id index_map index_map_offset key lattice lowest_node_id mesh mesh_offset_data node_id_index_map nom_geom_state polyline schema_embedding_map sp_count state
+CURVE_DATA                 14/15 unread   analytic_form associated_curve associated_surface bx construction continuity original_range parameter_scale safe_range self_int t_end t_start tangent_half_angle tint
+MESH_CHART                  9/13 unread   backward_tangent_sines chart_count forward_normals forward_tangent_sines pvecs span ts us vs
+HALFEDGE                    8/16 unread   backward isoparm_sense isoparm_type next_at_vx next_on_curve previous_on_curve u_int v_int
+BSPLINE_SURF                7/8  unread   col_count col_knots row_count row_knots u_order v_order vertex_dimension
+FACET_EDGE_DATA             7/7  unread   const_parm coords ctols involved_in_spike marched_index t_parms uv_parms
+SP_CURVE                    7/17 unread   bezier_vertices const_param order original segment_count tolerance_to_original use_count
+FACE                        6/17 unread   front_shell next_on_surface previous_front previous_on_surface u_int v_int
+PE_CURVE                    6/16 unread   approx global_scale internal_geom parameter_scale tf use_count
+BEZIER_CURVE                5/5  unread   check order segment segment_count vertex_dimension
+BLEND_OVERLAP               5/15 unread   overlap_type sub_surface swap_u_v thumb_weight use_count
+NURBS_SURF                  5/20 unread   n_u_knots n_v_knots surface_form u_knot_type v_knot_type
+OBSOLETE_SP_CURVE           5/13 unread   bezier_vertices const_param order segment_count use_count
+BSPLINE_CURVE               4/5  unread   knot_vector order vertex_count vertex_dimension
+FACE_SET                    4/5  unread   class he_set surfaces tag
+HALFEDGE_SET                4/6  unread   class co_he_set fa_set tag
+MESH_CHART_SPAN             4/4  unread   ends span_count starts types
+MESH_OFFSET_DATA            4/4  unread   mesh_index_map schema_data schema_data_offset_high schema_data_offset_low
+POINTER_LIS_BLOCK           4/4  unread   entries index_map_offset n_entries next_block
+SP_CHART                    4/6  unread   chart_count chordal_error_2d hvec parm
+SWEPT_UV_FORM               4/4  unread   subtype_u subtype_v sweep_u sweep_v
+BLENDED_VERTEX              3/15 unread   sub_surface thumb_weight use_count
+B_SURFACE                   3/14 unread   orig_uint orig_vint use_count
+CHART                       3/7  unread   chart_count hvec parameter_error
+NURBS_CURVE                 3/12 unread   curve_form knot_type n_knots
+OFFSET_SURF                 3/13 unread   check true_offset use_count
+BLENDED_EDGE                2/16 unread   thumb_weight use_count
+B_CURVE                     2/13 unread   orig_tint use_count
+EDGE                        2/10 unread   next_on_curve previous_on_curve
+MESH_INTERSECTION           2/11 unread   end_type start_type
+PARACURVE                   2/11 unread   cpc use_count
+PCURVE                      2/12 unread   bsp_parms use_count
+POLYLINE_DATA               2/4  unread   base_parm n_pvecs
+BLEND_BOUND                 1/10 unread   use_count
+BODY_DATA                   1/1  unread   facet_body_data
+BSPLINE_VERTICES            1/1  unread   vertices
+CIRCLE                      1/13 unread   use_count
+CONE                        1/14 unread   use_count
+CYLINDER                    1/12 unread   use_count
+EDGE_DATA                   1/1  unread   facet_edge_data
+ELLIPSE                     1/14 unread   use_count
+FACET_BODY_DATA             1/1  unread   global_tols
+HYPERBOLA                   1/14 unread   use_count
+INTERSECTION                1/14 unread   use_count
+LIMIT                       1/3  unread   hvec
+LINE                        1/11 unread   use_count
+OBSOLETE_POLYLINE           1/9  unread   attr
+OFFSET_CURVE                1/12 unread   use_count
+PARABOLA                    1/13 unread   use_count
+PATTERN_RECTILINEAR         1/1  unread   skewbox
+PLANE                       1/11 unread   use_count
+POLYLINE                    1/9  unread   attr
+REGION                      1/9  unread   frame
+SPHERE                      1/12 unread   use_count
+SPUN_FORM                   1/3  unread   subtype
+SPUN_SURF                   1/17 unread   use_count
+SWEPT_FORM                  1/2  unread   subtype
+SWEPT_SURF                  1/11 unread   use_count
+TORUS                       1/13 unread   use_count
+TRIMMED_CURVE               1/14 unread   use_count
+
+==============================================================================
+PER-FIELD SCHEMA SPAN -- read "stated value vs computed fallback" off this
+==============================================================================
+node                   field                    disk  earliest   models  verdict
+BEZIER_CURVE           check                   96/102  200_1009   217/217  CORPUS-ALL (fallback < 200_1009)
+BEZIER_CURVE           order                   96/102  200_1009   217/217  CORPUS-ALL (fallback < 200_1009)
+BEZIER_CURVE           segment                 96/102  200_1009   217/217  CORPUS-ALL (fallback < 200_1009)
+BEZIER_CURVE           segment_count           96/102  200_1009   217/217  CORPUS-ALL (fallback < 200_1009)
+BEZIER_CURVE           vertex_dimension        96/102  200_1009   217/217  CORPUS-ALL (fallback < 200_1009)
+BLENDED_EDGE           thumb_weight           102/102      0_15   217/217  ALWAYS
+BLENDED_VERTEX         sub_surface            102/102      0_15   217/217  ALWAYS
+BLENDED_VERTEX         thumb_weight           102/102      0_15   217/217  ALWAYS
+BLEND_OVERLAP          overlap_type           102/102      0_15   217/217  ALWAYS
+BLEND_OVERLAP          sub_surface            102/102      0_15   217/217  ALWAYS
+BLEND_OVERLAP          swap_u_v               101/102  100_1000   217/217  CORPUS-ALL (fallback < 100_1000)
+BLEND_OVERLAP          thumb_weight           102/102      0_15   217/217  ALWAYS
+BODY                   attribute_chains       102/102      0_15   217/217  ALWAYS
+BODY                   highest_node_id        102/102      0_15   217/217  ALWAYS
+BODY                   key                    102/102      0_15   217/217  ALWAYS
+BODY                   nom_geom_state          47/102     10004   217/217  CORPUS-ALL (fallback < 10004)
+BODY                   state                  102/102      0_15   217/217  ALWAYS
+BSPLINE_CURVE          knot_vector             96/102  200_1009   217/217  CORPUS-ALL (fallback < 200_1009)
+BSPLINE_CURVE          order                   96/102  200_1009   217/217  CORPUS-ALL (fallback < 200_1009)
+BSPLINE_CURVE          vertex_count            96/102  200_1009   217/217  CORPUS-ALL (fallback < 200_1009)
+BSPLINE_CURVE          vertex_dimension        96/102  200_1009   217/217  CORPUS-ALL (fallback < 200_1009)
+BSPLINE_SURF           col_count               96/102  200_1009   217/217  CORPUS-ALL (fallback < 200_1009)
+BSPLINE_SURF           col_knots               96/102  200_1009   217/217  CORPUS-ALL (fallback < 200_1009)
+BSPLINE_SURF           row_count               96/102  200_1009   217/217  CORPUS-ALL (fallback < 200_1009)
+BSPLINE_SURF           row_knots               96/102  200_1009   217/217  CORPUS-ALL (fallback < 200_1009)
+BSPLINE_SURF           u_order                 96/102  200_1009   217/217  CORPUS-ALL (fallback < 200_1009)
+BSPLINE_SURF           v_order                 96/102  200_1009   217/217  CORPUS-ALL (fallback < 200_1009)
+BSPLINE_SURF           vertex_dimension        96/102  200_1009   217/217  CORPUS-ALL (fallback < 200_1009)
+BSPLINE_VERTICES       vertices                96/102  200_1009   217/217  CORPUS-ALL (fallback < 200_1009)
+CHART                  chart_count            102/102      0_15   217/217  ALWAYS
+CHART                  hvec                   102/102      0_15   217/217  ALWAYS
+CHART                  parameter_error        102/102      0_15   217/217  ALWAYS
+CURVE_DATA             self_int                74/102      5041   217/217  CORPUS-ALL (fallback < 5041)
+EDGE                   next_on_curve           80/102      5021   217/217  CORPUS-ALL (fallback < 5021)
+EDGE                   previous_on_curve       80/102      5021   217/217  CORPUS-ALL (fallback < 5021)
+FACE                   front_shell             64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+FACE                   next_on_surface         80/102      5021   217/217  CORPUS-ALL (fallback < 5021)
+FACE                   previous_front          64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+FACE                   previous_on_surface     80/102      5021   217/217  CORPUS-ALL (fallback < 5021)
+FACE_SET               class                  102/102      0_15   217/217  ALWAYS
+FACE_SET               he_set                 102/102      0_15   217/217  ALWAYS
+FACE_SET               surfaces               102/102      0_15   217/217  ALWAYS
+FACE_SET               tag                    102/102      0_15   217/217  ALWAYS
+HALFEDGE               backward               102/102      0_15   217/217  ALWAYS
+HALFEDGE               next_at_vx              64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+HALFEDGE_SET           class                  102/102      0_15   217/217  ALWAYS
+HALFEDGE_SET           co_he_set              102/102      0_15   217/217  ALWAYS
+HALFEDGE_SET           fa_set                 102/102      0_15   217/217  ALWAYS
+HALFEDGE_SET           tag                    102/102      0_15   217/217  ALWAYS
+LIMIT                  hvec                   102/102      0_15   217/217  ALWAYS
+NURBS_CURVE            curve_form              81/102      5015   217/217  CORPUS-ALL (fallback < 5015)
+NURBS_CURVE            knot_type               81/102      5015   217/217  CORPUS-ALL (fallback < 5015)
+NURBS_CURVE            n_knots                 81/102      5015   217/217  CORPUS-ALL (fallback < 5015)
+NURBS_SURF             n_u_knots               81/102      5015   217/217  CORPUS-ALL (fallback < 5015)
+NURBS_SURF             n_v_knots               81/102      5015   217/217  CORPUS-ALL (fallback < 5015)
+NURBS_SURF             surface_form            81/102      5015   217/217  CORPUS-ALL (fallback < 5015)
+NURBS_SURF             u_knot_type             81/102      5015   217/217  CORPUS-ALL (fallback < 5015)
+NURBS_SURF             v_knot_type             81/102      5015   217/217  CORPUS-ALL (fallback < 5015)
+OBSOLETE_SP_CURVE      bezier_vertices         80/102      5021   217/217  CORPUS-ALL (fallback < 5021)
+OBSOLETE_SP_CURVE      const_param             80/102      5021   217/217  CORPUS-ALL (fallback < 5021)
+OBSOLETE_SP_CURVE      order                   80/102      5021   217/217  CORPUS-ALL (fallback < 5021)
+OBSOLETE_SP_CURVE      segment_count           80/102      5021   217/217  CORPUS-ALL (fallback < 5021)
+OFFSET_SURF            check                   83/102      4035   217/217  CORPUS-ALL (fallback < 4035)
+OFFSET_SURF            true_offset             96/102  200_1009   217/217  CORPUS-ALL (fallback < 200_1009)
+PARACURVE              cpc                    102/102      0_15   217/217  ALWAYS
+PCURVE                 bsp_parms               82/102      4039   217/217  CORPUS-ALL (fallback < 4039)
+PE_CURVE               internal_geom           88/102      4011   217/217  CORPUS-ALL (fallback < 4011)
+PE_CURVE               tf                      88/102      4011   217/217  CORPUS-ALL (fallback < 4011)
+POINTER_LIS_BLOCK      entries                102/102      0_15   217/217  ALWAYS
+POINTER_LIS_BLOCK      n_entries              102/102      0_15   217/217  ALWAYS
+POINTER_LIS_BLOCK      next_block             102/102      0_15   217/217  ALWAYS
+SPUN_FORM              subtype                 64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SP_CHART               chart_count             80/102      5021   217/217  CORPUS-ALL (fallback < 5021)
+SP_CHART               hvec                    50/102      9008   217/217  CORPUS-ALL (fallback < 9008)
+SP_CURVE               original                53/102      8101   217/217  CORPUS-ALL (fallback < 8101)
+SP_CURVE               tolerance_to_original   53/102      8101   217/217  CORPUS-ALL (fallback < 8101)
+SURFACE_DATA           analytic_form           64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SURFACE_DATA           analytic_form_type      64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SURFACE_DATA           blend_form              64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SURFACE_DATA           blend_form_type         64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SURFACE_DATA           extended_u_end          64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SURFACE_DATA           extended_u_start        64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SURFACE_DATA           extended_uint           64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SURFACE_DATA           extended_v_end          64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SURFACE_DATA           extended_v_start        64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SURFACE_DATA           extended_vint           64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SURFACE_DATA           original_u_end          64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SURFACE_DATA           original_u_start        64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SURFACE_DATA           original_uint           64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SURFACE_DATA           original_v_end          64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SURFACE_DATA           original_v_start        64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SURFACE_DATA           original_vint           64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SURFACE_DATA           self_int                74/102      5041   217/217  CORPUS-ALL (fallback < 5041)
+SURFACE_DATA           spun_form               64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SURFACE_DATA           spun_form_type          64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SURFACE_DATA           swept_form              64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SURFACE_DATA           swept_form_type         64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SWEPT_FORM             subtype                 64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SWEPT_UV_FORM          subtype_u               64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SWEPT_UV_FORM          subtype_v               64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SWEPT_UV_FORM          sweep_u                 64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+SWEPT_UV_FORM          sweep_v                 64/102      6020   217/217  CORPUS-ALL (fallback < 6020)
+CURVE_DATA             analytic_form           43/102     12006   213/217  PARTIAL 24/25 families
+POLYLINE_DATA          base_parm               32/102     16100   206/217  PARTIAL 20/25 families
+POLYLINE_DATA          n_pvecs                 32/102     16100   206/217  PARTIAL 20/25 families
+BODY                   index_map               25/102     19002   200/217  PARTIAL 17/25 families
+BODY                   index_map_offset        25/102     19002   200/217  PARTIAL 17/25 families
+BODY                   node_id_index_map       25/102     19002   200/217  PARTIAL 17/25 families
+BODY                   schema_embedding_map    25/102     19002   200/217  PARTIAL 17/25 families
+POINTER_LIS_BLOCK      index_map_offset        24/102     19007   200/217  PARTIAL 17/25 families
+SP_CHART               chordal_error_2d        26/102     18106   200/217  PARTIAL 17/25 families
+BODY                   child                   21/102     25000   186/217  PARTIAL 15/25 families
+BODY                   lowest_node_id          21/102     25000   186/217  PARTIAL 15/25 families
+BODY                   boundary_mesh           17/102     26105   167/217  PARTIAL 14/25 families
+BODY_DATA              facet_body_data         16/102     28002   146/217  PARTIAL 13/25 families
+EDGE_DATA              facet_edge_data         16/102     28002   146/217  PARTIAL 13/25 families
+FACET_BODY_DATA        global_tols             16/102     28002   146/217  PARTIAL 13/25 families
+FACET_EDGE_DATA        const_parm              16/102     28002   146/217  PARTIAL 13/25 families
+FACET_EDGE_DATA        coords                  16/102     28002   146/217  PARTIAL 13/25 families
+FACET_EDGE_DATA        ctols                   16/102     28002   146/217  PARTIAL 13/25 families
+FACET_EDGE_DATA        involved_in_spike       16/102     28002   146/217  PARTIAL 13/25 families
+FACET_EDGE_DATA        marched_index           16/102     28002   146/217  PARTIAL 13/25 families
+FACET_EDGE_DATA        t_parms                 16/102     28002   146/217  PARTIAL 13/25 families
+FACET_EDGE_DATA        uv_parms                16/102     28002   146/217  PARTIAL 13/25 families
+BODY                   boundary_polyline       15/102     28101   121/217  PARTIAL 12/25 families
+BODY                   mesh                    15/102     28101   121/217  PARTIAL 12/25 families
+BODY                   polyline                15/102     28101   121/217  PARTIAL 12/25 families
+OBSOLETE_POLYLINE      attr                    15/102     28101   121/217  PARTIAL 12/25 families
+POLYLINE               attr                    16/102     17104    84/217  PARTIAL 7/25 families
+BODY                   mesh_offset_data        13/102     30100    76/217  PARTIAL 10/25 families
+MESH_OFFSET_DATA       mesh_index_map          13/102     30100    76/217  PARTIAL 10/25 families
+MESH_OFFSET_DATA       schema_data             13/102     30100    76/217  PARTIAL 10/25 families
+MESH_OFFSET_DATA       schema_data_offset_high  13/102     30100    76/217  PARTIAL 10/25 families
+MESH_OFFSET_DATA       schema_data_offset_low  13/102     30100    76/217  PARTIAL 10/25 families
+MESH_CHART             backward_tangent_sines  11/102     31100    61/217  PARTIAL 8/25 families
+MESH_CHART             chart_count             11/102     31100    61/217  PARTIAL 8/25 families
+MESH_CHART             forward_normals         11/102     31100    61/217  PARTIAL 8/25 families
+MESH_CHART             forward_tangent_sines   11/102     31100    61/217  PARTIAL 8/25 families
+MESH_CHART             pvecs                   11/102     31100    61/217  PARTIAL 8/25 families
+MESH_CHART             span                    11/102     31100    61/217  PARTIAL 8/25 families
+MESH_CHART             ts                      11/102     31100    61/217  PARTIAL 8/25 families
+MESH_CHART             us                      11/102     31100    61/217  PARTIAL 8/25 families
+MESH_CHART             vs                      11/102     31100    61/217  PARTIAL 8/25 families
+MESH_CHART_SPAN        ends                    11/102     31100    61/217  PARTIAL 8/25 families
+MESH_CHART_SPAN        span_count              11/102     31100    61/217  PARTIAL 8/25 families
+MESH_CHART_SPAN        starts                  11/102     31100    61/217  PARTIAL 8/25 families
+MESH_CHART_SPAN        types                   11/102     31100    61/217  PARTIAL 8/25 families
+MESH_INTERSECTION      end_type                11/102     31100    61/217  PARTIAL 8/25 families
+MESH_INTERSECTION      start_type              11/102     31100    61/217  PARTIAL 8/25 families
+BODY                   lattice                  9/102     33101    14/217  PARTIAL 6/25 families
+BODY                   boundary_lattice         7/102     34001    11/217  PARTIAL 5/25 families
+REGION                 frame                    7/102     34001    11/217  PARTIAL 5/25 families
+PATTERN_RECTILINEAR    skewbox                  1/102     37102     2/217  PARTIAL 1/25 families
+BLENDED_EDGE           use_count               27/102      0_15     0/217  ABSENT from corpus
+BLENDED_VERTEX         use_count               27/102      0_15     0/217  ABSENT from corpus
+BLEND_BOUND            use_count               27/102      0_15     0/217  ABSENT from corpus
+BLEND_OVERLAP          use_count               27/102      0_15     0/217  ABSENT from corpus
+BODY                   approx_geom_count        5/102      4030     0/217  ABSENT from corpus
+BODY                   boundary_pline           2/102     17104     0/217  ABSENT from corpus
+BODY                   sp_count                 5/102      4030     0/217  ABSENT from corpus
+B_CURVE                orig_tint                2/102      5015     0/217  ABSENT from corpus
+B_CURVE                use_count                6/102      5015     0/217  ABSENT from corpus
+B_SURFACE              orig_uint                2/102      5015     0/217  ABSENT from corpus
+B_SURFACE              orig_vint                2/102      5015     0/217  ABSENT from corpus
+B_SURFACE              use_count                6/102      5015     0/217  ABSENT from corpus
+CIRCLE                 use_count               27/102      0_15     0/217  ABSENT from corpus
+CONE                   use_count               27/102      0_15     0/217  ABSENT from corpus
+CURVE_DATA             associated_curve         2/102      5015     0/217  ABSENT from corpus
+CURVE_DATA             associated_surface       2/102      5015     0/217  ABSENT from corpus
+CURVE_DATA             bx                      15/102      5015     0/217  ABSENT from corpus
+CURVE_DATA             construction             2/102      5015     0/217  ABSENT from corpus
+CURVE_DATA             continuity               2/102      5015     0/217  ABSENT from corpus
+CURVE_DATA             original_range           3/102      5025     0/217  ABSENT from corpus
+CURVE_DATA             parameter_scale          8/102      5041     0/217  ABSENT from corpus
+CURVE_DATA             safe_range              10/102      5032     0/217  ABSENT from corpus
+CURVE_DATA             t_end                    8/102      5041     0/217  ABSENT from corpus
+CURVE_DATA             t_start                  8/102      5041     0/217  ABSENT from corpus
+CURVE_DATA             tangent_half_angle       8/102      5041     0/217  ABSENT from corpus
+CURVE_DATA             tint                     8/102      5041     0/217  ABSENT from corpus
+CYLINDER               use_count               27/102      0_15     0/217  ABSENT from corpus
+ELLIPSE                use_count               27/102      0_15     0/217  ABSENT from corpus
+FACE                   u_int                    9/102      5015     0/217  ABSENT from corpus
+FACE                   v_int                    9/102      5015     0/217  ABSENT from corpus
+HALFEDGE               isoparm_sense            9/102      5015     0/217  ABSENT from corpus
+HALFEDGE               isoparm_type             9/102      5015     0/217  ABSENT from corpus
+HALFEDGE               next_on_curve           10/102      5025     0/217  ABSENT from corpus
+HALFEDGE               previous_on_curve       10/102      5025     0/217  ABSENT from corpus
+HALFEDGE               u_int                    9/102      5015     0/217  ABSENT from corpus
+HALFEDGE               v_int                    9/102      5015     0/217  ABSENT from corpus
+HYPERBOLA              use_count               27/102      0_15     0/217  ABSENT from corpus
+INTERSECTION           use_count               27/102      0_15     0/217  ABSENT from corpus
+LINE                   use_count               27/102      0_15     0/217  ABSENT from corpus
+OBSOLETE_SP_CURVE      use_count                5/102      5021     0/217  ABSENT from corpus
+OFFSET_CURVE           use_count               21/102  200_1009     0/217  ABSENT from corpus
+OFFSET_SURF            use_count               27/102      0_15     0/217  ABSENT from corpus
+PARABOLA               use_count               27/102      0_15     0/217  ABSENT from corpus
+PARACURVE              use_count               27/102      0_15     0/217  ABSENT from corpus
+PCURVE                 use_count               12/102      4022     0/217  ABSENT from corpus
+PE_CURVE               approx                   1/102      4011     0/217  ABSENT from corpus
+PE_CURVE               global_scale             1/102      4011     0/217  ABSENT from corpus
+PE_CURVE               parameter_scale          1/102      4011     0/217  ABSENT from corpus
+PE_CURVE               use_count               13/102      4011     0/217  ABSENT from corpus
+PLANE                  use_count               27/102      0_15     0/217  ABSENT from corpus
+SPHERE                 use_count               27/102      0_15     0/217  ABSENT from corpus
+SPUN_SURF              use_count               21/102  200_1009     0/217  ABSENT from corpus
+SP_CHART               parm                    30/102      5021     0/217  ABSENT from corpus
+SP_CURVE               bezier_vertices         11/102  300_1022     0/217  ABSENT from corpus
+SP_CURVE               const_param             11/102  300_1022     0/217  ABSENT from corpus
+SP_CURVE               order                   11/102  300_1022     0/217  ABSENT from corpus
+SP_CURVE               segment_count           11/102  300_1022     0/217  ABSENT from corpus
+SP_CURVE               use_count               16/102  300_1022     0/217  ABSENT from corpus
+SURFACE_DATA           associated_curve         2/102      5015     0/217  ABSENT from corpus
+SURFACE_DATA           associated_surface       2/102      5015     0/217  ABSENT from corpus
+SURFACE_DATA           bx                      13/102      5015     0/217  ABSENT from corpus
+SURFACE_DATA           construction             2/102      5015     0/217  ABSENT from corpus
+SURFACE_DATA           convexity               13/102      5015     0/217  ABSENT from corpus
+SURFACE_DATA           normal_bx                2/102      5015     0/217  ABSENT from corpus
+SURFACE_DATA           original_u_range         3/102      5025     0/217  ABSENT from corpus
+SURFACE_DATA           original_v_range         3/102      5025     0/217  ABSENT from corpus
+SURFACE_DATA           safe_u_range             8/102      5032     0/217  ABSENT from corpus
+SURFACE_DATA           safe_v_range             8/102      5032     0/217  ABSENT from corpus
+SURFACE_DATA           u_continuity             2/102      5015     0/217  ABSENT from corpus
+SURFACE_DATA           u_end                    6/102      5041     0/217  ABSENT from corpus
+SURFACE_DATA           u_parameter_scale        6/102      5041     0/217  ABSENT from corpus
+SURFACE_DATA           u_start                  6/102      5041     0/217  ABSENT from corpus
+SURFACE_DATA           u_tangent_half_angle     6/102      5041     0/217  ABSENT from corpus
+SURFACE_DATA           uint                     6/102      5041     0/217  ABSENT from corpus
+SURFACE_DATA           v_continuity             2/102      5015     0/217  ABSENT from corpus
+SURFACE_DATA           v_end                    6/102      5041     0/217  ABSENT from corpus
+SURFACE_DATA           v_parameter_scale        6/102      5041     0/217  ABSENT from corpus
+SURFACE_DATA           v_start                  6/102      5041     0/217  ABSENT from corpus
+SURFACE_DATA           v_tangent_half_angle     6/102      5041     0/217  ABSENT from corpus
+SURFACE_DATA           vint                     6/102      5041     0/217  ABSENT from corpus
+SWEPT_SURF             use_count               21/102  200_1009     0/217  ABSENT from corpus
+TORUS                  use_count               27/102      0_15     0/217  ABSENT from corpus
+TRIMMED_CURVE          use_count               12/102      4022     0/217  ABSENT from corpus
+
+verdict counts: ABSENT=83  ALWAYS=27  CORPUS-ALL=75  PARTIAL=51

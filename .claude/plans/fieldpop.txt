@@ -1,0 +1,126 @@
+(node,field) pairs OBSERVED in the corpus : 451
+  UNREAD by our extractor                 : 101
+    LIVE somewhere (a file states it)     : 66   <- the real work list
+    never live in any model               : 35   <- declared, file-silent
+
+UNREAD *AND* STATED, by nodes carrying a value:
+  node                   field                         live        of    pct
+  HALFEDGE               backward                    221867    222697   100%
+  ATTRIBUTE              next_of_type                162112    170553    95%
+  ATTRIBUTE              previous_of_type            162112    170553    95%
+  HALFEDGE               next_at_vx                  137016    222697    62%
+  FACE                   front_shell                  47252     47252   100%
+  FACE                   previous_front               45812     47252    97%
+  GEOMETRIC_OWNER        shared_geometry              24701     24701   100%
+  EDGE                   next_on_curve                 7616    111212     7%
+  EDGE                   previous_on_curve             7616    111212     7%
+  FACE                   next_on_surface               6421     47252    14%
+  FACE                   previous_on_surface           6421     47252    14%
+  NURBS_CURVE            curve_form                    5300      5300   100%
+  NURBS_CURVE            knot_type                     5300      5300   100%
+  NURBS_CURVE            n_knots                       5300      5300   100%
+  CURVE_DATA             self_int                      5294      5294   100%
+  CHART                  chart_count                   5048      5048   100%
+  INSTANCE               prev_in_part                  2123      2294    93%
+  POINTER_LIS_BLOCK      n_entries                     2069      2069   100%
+  LIST                   block_length                  2064      2064   100%
+  LIST                   finger_block                  2064      2064   100%
+  LIST                   finger_index                  2064      2064   100%
+  LIST                   list_block                    2064      2064   100%
+  LIST                   list_length                   2064      2064   100%
+  LIST                   list_type                     2064      2064   100%
+  LIST                   notransmit                    2038      2038   100%
+  BODY                   highest_node_id               1959      1959   100%
+  BODY                   state                         1959      1959   100%
+  BODY                   attribute_chains              1918      1959    98%
+  BODY                   nom_geom_state                1886      1886   100%
+  TRANSFORM              flag                          1658      2198    75%
+  BLENDED_EDGE           thumb_weight                   496       496   100%
+  NURBS_SURF             n_u_knots                      404       404   100%
+  NURBS_SURF             n_v_knots                      404       404   100%
+  NURBS_SURF             surface_form                   404       404   100%
+  NURBS_SURF             u_knot_type                    404       404   100%
+  NURBS_SURF             v_knot_type                    404       404   100%
+  SURFACE_DATA           analytic_form_type             382       382   100%
+  SURFACE_DATA           blend_form_type                382       382   100%
+  SURFACE_DATA           extended_u_end                 382       382   100%
+  SURFACE_DATA           extended_u_start               382       382   100%
+  SURFACE_DATA           extended_uint                  382       382   100%
+  SURFACE_DATA           extended_v_end                 382       382   100%
+  SURFACE_DATA           extended_v_start               382       382   100%
+  SURFACE_DATA           extended_vint                  382       382   100%
+  SURFACE_DATA           original_u_end                 382       382   100%
+  SURFACE_DATA           original_u_start               382       382   100%
+  SURFACE_DATA           original_uint                  382       382   100%
+  SURFACE_DATA           original_v_end                 382       382   100%
+  SURFACE_DATA           original_v_start               382       382   100%
+  SURFACE_DATA           original_vint                  382       382   100%
+  SURFACE_DATA           self_int                       382       382   100%
+  SURFACE_DATA           spun_form_type                 382       382   100%
+  SURFACE_DATA           swept_form_type                382       382   100%
+  OFFSET_SURF            check                          354       354   100%
+  OFFSET_SURF            true_offset                    354       354   100%
+  SP_CURVE               tolerance_to_original          212      2661     8%
+  ASSEMBLY               highest_node_id                171       171   100%
+  ASSEMBLY               state                          171       171   100%
+  ASSEMBLY               attribute_chains               146       171    85%
+  LIST                   size_of_entry                  103       355    29%
+  MEMBER_OF_FEATURE      owning_feature                  60        60   100%
+  MEMBER_OF_FEATURE      next_member                     42        60    70%
+  MEMBER_OF_FEATURE      previous_member                 42        60    70%
+  FEATURE                first_member                    18        20    90%
+  ASSEMBLY               key                              2       171     1%
+  PART_XMT_BLOCK         n_entries                        2         2   100%
+
+MENTIONED IN THE SOURCES BUT NOT VIA A KNOWN READER HELPER --
+VERIFY AT THE CALL SITE BEFORE RANKING (this tier held 2 false positives):
+  FACE                   next_front                   45812     47252    97%
+  B_CURVE                data                          5294      5300   100%
+  INSTANCE               next_in_part                  2123      2294    93%
+  BODY                   boundary_curve                1736      1959    89%
+  BODY                   boundary_point                1687      1959    86%
+  BODY                   boundary_surface              1399      1959    71%
+  ATTRIB_DEF             actions                       1196      1196   100%
+  ATTRIB_DEF             legal_owners                  1196      1196   100%
+  ATTRIB_DEF             type_id                       1196      1196   100%
+  INSTANCE               next_of_part                   995      2294    43%
+  INSTANCE               prev_of_part                   995      2294    43%
+  B_SURFACE              data                           382       404    95%
+  ATTRIB_DEF             field_names                      3      1116     0%
+
+DECLARED BUT NEVER STATED (do not spend a session on these):
+  CHART                  parameter_error          0 of 5048
+  CURVE_DATA             analytic_form            0 of 4296
+  SP_CURVE               original                 0 of 2661
+  TRANSFORM              perspective_vector       0 of 2198
+  POINTER_LIS_BLOCK      next_block               0 of 2069
+  BODY                   key                      0 of 1959
+  POINTER_LIS_BLOCK      index_map_offset         0 of 1700
+  BODY                   index_map                0 of 1573
+  BODY                   index_map_offset         0 of 1573
+  BODY                   node_id_index_map        0 of 1573
+  BODY                   schema_embedding_map     0 of 1573
+  BODY                   child                    0 of 1430
+  BODY                   lowest_node_id           0 of 1430
+  BODY                   boundary_mesh            0 of 1329
+  BODY                   boundary_polyline        0 of 943
+  BODY                   mesh                     0 of 943
+  BODY                   polyline                 0 of 943
+  BODY                   mesh_offset_data         0 of 739
+  REGION                 frame                    0 of 457
+  SURFACE_DATA           analytic_form            0 of 382
+  SURFACE_DATA           blend_form               0 of 382
+  SURFACE_DATA           spun_form                0 of 382
+  SURFACE_DATA           swept_form               0 of 382
+  BODY                   lattice                  0 of 373
+  BODY                   boundary_lattice         0 of 368
+  ASSEMBLY               list                     0 of 171
+  ASSEMBLY               mesh                     0 of 86
+  ASSEMBLY               polyline                 0 of 86
+  ASSEMBLY               mesh_offset_data         0 of 62
+  MEMBER_OF_FEATURE      dummy_node_id            0 of 60
+  ASSEMBLY               lattice                  0 of 15
+  PART_XMT_BLOCK         index_map                0 of 2
+  PART_XMT_BLOCK         index_map_offset         0 of 2
+  PART_XMT_BLOCK         mesh_offset_data         0 of 2
+  PART_XMT_BLOCK         schema_embedding_map     0 of 2
