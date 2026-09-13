@@ -8,6 +8,7 @@ export const lessons: Lesson[] = [
     emoji: '🦵',
     title: { pt: 'O corpo e as dores', en: 'The body and aches' },
     summary: { pt: 'Partes do corpo e o verbo doer: dói-me a cabeça!', en: 'Body parts and the verb doer: my head hurts!' },
+    objectives: { pt: 'Depois desta lição vais conseguir nomear as principais partes do corpo, dizer o que te dói usando o verbo doer com os pronomes certos, e perceber a diferença entre a construção portuguesa e a inglesa para expressar dor.', en: 'After this lesson you will be able to name the main parts of the body, say what hurts you using the verb doer with the right pronouns, and understand how the Portuguese construction differs from the English one for expressing pain.' },
     sections: [
       {
         id: 'learn',
@@ -123,12 +124,14 @@ export const lessons: Lesson[] = [
     emoji: '🤒',
     title: { pt: 'No médico e na farmácia', en: 'At the doctor and pharmacy' },
     summary: { pt: 'Sintomas, sentimentos e o centro de saúde.', en: 'Symptoms, feelings and the health centre.' },
+    objectives: { pt: 'Depois desta lição vais conseguir descrever sintomas e como te sentes, usar o verbo sentir-se, e desenrascar-te no centro de saúde e na farmácia em Portugal.', en: 'After this lesson you will be able to describe symptoms and how you feel, use the verb sentir-se, and get by at the health centre and pharmacy in Portugal.' },
     sections: [
       {
         id: 'learn',
         title: { pt: 'Aprender', en: 'Learn' },
         blocks: [
           { kind: 'heading', pt: 'Como te sentes?', en: 'How do you feel?' },
+          { kind: 'text', pt: 'Para dizer que estamos doentes usamos duas estruturas diferentes: estar + adjetivo (estou doente) para o teu estado geral, e ter + nome (tenho febre) para um sintoma concreto. As duas aparecem muitas vezes juntas na mesma frase.', en: 'To say we are ill we use two different structures: estar + adjective (estou doente) for your general state, and ter + noun (tenho febre) for a specific symptom. The two often appear together in the same sentence.' },
           { kind: 'table', title: { pt: 'Sintomas', en: 'Symptoms' }, head: ['Estar', 'Ter', 'English'], rows: [
             ['Estou constipado/a.', 'Tenho febre.', 'I have a cold. / I have a fever.'],
             ['Estou doente.', 'Tenho tosse.', 'I am ill. / I have a cough.'],
@@ -226,6 +229,7 @@ export const lessons: Lesson[] = [
     emoji: '💊',
     title: { pt: 'Conselhos: o imperativo', en: 'Advice: the imperative' },
     summary: { pt: 'Dar ordens e conselhos: fala, fale, não fales; dever, ter de, precisar de.', en: 'Giving orders and advice: fala, fale, não fales; dever, ter de, precisar de.' },
+    objectives: { pt: 'Depois desta lição vais conseguir formar o imperativo afirmativo e negativo para tu e você, e dar conselhos com dever, ter de e precisar de.', en: 'After this lesson you will be able to form the affirmative and negative imperative for tu and você, and give advice with dever, ter de and precisar de.' },
     sections: [
       {
         id: 'grammar',
@@ -266,6 +270,7 @@ export const lessons: Lesson[] = [
         id: 'advice',
         title: { pt: 'Dar conselhos', en: 'Giving advice' },
         blocks: [
+          { kind: 'text', pt: 'Além do imperativo, há três construções muito úteis para dar conselhos e falar de obrigações: dever + infinitivo (uma sugestão, mais suave), ter de + infinitivo (uma obrigação forte) e precisar de + infinitivo ou nome (uma necessidade). São todas seguidas da preposição "de", exceto dever.', en: 'Besides the imperative, there are three very useful constructions for giving advice and talking about obligations: dever + infinitive (a suggestion, softer), ter de + infinitive (a strong obligation) and precisar de + infinitive or noun (a need). They are all followed by the preposition "de", except dever.' },
           { kind: 'table', head: ['Expressão', 'Sentido', 'Exemplo'], rows: [
             ['dever + inf.', 'should (advice)', 'Deves descansar.'],
             ['ter de + inf.', 'must / have to', 'Tens de tomar o xarope.'],
@@ -359,6 +364,7 @@ export const lessons: Lesson[] = [
     emoji: '😊',
     title: { pt: 'Emoções e estados', en: 'Emotions and states' },
     summary: { pt: 'Ter fome, estar contente, ficar nervoso e reagir: Coitado! As melhoras!', en: 'Being hungry, happy, getting nervous and reacting: Poor thing! Get well soon!' },
+    objectives: { pt: 'Depois desta lição vais conseguir expressar sensações físicas com ter, descrever emoções com estar e ficar, e reagir e consolar alguém com expressões do dia a dia.', en: 'After this lesson you will be able to express physical sensations with ter, describe emotions with estar and ficar, and react to and comfort someone with everyday expressions.' },
     sections: [
       {
         id: 'learn',
@@ -405,6 +411,7 @@ export const lessons: Lesson[] = [
         id: 'react',
         title: { pt: 'Reagir e consolar', en: 'Reacting and comforting' },
         blocks: [
+          { kind: 'text', pt: 'Em português há expressões fixas para reagir a más ou boas notícias e para mostrar que te importas com alguém. Não são traduções literais do inglês, por isso vale a pena aprendê-las como blocos inteiros.', en: 'In Portuguese there are fixed expressions to react to bad or good news and to show you care about someone. They are not literal translations from English, so it is worth learning them as whole chunks.' },
           { kind: 'table', head: ['Situação', 'Reação', 'English'], rows: [
             ['Alguém parece mal', 'Que se passa? / O que é que tens?', 'What’s the matter?'],
             ['Alguém está doente', 'As melhoras!', 'Get well soon!'],

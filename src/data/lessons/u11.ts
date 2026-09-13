@@ -8,12 +8,14 @@ export const lessons: Lesson[] = [
     emoji: '📜',
     title: { pt: 'O pretérito imperfeito', en: 'The imperfect tense' },
     summary: { pt: 'Formas regulares (-ava, -ia) e irregulares: era, tinha, vinha, punha.', en: 'Regular (-ava, -ia) and irregular forms: era, tinha, vinha, punha.' },
+    objectives: { pt: 'Depois desta lição vais conseguir conjugar verbos regulares e os quatro irregulares principais no pretérito imperfeito, descrever como as coisas costumavam ser no passado e contar pequenas memórias de família usando este tempo verbal.', en: 'After this lesson you will be able to conjugate regular verbs and the four main irregular verbs in the imperfect tense, describe what things used to be like in the past, and tell short family memories using this tense.' },
     sections: [
       {
         id: 'grammar',
         title: { pt: 'Gramática', en: 'Grammar' },
         blocks: [
           { kind: 'text', pt: 'O imperfeito descreve o passado "em câmara lenta": hábitos, descrições e situações.', en: 'The imperfect describes the past "in slow motion": habits, descriptions and situations.' },
+          { kind: 'text', pt: 'Para formar o imperfeito regular, tira-se a terminação do infinitivo e junta-se -ava (verbos -ar) ou -ia (verbos -er e -ir). Não há praticamente exceções nos verbos regulares, o que torna este tempo muito previsível e fácil de aprender. A ideia central é sempre a mesma: uma ação que durava, se repetia ou descrevia algo, sem um início ou fim marcados.', en: 'To form the regular imperfect, drop the infinitive ending and add -ava (for -ar verbs) or -ia (for -er and -ir verbs). There are practically no exceptions among regular verbs, which makes this tense very predictable and easy to learn. The core idea is always the same: an action that lasted, repeated itself, or described something, with no marked beginning or end.' },
           { kind: 'table', title: { pt: 'Verbos regulares', en: 'Regular verbs' }, head: ['Pessoa', 'morar', 'comer', 'dormir'], rows: [
             ['eu', 'morava', 'comia', 'dormia'],
             ['tu', 'moravas', 'comias', 'dormias'],
@@ -33,6 +35,7 @@ export const lessons: Lesson[] = [
           { kind: 'verb', verb: 'ser', tenses: ['imperfeito'] },
           { kind: 'verb', verb: 'ter', tenses: ['imperfeito'] },
           { kind: 'tip', pt: 'Acento em nós: morávamos, comíamos, éramos. Não te esqueças!', en: 'Accent in the nós form: morávamos, comíamos, éramos. Do not forget!' },
+          { kind: 'tip', pt: 'Erro comum: usar o pretérito perfeito (morei, comi) para descrever hábitos ou situações no passado. Para "eu vivia em Lisboa quando era pequeno" usa sempre o imperfeito, nunca "vivi".', en: 'Common mistake: using the simple past (morei, comi) to describe past habits or situations. For "I lived in Lisbon when I was little" always use the imperfect, never "vivi".' },
         ],
       },
       {
@@ -119,12 +122,14 @@ export const lessons: Lesson[] = [
     emoji: '🧸',
     title: { pt: 'Quando eu era pequeno', en: 'When I was little' },
     summary: { pt: 'Hábitos no passado, costumava, idade e horas no passado.', en: 'Past habits, costumava, age and time in the past.' },
+    objectives: { pt: 'Depois desta lição vais conseguir falar sobre a tua infância, descrever hábitos antigos com "costumava", dizer a idade e as horas no passado e usar o imperfeito para pintar o cenário de uma memória.', en: 'After this lesson you will be able to talk about your childhood, describe old habits with "costumava", say age and time in the past, and use the imperfect to set the scene of a memory.' },
     sections: [
       {
         id: 'grammar',
         title: { pt: 'Gramática', en: 'Grammar' },
         blocks: [
           { kind: 'heading', pt: 'Usos do imperfeito', en: 'Uses of the imperfect' },
+          { kind: 'text', pt: 'O imperfeito não serve só para hábitos: também descrevemos pessoas e coisas ("era alto"), dizemos a idade ("tinha oito anos"), as horas ("eram três da tarde") e o tempo atmosférico ("estava calor") no passado. Repara que todos estes usos têm algo em comum: não há um momento preciso em que começam ou acabam, apenas um estado ou situação que existia nessa altura.', en: 'The imperfect is not only for habits: we also use it to describe people and things ("he was tall"), to say age ("I was eight"), the time ("it was three in the afternoon") and the weather ("it was hot") in the past. Notice that all of these uses have something in common: there is no precise moment when they start or end, just a state or situation that existed at that time.' },
           { kind: 'table', head: ['Uso', 'Exemplo', 'English'], rows: [
             ['hábitos / habits', 'Ia à praia todos os verões.', 'I went to the beach every summer.'],
             ['descrições / descriptions', 'Ele era alto e simpático.', 'He was tall and nice.'],
@@ -138,6 +143,7 @@ export const lessons: Lesson[] = [
           { kind: 'verb', verb: 'ver', tenses: ['imperfeito'] },
           { kind: 'tip', pt: '"Quando era pequeno/a" = when I was little. Em pt-BR diz-se muitas vezes "quando era criança" — também correto em pt-PT, mas "pequeno" é mais natural.', en: '"Quando era pequeno/a" = when I was little. In pt-BR "quando era criança" is common — also fine in pt-PT, but "pequeno" sounds more natural.' },
           { kind: 'tip', pt: 'Ir no imperfeito: ia, ias, ia, íamos, iam.', en: 'Ir in the imperfect: ia, ias, ia, íamos, iam.' },
+          { kind: 'tip', pt: 'Erro comum: dizer "Eu tinha oito anos" mas depois mudar para o perfeito no meio da mesma descrição, tipo "e fui muito feliz". Se estás só a descrever como as coisas eram, mantém-te no imperfeito até haver um evento concreto.', en: 'Common mistake: saying "Eu tinha oito anos" but then switching to the simple past mid-description, like "e fui muito feliz". If you are only describing what things were like, stay in the imperfect until a concrete event happens.' },
         ],
       },
       {
@@ -227,6 +233,7 @@ export const lessons: Lesson[] = [
     emoji: '📞',
     title: { pt: 'Perfeito ou imperfeito?', en: 'Perfect or imperfect?' },
     summary: { pt: 'Estava a ler quando o telefone tocou.', en: 'I was reading when the phone rang.' },
+    objectives: { pt: 'Depois desta lição vais conseguir escolher entre o perfeito e o imperfeito ao contar uma história, usar "estar a + infinitivo" para descrever uma ação em curso no passado e construir frases com "quando" e "enquanto" para ligar o cenário ao evento.', en: 'After this lesson you will be able to choose between the perfect and imperfect when telling a story, use "estar a + infinitive" to describe an action in progress in the past, and build sentences with "quando" and "enquanto" to connect the scene to the event.' },
     sections: [
       {
         id: 'grammar',
@@ -240,6 +247,7 @@ export const lessons: Lesson[] = [
             ['duração indefinida', 'ação acabada'],
           ] },
           { kind: 'heading', pt: 'Estar a + infinitivo no passado', en: 'Estar a + infinitive in the past' },
+          { kind: 'text', pt: '"Estar a + infinitivo" no imperfeito descreve uma ação que estava a decorrer quando outra coisa aconteceu, tal como "was/were + -ing" em inglês. Conjuga-se "estar" no imperfeito e junta-se "a" mais o infinitivo do verbo principal: "estava a ler", "estávamos a jantar". É a forma mais natural de descrever o pano de fundo de uma história em pt-PT.', en: '"Estar a + infinitive" in the imperfect describes an action that was in progress when something else happened, similar to "was/were + -ing" in English. Conjugate "estar" in the imperfect and add "a" plus the main verb\'s infinitive: "estava a ler", "estávamos a jantar". It is the most natural way to describe the background of a story in pt-PT.' },
           { kind: 'examples', items: [
             { pt: 'Estava a ler quando o telefone tocou.', en: 'I was reading when the phone rang.' },
             { pt: 'Estávamos a jantar quando a luz foi abaixo.', en: 'We were having dinner when the power went out.' },
@@ -250,6 +258,7 @@ export const lessons: Lesson[] = [
           ] },
           { kind: 'verb', verb: 'estar', tenses: ['imperfeito', 'perfeito'] },
           { kind: 'tip', pt: 'pt-PT: "estava a ler". pt-BR: "estava lendo". Usa sempre "a + infinitivo"!', en: 'pt-PT: "estava a ler". pt-BR: "estava lendo". Always use "a + infinitive"!' },
+          { kind: 'tip', pt: 'Erro comum: usar o perfeito nas duas partes da frase, tipo "Estive a ler quando o telefone tocou". A ação de fundo fica sempre no imperfeito ("estava a ler"); só o evento que a interrompe é que vai para o perfeito ("tocou").', en: 'Common mistake: using the simple past in both halves of the sentence, like "Estive a ler quando o telefone tocou". The background action always stays in the imperfect ("estava a ler"); only the event that interrupts it goes into the simple past ("tocou").' },
         ],
       },
       {
@@ -321,6 +330,7 @@ export const lessons: Lesson[] = [
     emoji: '🎬',
     title: { pt: 'Contar uma história', en: 'Telling a story' },
     summary: { pt: 'Mais-que-perfeito composto (tinha feito), sequenciadores e os três passados juntos.', en: 'Past perfect (tinha feito), story sequencers and the three past tenses together.' },
+    objectives: { pt: 'Depois desta lição vais conseguir formar o mais-que-perfeito composto (tinha feito) para falar de ações anteriores a outras no passado, usar palavras como "primeiro", "entretanto" e "finalmente" para organizar uma história e combinar o perfeito, o imperfeito e o mais-que-perfeito na mesma narrativa.', en: 'After this lesson you will be able to form the past perfect (tinha feito) to talk about actions that happened before other past actions, use words like "primeiro", "entretanto" and "finalmente" to organise a story, and combine the perfect, imperfect and past perfect in the same narrative.' },
     sections: [
       {
         id: 'grammar',
@@ -336,6 +346,7 @@ export const lessons: Lesson[] = [
             ['nós', 'tínhamos', 'visto'],
             ['eles / elas / vocês', 'tinham', 'feito'],
           ] },
+          { kind: 'text', pt: 'A maior parte dos particípios é regular: verbos em -ar formam o particípio em -ado (falado), e verbos em -er/-ir formam-no em -ido (comido, partido). Mas há um grupo pequeno e muito frequente de particípios irregulares que vale a pena decorar de cor, porque aparecem em quase todas as histórias e conversas sobre o passado.', en: 'Most past participles are regular: -ar verbs form the participle with -ado (falado), and -er/-ir verbs with -ido (comido, partido). But there is a small, very common group of irregular participles that is worth memorising, because they show up in almost every story and conversation about the past.' },
           { kind: 'table', title: { pt: 'Particípios', en: 'Participles' }, head: ['Infinitivo', 'Particípio', 'English'], rows: [
             ['falar', 'falado', 'spoken (regular -ado)'],
             ['comer / partir', 'comido / partido', 'eaten / left (regular -ido)'],
@@ -348,12 +359,14 @@ export const lessons: Lesson[] = [
             ['vir', 'vindo', 'come'],
           ] },
           { kind: 'tip', pt: 'O particípio não muda com "ter": Ela tinha feito (não "feita"). "Já" e "ainda não" são muito comuns: Ainda não tinha visto o filme.', en: 'The participle does not change with "ter": Ela tinha feito (not "feita"). "Já" and "ainda não" are very common: I had not seen the film yet.' },
+          { kind: 'tip', pt: 'Erro comum: confundir o mais-que-perfeito composto ("tinha partido") com o perfeito simples ("parti"). Usa "tinha partido" só quando essa ação já tinha acontecido ANTES de outro momento do passado que estás a mencionar; se é só um facto isolado no passado, usa o perfeito.', en: 'Common mistake: confusing the past perfect ("tinha partido") with the simple past ("parti"). Use "tinha partido" only when that action had already happened BEFORE another past moment you are mentioning; if it is just an isolated past fact, use the simple past.' },
         ],
       },
       {
         id: 'learn',
         title: { pt: 'Sequenciadores', en: 'Sequencers' },
         blocks: [
+          { kind: 'text', pt: 'Contar uma história de forma clara não depende só dos tempos verbais certos — também precisas de palavras que organizem os acontecimentos por ordem. Os sequenciadores fazem exatamente isso: mostram o que veio primeiro, o que aconteceu ao mesmo tempo e o que foi a conclusão da história.', en: 'Telling a story clearly does not only depend on the right verb tenses — you also need words that organise events in order. Sequencers do exactly that: they show what came first, what happened at the same time, and what the conclusion of the story was.' },
           { kind: 'table', head: ['Português', 'English'], rows: [
             ['primeiro', 'first'],
             ['depois', 'then, afterwards'],
@@ -363,6 +376,7 @@ export const lessons: Lesson[] = [
             ['no fim', 'in the end'],
           ] },
           { kind: 'heading', pt: 'Três passados juntos', en: 'Three past tenses together' },
+          { kind: 'text', pt: 'Uma boa história em português combina normalmente os três passados: o imperfeito pinta o cenário (o que se passava), o perfeito conta os eventos principais (o que aconteceu) e o mais-que-perfeito recua no tempo para mostrar o que já tinha acontecido antes desses eventos. Pensa nisto como três camadas: o fundo, a ação, e o que veio ainda antes da ação.', en: 'A good story in Portuguese usually combines all three past tenses: the imperfect paints the scene (what was going on), the perfect tells the main events (what happened) and the past perfect goes further back in time to show what had already happened before those events. Think of it as three layers: the background, the action, and whatever came even before the action.' },
           { kind: 'table', head: ['Tempo', 'Função', 'Exemplo'], rows: [
             ['imperfeito', 'cenário / scene', 'Era sábado e estava sol.'],
             ['perfeito', 'evento / event', 'Fui à praia.'],

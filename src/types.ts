@@ -36,6 +36,9 @@ export type TenseKey =
   | 'futuro'
   | 'condicional'
   | 'imperativo'
+  | 'presConj'
+  | 'impConj'
+  | 'futConj'
 
 export interface Verb {
   inf: string
@@ -43,6 +46,8 @@ export interface Verb {
   irregular?: boolean
   /** each tense: [eu, tu, ele/ela/você, nós, eles/elas/vocês]; imperativo: [tu, você, nós, vocês] */
   forms: Partial<Record<TenseKey, string[]>>
+  /** irregular past participle (used for the passive voice); omit if it just follows -ado/-ido */
+  participle?: string
   ex?: Bi
 }
 
@@ -83,6 +88,8 @@ export interface Lesson {
   emoji: string
   title: Bi
   summary: Bi
+  /** "After this lesson you will be able to..." — objectives paragraph shown under the title */
+  objectives?: Bi
   sections: Section[]
   vocab: VocabItem[]
   verbs: string[]

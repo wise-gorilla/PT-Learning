@@ -76,6 +76,12 @@ const gender = (g?: string) => (g === 'm' ? 'o' : g === 'f' ? 'a' : g === 'mf' ?
       </button>
     </header>
 
+    <div v-if="lesson.objectives" class="mt-4 rounded-2xl bg-sky-50 px-4 py-3 dark:bg-sky-950/40">
+      <p class="text-xs font-bold uppercase tracking-wide text-sky-700 dark:text-sky-300">🎯 Objetivos · What you will be able to do</p>
+      <p class="mt-1 leading-relaxed">{{ lesson.objectives.pt }}</p>
+      <p class="en mt-1 leading-relaxed">{{ lesson.objectives.en }}</p>
+    </div>
+
     <nav class="sticky top-[53px] z-20 -mx-4 mt-5 flex gap-2 overflow-x-auto bg-stone-50/90 px-4 py-2 backdrop-blur dark:bg-stone-950/90">
       <button v-for="t in tabs" :key="t.key" class="btn shrink-0 border-2" :class="active === t.key ? 'border-verde bg-verde text-white' : 'border-stone-200 bg-white dark:border-stone-700 dark:bg-stone-900'" @click="go(t.key)">
         {{ t.icon }} {{ t.pt }} <span class="hidden text-xs opacity-70 sm:inline">· {{ t.en }}</span>

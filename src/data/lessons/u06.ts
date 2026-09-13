@@ -8,12 +8,14 @@ export const lessons: Lesson[] = [
     emoji: '🍞',
     title: { pt: 'Comida e bebida', en: 'Food and drink' },
     summary: { pt: 'Alimentos, refeições e o verbo gostar de.', en: 'Foods, meals and the verb gostar de.' },
+    objectives: { pt: 'Depois desta lição vais conseguir nomear as principais refeições e alimentos portugueses, dizer o que gostas e não gostas de comer ou beber usando "gostar de", e falar sobre as tuas refeições do dia a dia.', en: 'After this lesson you will be able to name the main Portuguese meals and foods, say what you do and do not like to eat or drink using "gostar de", and talk about your daily meals.' },
     sections: [
       {
         id: 'learn',
         title: { pt: 'Aprender', en: 'Learn' },
         blocks: [
           { kind: 'text', pt: 'Em Portugal há quatro refeições principais: o pequeno-almoço, o almoço, o lanche e o jantar.', en: 'In Portugal there are four main meals: breakfast, lunch, afternoon snack and dinner.' },
+          { kind: 'text', pt: 'Cada refeição tem a sua hora e o seu nome próprio, e é comum falar do que se come em cada uma. Repara que "ao" se usa antes da refeição: "ao pequeno-almoço", "ao almoço", "ao lanche", "ao jantar" — é a contração de "a" + "o".', en: 'Each meal has its own time and its own name, and it is common to talk about what is eaten at each one. Notice that "ao" is used before the meal name: "ao pequeno-almoço", "ao almoço", "ao lanche", "ao jantar" — it is the contraction of "a" + "o".' },
           { kind: 'table', title: { pt: 'As refeições', en: 'Meals' }, head: ['refeição', 'meal', 'hora'], rows: [
             ['o pequeno-almoço', 'breakfast', '7h–9h'],
             ['o almoço', 'lunch', '12h30–14h'],
@@ -123,6 +125,7 @@ export const lessons: Lesson[] = [
     emoji: '☕',
     title: { pt: 'No café', en: 'At the café' },
     summary: { pt: 'A cultura do café e os verbos querer, poder e preferir.', en: 'Café culture and the verbs querer, poder and preferir.' },
+    objectives: { pt: 'Depois desta lição vais conseguir pedir uma bebida ou um doce num café português, entender os nomes locais para o café (bica, cimbalino, galão), e usar os verbos "querer", "poder" e "preferir" para expressar desejos, pedir permissão e dizer preferências.', en: 'After this lesson you will be able to order a drink or a pastry at a Portuguese café, understand the local names for coffee (bica, cimbalino, galão), and use the verbs "querer", "poder" and "preferir" to express wishes, ask permission and state preferences.' },
     sections: [
       {
         id: 'culture',
@@ -145,6 +148,7 @@ export const lessons: Lesson[] = [
         id: 'grammar',
         title: { pt: 'Gramática', en: 'Grammar' },
         blocks: [
+          { kind: 'text', pt: '"Querer" (to want), "poder" (can / to be allowed to) e "preferir" (to prefer) são verbos muito usados para pedir coisas com educação. São irregulares na forma "eu": "quero", "posso", "prefiro". Nas outras pessoas seguem um padrão mais regular, mas repara nas mudanças de vogal.', en: '"Querer" (to want), "poder" (can / to be allowed to) and "preferir" (to prefer) are very common verbs for making polite requests. They are irregular in the "eu" form: "quero", "posso", "prefiro". In the other persons they follow a more regular pattern, but watch the vowel changes.' },
           { kind: 'table', title: { pt: 'Presente', en: 'Present' }, head: ['', 'querer', 'poder', 'preferir'], rows: [
             ['eu', 'quero', 'posso', 'prefiro'],
             ['tu', 'queres', 'podes', 'preferes'],
@@ -246,12 +250,14 @@ export const lessons: Lesson[] = [
     emoji: '🍽️',
     title: { pt: 'No restaurante', en: 'At the restaurant' },
     summary: { pt: 'Pedir com educação, preços e pagar a conta.', en: 'Ordering politely, prices and paying the bill.' },
+    objectives: { pt: 'Depois desta lição vais conseguir pedir uma mesa e pratos num restaurante com frases educadas, perguntar e entender preços em euros, e pedir a conta e pagar no final da refeição.', en: 'After this lesson you will be able to ask for a table and order dishes at a restaurant using polite phrases, ask and understand prices in euros, and request the bill and pay at the end of the meal.' },
     sections: [
       {
         id: 'learn',
         title: { pt: 'Pedir com educação', en: 'Ordering politely' },
         blocks: [
           { kind: 'text', pt: 'Para pedir com educação, os portugueses dizem "queria" em vez de "quero". É mais simpático!', en: 'To order politely, Portuguese people say "queria" (I would like) instead of "quero". It is friendlier!' },
+          { kind: 'text', pt: '"Queria" é a forma do imperfeito de "querer", mas aqui não fala do passado — funciona como um "would like" mais suave e é a forma preferida para pedir em cafés, restaurantes e lojas. Combina-se sempre com um nome ou um infinitivo: "Queria uma mesa", "Queria pagar".', en: '"Queria" is the imperfect form of "querer", but here it does not refer to the past — it works like a softer "would like" and is the preferred way to ask for things in cafés, restaurants and shops. It always combines with a noun or an infinitive: "Queria uma mesa", "Queria pagar".' },
           { kind: 'examples', items: [
             { pt: 'Queria uma mesa para dois, por favor.', en: 'I would like a table for two, please.' },
             { pt: 'Pode trazer a ementa?', en: 'Can you bring the menu?' },
@@ -279,6 +285,7 @@ export const lessons: Lesson[] = [
             ['25,90 €', 'vinte e cinco euros e noventa'],
           ] },
           { kind: 'tip', pt: 'Em Portugal escrevemos os preços com vírgula: 1,50 €. E dizemos "cêntimos" (no Brasil, "centavos").', en: 'In Portugal we write prices with a comma: 1,50 €. And we say "cêntimos" (in Brazil, "centavos").' },
+          { kind: 'tip', pt: 'Erro comum: dizer "quanto custa" para várias coisas. Se o sujeito é plural (as sardinhas, os tomates), o verbo tem de concordar: "Quanto custam as sardinhas?".', en: 'Common mistake: using "quanto custa" for several things. If the subject is plural (the sardines, the tomatoes), the verb must agree: "Quanto custam as sardinhas?".' },
           { kind: 'verb', verb: 'custar', tenses: ['presente'] },
           { kind: 'verb', verb: 'pagar', tenses: ['presente'] },
           { kind: 'verb', verb: 'pedir', tenses: ['presente'] },
@@ -367,6 +374,7 @@ export const lessons: Lesson[] = [
     emoji: '🛒',
     title: { pt: 'No supermercado e no mercado', en: 'At the supermarket and the market' },
     summary: { pt: 'Quantidades, embalagens, fruta e legumes, e pagar.', en: 'Quantities, containers, fruit and vegetables, and paying.' },
+    objectives: { pt: 'Depois desta lição vais conseguir pedir quantidades e embalagens de produtos (um quilo de, uma dúzia de, uma garrafa de), nomear frutas e legumes comuns, e perguntar e responder sobre preços no supermercado ou no mercado.', en: 'After this lesson you will be able to ask for quantities and containers of products (a kilo of, a dozen, a bottle of), name common fruits and vegetables, and ask and answer about prices at the supermarket or the market.' },
     sections: [
       {
         id: 'quantities',
@@ -390,6 +398,7 @@ export const lessons: Lesson[] = [
         id: 'market',
         title: { pt: 'Fruta, legumes e preços', en: 'Fruit, vegetables and prices' },
         blocks: [
+          { kind: 'text', pt: 'No mercado e no supermercado é essencial conhecer os nomes das frutas e dos legumes mais comuns, já que aparecem em quase todas as conversas de compras. Repara que "fruta" é normalmente usada no singular coletivo em português ("gosto de fruta"), enquanto em inglês se usa muitas vezes no plural.', en: 'At the market and the supermarket it is essential to know the names of the most common fruits and vegetables, since they come up in almost every shopping conversation. Note that "fruta" is normally used as a collective singular in Portuguese ("gosto de fruta"), while English often uses the plural.' },
           { kind: 'table', head: ['fruta', 'legumes'], rows: [
             ['a maçã (apple)', 'a batata (potato)'],
             ['a pera (pear)', 'a cenoura (carrot)'],

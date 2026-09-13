@@ -8,11 +8,13 @@ export const lessons: Lesson[] = [
     emoji: '🧱',
     title: { pt: 'Revisão A1: as bases', en: 'A1 review: the basics' },
     summary: { pt: 'Ser, estar, ter, presente, artigos, contrações, possessivos e estar a.', en: 'Ser, estar, ter, present, articles, contractions, possessives and estar a.' },
+    objectives: { pt: 'Depois desta lição vais rever os verbos ser, estar e ter no presente, o presente regular, os artigos e contrações, os possessivos, e a construção estar a + infinitivo.', en: 'After this lesson you will have reviewed the verbs ser, estar and ter in the present, the regular present tense, articles and contractions, possessives, and the estar a + infinitive construction.' },
     sections: [
       {
         id: 'verbs',
         title: { pt: 'Ser, estar, ter', en: 'Ser, estar, ter' },
         blocks: [
+          { kind: 'text', pt: 'Esta lição revê três dos verbos mais usados do português: ser (identidade e características permanentes), estar (estados temporários e localização) e ter (posse). São todos irregulares no presente, por isso convém saber as formas de cor.', en: 'This lesson reviews three of the most used verbs in Portuguese: ser (identity and permanent characteristics), estar (temporary states and location) and ter (possession). They are all irregular in the present, so it is worth knowing the forms by heart.' },
           { kind: 'table', head: ['Pessoa', 'ser', 'estar', 'ter'], rows: [
             ['eu', 'sou', 'estou', 'tenho'],
             ['tu', 'és', 'estás', 'tens'],
@@ -26,6 +28,7 @@ export const lessons: Lesson[] = [
             ['Lisboa é em Portugal.', 'O Rui está em casa.'],
           ] },
           { kind: 'heading', pt: 'Presente regular', en: 'Regular present' },
+          { kind: 'text', pt: 'Os verbos regulares dividem-se em três conjugações (-ar, -er, -ir), cada uma com o seu conjunto de terminações no presente. Falar, comer e abrir são os modelos de cada grupo.', en: 'Regular verbs fall into three conjugations (-ar, -er, -ir), each with its own set of present-tense endings. Falar, comer and abrir are the models for each group.' },
           { kind: 'table', head: ['Pessoa', 'falar', 'comer', 'abrir'], rows: [
             ['eu', 'falo', 'como', 'abro'],
             ['tu', 'falas', 'comes', 'abres'],
@@ -41,6 +44,7 @@ export const lessons: Lesson[] = [
         id: 'words',
         title: { pt: 'Artigos, contrações, possessivos', en: 'Articles, contractions, possessives' },
         blocks: [
+          { kind: 'text', pt: 'Os artigos concordam sempre em género e número com o nome. Quando uma preposição (de, em, a, por) é seguida de artigo, os dois juntam-se numa única palavra: a contração. Os possessivos, por sua vez, também levam artigo em português europeu.', en: 'Articles always agree in gender and number with the noun. When a preposition (de, em, a, por) is followed by an article, the two merge into a single word: the contraction. Possessives, in turn, also take an article in European Portuguese.' },
           { kind: 'table', title: { pt: 'Artigos', en: 'Articles' }, head: ['', 'm sing.', 'f sing.', 'm pl.', 'f pl.'], rows: [
             ['definido', 'o', 'a', 'os', 'as'],
             ['indefinido', 'um', 'uma', 'uns', 'umas'],
@@ -110,11 +114,13 @@ export const lessons: Lesson[] = [
     emoji: '🧩',
     title: { pt: 'Revisão A2: gramática', en: 'A2 review: grammar' },
     summary: { pt: 'Perfeito vs imperfeito, pronomes, imperativo, futuro, condicional e comparativos.', en: 'Perfect vs imperfect, pronouns, imperative, future, conditional and comparatives.' },
+    objectives: { pt: 'Depois desta lição vais rever a diferença entre perfeito e imperfeito, os pronomes de complemento, o imperativo, o futuro e o condicional, e os comparativos.', en: 'After this lesson you will have reviewed the difference between perfeito and imperfeito, object pronouns, the imperative, the future and conditional, and comparatives.' },
     sections: [
       {
         id: 'past',
         title: { pt: 'O passado', en: 'The past' },
         blocks: [
+          { kind: 'text', pt: 'O pretérito perfeito simples descreve uma ação passada e acabada, num momento concreto. O pretérito imperfeito descreve hábitos, descrições e ações a decorrer no passado, sem indicar quando acabaram. Muitas vezes usam-se os dois juntos: o imperfeito cria o cenário e o perfeito conta o que aconteceu.', en: 'The simple past (perfeito) describes a finished action at a specific moment. The imperfect (imperfeito) describes habits, descriptions and ongoing actions in the past, without saying when they ended. The two are often used together: the imperfect sets the scene and the perfect tells what happened.' },
           { kind: 'table', head: ['Pessoa', 'falar (perf.)', 'comer (perf.)', 'falar (imperf.)', 'comer (imperf.)'], rows: [
             ['eu', 'falei', 'comi', 'falava', 'comia'],
             ['tu', 'falaste', 'comeste', 'falavas', 'comias'],
@@ -134,6 +140,7 @@ export const lessons: Lesson[] = [
         id: 'more',
         title: { pt: 'Pronomes, imperativo, futuro', en: 'Pronouns, imperative, future' },
         blocks: [
+          { kind: 'text', pt: 'Os pronomes de complemento direto (o, a, os, as) substituem o objeto direto de um verbo, e os indiretos (lhe, lhes) substituem um objeto introduzido por "a". A sua posição na frase muda consoante haja ou não certas palavras antes do verbo.', en: 'Direct object pronouns (o, a, os, as) replace the direct object of a verb, and indirect ones (lhe, lhes) replace an object introduced by "a". Their position in the sentence changes depending on whether certain words come before the verb.' },
           { kind: 'table', title: { pt: 'Pronomes', en: 'Pronouns' }, head: ['Sujeito', 'Direto', 'Indireto'], rows: [
             ['eu', 'me', 'me'],
             ['tu', 'te', 'te'],
@@ -154,6 +161,7 @@ export const lessons: Lesson[] = [
             ['dizer (eu)', 'direi', 'diria'],
             ['poder (você)', 'poderá', 'poderia'],
           ] },
+          { kind: 'text', pt: 'Os comparativos servem para comparar duas coisas ou pessoas: superioridade (mais... do que), inferioridade (menos... do que) e igualdade (tão... como). Alguns adjetivos têm uma forma comparativa irregular própria, como melhor, pior e maior, e não se combinam com "mais".', en: 'Comparatives are used to compare two things or people: superiority (mais... do que), inferiority (menos... do que) and equality (tão... como). Some adjectives have their own irregular comparative form, like melhor, pior and maior, and do not combine with "mais".' },
           { kind: 'table', title: { pt: 'Comparativos', en: 'Comparatives' }, head: ['Forma', 'Exemplo'], rows: [
             ['mais ... (do) que', 'O Porto é mais pequeno do que Lisboa.'],
             ['menos ... (do) que', 'Este é menos caro do que aquele.'],
@@ -212,11 +220,13 @@ export const lessons: Lesson[] = [
     emoji: '🆘',
     title: { pt: 'Situações do dia a dia', en: 'Survival situations' },
     summary: { pt: 'Café, direções, médico, hotel e telefonema.', en: 'Café, directions, doctor, hotel and phone call.' },
+    objectives: { pt: 'Depois desta lição vais conseguir desenrascar-te em cinco situações do dia a dia: no café, a pedir direções, no médico, no hotel e ao telefone.', en: 'After this lesson you will be able to get by in five everyday situations: at the café, asking for directions, at the doctor, at the hotel, and on the phone.' },
     sections: [
       {
         id: 'phrases',
         title: { pt: 'Frases essenciais', en: 'Essential phrases' },
         blocks: [
+          { kind: 'text', pt: 'Esta lição junta as frases mais úteis de várias unidades anteriores, para reveres o vocabulário de sobrevivência que já aprendeste em situações reais: pedir num café, orientar-te na rua, explicar sintomas, tratar de um hotel e falar ao telefone.', en: 'This lesson brings together the most useful phrases from several earlier units, so you can review the survival vocabulary you have already learnt for real situations: ordering at a café, finding your way, explaining symptoms, dealing with a hotel and talking on the phone.' },
           { kind: 'table', title: { pt: 'No café', en: 'At the café' }, head: ['Português', 'English'], rows: [
             ['Queria um café / uma bica, por favor.', 'I would like an espresso, please.'],
             ['Um galão e uma torrada.', 'A milky coffee and toast.'],

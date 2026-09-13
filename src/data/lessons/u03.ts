@@ -11,12 +11,21 @@ export const lessons: Lesson[] = [
       pt: 'O verbo estar e a diferença entre ser e estar.',
       en: 'The verb estar and the difference between ser and estar.',
     },
+    objectives: {
+      pt: 'Depois desta lição vais conseguir conjugar o verbo estar no presente, escolher corretamente entre ser e estar, descrever estados temporários e o tempo (Está frio, Está calor), e falar de ações a acontecer agora com estar a + infinitivo.',
+      en: 'After this lesson you will be able to conjugate the verb estar in the present, choose correctly between ser and estar, describe temporary states and the weather (Está frio, Está calor), and talk about actions happening now with estar a + infinitive.',
+    },
     sections: [
       {
         id: 'grammar',
         title: { pt: 'Gramática', en: 'Grammar' },
         blocks: [
           { kind: 'heading', pt: 'O verbo estar', en: 'The verb estar (to be)' },
+          {
+            kind: 'text',
+            pt: 'Estar é um dos verbos mais usados em português e é irregular, por isso vale a pena aprender bem as suas formas. Usa-se para localização (Estou em casa), estados temporários (Estou cansado) e, com a preposição "a" mais infinitivo, para ações a decorrer neste momento.',
+            en: 'Estar is one of the most-used verbs in Portuguese and it is irregular, so it is worth learning its forms well. It is used for location (Estou em casa — I am at home), temporary states (Estou cansado — I am tired), and, with the preposition "a" plus infinitive, for actions happening right now.',
+          },
           { kind: 'verb', verb: 'estar', tenses: ['presente'] },
           {
             kind: 'text',
@@ -44,6 +53,11 @@ export const lessons: Lesson[] = [
             kind: 'tip',
             pt: 'Em Portugal, para ações a acontecer agora, usa-se "estar a + infinitivo": "Estou a estudar." No Brasil: "Estou estudando."',
             en: 'In Portugal, for actions happening now, use "estar a + infinitive": "Estou a estudar." (I am studying.) In Brazil: "Estou estudando."',
+          },
+          {
+            kind: 'tip',
+            pt: 'Erro comum: usar "ser" para descrever como alguém se sente. "Sou cansado" soa como se o cansaço fosse parte da tua personalidade! Para estados temporários, usa sempre "estar": "Estou cansado."',
+            en: 'Common mistake: using "ser" to describe how someone feels. "Sou cansado" sounds like tiredness is part of your personality! For temporary states, always use "estar": "Estou cansado" (I am tired).',
           },
           {
             kind: 'examples',
@@ -153,12 +167,21 @@ export const lessons: Lesson[] = [
       pt: 'Artigos, género e plural dos nomes, objetos do dia a dia e o verbo ter.',
       en: 'Articles, noun gender and plural, everyday objects and the verb ter.',
     },
+    objectives: {
+      pt: 'Depois desta lição vais conseguir usar os artigos definidos e indefinidos em português, identificar o género masculino ou feminino de um nome, formar o plural corretamente, e usar o verbo ter para falar de objetos do dia a dia.',
+      en: 'After this lesson you will be able to use definite and indefinite articles in Portuguese, identify whether a noun is masculine or feminine, form the plural correctly, and use the verb ter to talk about everyday objects.',
+    },
     sections: [
       {
         id: 'grammar',
         title: { pt: 'Gramática', en: 'Grammar' },
         blocks: [
           { kind: 'heading', pt: 'Artigos', en: 'Articles' },
+          {
+            kind: 'text',
+            pt: 'Todos os nomes em português vêm acompanhados de um artigo, e o artigo muda consoante o género (masculino ou feminino) e o número (singular ou plural) do nome. O artigo definido ("o", "a") corresponde a "the" e o indefinido ("um", "uma") corresponde a "a/an". É essencial escolher o artigo certo, porque também afeta a forma dos adjetivos que acompanham o nome.',
+            en: 'Every noun in Portuguese comes with an article, and the article changes according to the noun\'s gender (masculine or feminine) and number (singular or plural). The definite article ("o", "a") corresponds to "the" and the indefinite one ("um", "uma") to "a/an". Choosing the right article matters because it also affects the shape of any adjective that goes with the noun.',
+          },
           {
             kind: 'table',
             head: ['', 'Masculino', 'Feminino', 'English'],
@@ -200,6 +223,11 @@ export const lessons: Lesson[] = [
             en: 'For -ão, the most common plural is -ões. Learn -ães and -ãos with each word: pão/pães, alemão/alemães, mão/mãos, irmão/irmãos.',
           },
           { kind: 'heading', pt: 'O verbo ter', en: 'The verb ter (to have)' },
+          {
+            kind: 'text',
+            pt: 'Ter significa "to have" e é usado para posse (Tenho uma caneta) e também em muitas expressões fixas (ter fome, ter sede, ter razão). É um verbo irregular e muito frequente, por isso convém memorizar as suas formas desde já.',
+            en: 'Ter means "to have" and is used for possession (Tenho uma caneta — I have a pen) and also in many fixed expressions (ter fome — to be hungry, ter sede — to be thirsty, ter razão — to be right). It is irregular and very common, so it is worth memorizing its forms now.',
+          },
           { kind: 'verb', verb: 'ter', tenses: ['presente'] },
           {
             kind: 'examples',
@@ -216,6 +244,11 @@ export const lessons: Lesson[] = [
             kind: 'tip',
             pt: 'Atenção ao acento: "ele tem" (singular), "eles têm" (plural). O som é quase igual.',
             en: 'Watch the accent: "ele tem" (singular), "eles têm" (plural). The sound is almost the same.',
+          },
+          {
+            kind: 'tip',
+            pt: 'Erro comum: dizer "a problema" só porque termina em -a. Palavras gregas como problema, mapa, dia e programa são masculinas — tens de aprender o género com a palavra, não só pela terminação.',
+            en: 'Common mistake: saying "a problema" just because it ends in -a. Greek-derived words like problema, mapa, dia and programa are masculine — you must learn the gender with the word, not just from its ending.',
           },
         ],
       },
@@ -308,11 +341,20 @@ export const lessons: Lesson[] = [
       pt: 'Preposições de lugar e contrações: no, na, do, da.',
       en: 'Prepositions of place and contractions: no, na, do, da.',
     },
+    objectives: {
+      pt: 'Depois desta lição vais conseguir descrever onde as coisas estão usando preposições de lugar como em cima de, debaixo de e ao lado de, e aplicar corretamente as contrações obrigatórias no, na, do e da.',
+      en: 'After this lesson you will be able to describe where things are using prepositions of place like em cima de, debaixo de and ao lado de, and correctly apply the mandatory contractions no, na, do and da.',
+    },
     sections: [
       {
         id: 'learn',
         title: { pt: 'Aprender', en: 'Learn' },
         blocks: [
+          {
+            kind: 'text',
+            pt: 'Para dizer onde algo está, o português usa preposições de lugar, muitas vezes seguidas da palavra "de": em cima de (on top of), debaixo de (under), ao lado de (next to). Estas expressões combinam-se com "estar" ou "ficar" para descrever a posição de pessoas, objetos e lugares.',
+            en: 'To say where something is, Portuguese uses prepositions of place, often followed by "de": em cima de (on top of), debaixo de (under), ao lado de (next to). These expressions combine with "estar" or "ficar" to describe the position of people, objects and places.',
+          },
           {
             kind: 'table',
             title: { pt: 'Preposições de lugar', en: 'Prepositions of place' },
@@ -330,6 +372,11 @@ export const lessons: Lesson[] = [
             ],
           },
           { kind: 'heading', pt: 'Contrações', en: 'Contractions' },
+          {
+            kind: 'text',
+            pt: 'Em português, algumas preposições (em, de, a) fundem-se obrigatoriamente com o artigo definido que vem a seguir, formando uma única palavra: "em" + "a" torna-se "na", "de" + "o" torna-se "do". Estas contrações são obrigatórias — não podes dizer as duas palavras separadas.',
+            en: 'In Portuguese, some prepositions (em, de, a) must merge with the definite article that follows them, forming a single word: "em" + "a" becomes "na", "de" + "o" becomes "do". These contractions are mandatory — you cannot say the two words separately.',
+          },
           {
             kind: 'table',
             head: ['', 'o', 'a', 'os', 'as'],
@@ -361,6 +408,11 @@ export const lessons: Lesson[] = [
             kind: 'tip',
             pt: 'Em Portugal diz-se "à frente de". No Brasil é mais comum "na frente de".',
             en: 'In Portugal people say "à frente de". In Brazil "na frente de" is more common.',
+          },
+          {
+            kind: 'tip',
+            pt: 'Erro comum: esquecer a contração e dizer "de o banco" ou "em a mesa". Em português europeu estas fusões são sempre obrigatórias, ao contrário do inglês, onde "of the" e "in the" ficam sempre separados.',
+            en: 'Common mistake: forgetting the contraction and saying "de o banco" or "em a mesa". In European Portuguese these mergers are always mandatory, unlike English, where "of the" and "in the" always stay separate.',
           },
         ],
       },

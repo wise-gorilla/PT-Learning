@@ -8,6 +8,7 @@ export const lessons: Lesson[] = [
     emoji: '👩‍⚕️',
     title: { pt: 'As profissões', en: 'Professions' },
     summary: { pt: 'Profissões (masculino e feminino) e o local de trabalho.', en: 'Professions (masculine and feminine) and the workplace.' },
+    objectives: { pt: 'Depois desta lição vais conseguir nomear profissões nas formas masculina e feminina, dizer sem artigo o que fazes, e falar do teu local de trabalho e horário.', en: 'After this lesson you will be able to name professions in their masculine and feminine forms, say what you do without an article, and talk about your workplace and hours.' },
     sections: [
       {
         id: 'learn',
@@ -122,6 +123,7 @@ export const lessons: Lesson[] = [
     emoji: '🎓',
     title: { pt: 'Escola, universidade e entrevista', en: 'School, university and interview' },
     summary: { pt: 'Estudos, o CV e pronomes indefinidos: alguém, ninguém, nada...', en: 'Studies, the CV and indefinite pronouns: someone, no one, nothing...' },
+    objectives: { pt: 'Depois desta lição vais conseguir falar dos teus estudos e experiência de trabalho, usar corretamente os pronomes indefinidos, e entender a dupla negação em português.', en: 'After this lesson you will be able to talk about your studies and work experience, correctly use indefinite pronouns, and understand double negation in Portuguese.' },
     sections: [
       {
         id: 'learn',
@@ -145,6 +147,7 @@ export const lessons: Lesson[] = [
         title: { pt: 'Gramática', en: 'Grammar' },
         blocks: [
           { kind: 'heading', pt: 'Pronomes indefinidos', en: 'Indefinite pronouns' },
+          { kind: 'text', pt: 'Os pronomes indefinidos referem-se a pessoas ou coisas não específicas: alguém e ninguém para pessoas, algum/nenhum para coisas contáveis, e tudo/nada para quantidades ou situações em geral. Concordam em género e número com o nome a que se referem, quando existe (alguma pergunta, nenhuns problemas).', en: 'Indefinite pronouns refer to non-specific people or things: alguém and ninguém for people, algum/nenhum for countable things, and tudo/nada for general amounts or situations. They agree in gender and number with the noun they refer to, when there is one (alguma pergunta, some question).' },
           { kind: 'table', head: ['Afirmativo', 'Negativo', 'English'], rows: [
             ['alguém', 'ninguém', 'someone / no one'],
             ['algum / alguma', 'nenhum / nenhuma', 'some / none, no'],
@@ -240,6 +243,7 @@ export const lessons: Lesson[] = [
     emoji: '📧',
     title: { pt: 'Tenho trabalhado muito', en: 'I have been working a lot' },
     summary: { pt: 'Pretérito perfeito composto, pronomes relativos e o email formal.', en: 'Present perfect (composto), relative pronouns and formal email.' },
+    objectives: { pt: 'Depois desta lição vais conseguir usar o pretérito perfeito composto para ações repetidas ou contínuas até agora, ligar frases com pronomes relativos, e escrever um email formal em português.', en: 'After this lesson you will be able to use the pretérito perfeito composto for repeated or ongoing actions up to now, link sentences with relative pronouns, and write a formal email in Portuguese.' },
     sections: [
       {
         id: 'grammar',
@@ -261,6 +265,7 @@ export const lessons: Lesson[] = [
           ] },
           { kind: 'tip', pt: 'Atenção! "Tenho feito" NÃO é "I have done". Para "I have finished", usa o simples: "Já acabei".', en: 'Careful! "Tenho feito" is NOT "I have done". For "I have finished", use the simple past: "Já acabei".' },
           { kind: 'heading', pt: 'Pronomes relativos', en: 'Relative pronouns' },
+          { kind: 'text', pt: 'Os pronomes relativos ligam duas frases sem repetir o nome. "Que" é o mais comum e serve para pessoas e coisas. "Quem" só se usa para pessoas, e normalmente depois de uma preposição (com quem, para quem). "Onde" substitui um lugar, e "o que" refere-se a uma ideia ou coisa não nomeada antes.', en: 'Relative pronouns link two sentences without repeating the noun. "Que" is the most common and works for both people and things. "Quem" is only used for people, usually after a preposition (com quem, para quem). "Onde" replaces a place, and "o que" refers to an idea or thing not named before.' },
           { kind: 'table', head: ['Pronome', 'Uso', 'Exemplo'], rows: [
             ['que', 'coisas e pessoas', 'A empresa que me contratou é grande.'],
             ['quem', 'pessoas (depois de preposição)', 'O colega com quem trabalho é ótimo.'],
@@ -273,6 +278,7 @@ export const lessons: Lesson[] = [
         id: 'email',
         title: { pt: 'O email formal', en: 'The formal email' },
         blocks: [
+          { kind: 'text', pt: 'Um email formal em português tem uma estrutura própria, bem diferente da linguagem que usarias com amigos: uma saudação com título (Exmo./Exma.), uma introdução que explica o motivo do email, o pedido em si e um fecho de cortesia. Vale a pena ter estes blocos prontos para reutilizar.', en: 'A formal email in Portuguese has its own structure, quite different from the language you would use with friends: a greeting with a title (Exmo./Exma.), an introduction explaining the purpose of the email, the request itself, and a polite closing. It is worth having these chunks ready to reuse.' },
           { kind: 'table', head: ['Parte', 'Formal', 'Informal'], rows: [
             ['Saudação', 'Exmo. Sr. / Exma. Sra.; Caro Dr. Costa', 'Olá Rui,'],
             ['Início', 'Venho por este meio candidatar-me...', 'Tudo bem?'],
@@ -360,6 +366,7 @@ export const lessons: Lesson[] = [
     emoji: '🚀',
     title: { pt: 'Planos para o futuro', en: 'Plans for the future' },
     summary: { pt: 'Vou estudar, espero, gostava de, tenciono, se calhar e "Se chover, fico em casa".', en: 'I’m going to study, I hope, I’d like to, I intend, maybe and "If it rains, I’ll stay home".' },
+    objectives: { pt: 'Depois desta lição vais conseguir falar de planos futuros com ir + infinitivo, expressar desejos e intenções com verbos como esperar e tencionar, e usar expressões de possibilidade como se calhar e talvez.', en: 'After this lesson you will be able to talk about future plans with ir + infinitive, express wishes and intentions with verbs like esperar and tencionar, and use possibility expressions like se calhar and talvez.' },
     sections: [
       {
         id: 'grammar',
@@ -374,6 +381,7 @@ export const lessons: Lesson[] = [
           ] },
           { kind: 'verb', verb: 'ir', tenses: ['presente'] },
           { kind: 'heading', pt: 'Desejos e intenções', en: 'Wishes and intentions' },
+          { kind: 'text', pt: 'Além de "ir + infinitivo", há vários verbos que introduzem um desejo, uma esperança ou uma intenção, sempre seguidos de infinitivo (exceto "sonhar", que usa "com"). Escolhe o verbo conforme a força da intenção: "quero" é mais direto, "gostava de" é mais suave e educado, "tenciono" é mais formal e definitivo.', en: 'Besides "ir + infinitive", several verbs introduce a wish, a hope or an intention, always followed by the infinitive (except "sonhar", which uses "com"). Choose the verb according to the strength of the intention: "quero" is more direct, "gostava de" is softer and more polite, "tenciono" is more formal and definite.' },
           { kind: 'table', head: ['Expressão', 'English', 'Exemplo'], rows: [
             ['quero + inf.', 'I want to', 'Quero aprender a nadar.'],
             ['espero + inf.', 'I hope to', 'Espero encontrar trabalho.'],

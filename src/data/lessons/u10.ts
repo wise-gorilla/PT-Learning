@@ -8,12 +8,14 @@ export const lessons: Lesson[] = [
     emoji: '⏪',
     title: { pt: 'Ontem: verbos regulares', en: 'Yesterday: regular verbs' },
     summary: { pt: 'Pretérito perfeito simples dos verbos em -ar, -er, -ir.', en: 'Simple past of -ar, -er, -ir verbs.' },
+    objectives: { pt: 'Depois desta lição vais conseguir conjugar verbos regulares em -ar, -er e -ir no pretérito perfeito, falar sobre o que fizeste ontem ou na semana passada usando expressões de tempo, e distinguir na escrita o presente do passado em formas como "falamos" e "falámos".', en: 'After this lesson you will be able to conjugate regular -ar, -er and -ir verbs in the simple past, talk about what you did yesterday or last week using time expressions, and tell present from past apart in writing in forms like "falamos" and "falámos".' },
     sections: [
       {
         id: 'grammar',
         title: { pt: 'Gramática', en: 'Grammar' },
         blocks: [
           { kind: 'text', pt: 'O pretérito perfeito simples fala de ações acabadas no passado: Ontem jantei em casa.', en: 'The simple past talks about finished actions in the past: Yesterday I had dinner at home.' },
+          { kind: 'text', pt: 'Para formar o pretérito perfeito dos verbos regulares, tiramos a terminação -ar, -er ou -ir do infinitivo e acrescentamos as terminações próprias de cada pessoa. Repara que os verbos em -er e -ir têm exatamente as mesmas terminações entre si, só os verbos em -ar são diferentes. É um tempo muito usado no dia a dia, por isso vale a pena praticar bem estas formas antes de avançar para os verbos irregulares.', en: 'To form the simple past of regular verbs, we drop the -ar, -er or -ir ending from the infinitive and add the ending for each person. Notice that -er and -ir verbs share exactly the same endings as each other, while only -ar verbs differ. It is a very common everyday tense, so it is worth practising these forms well before moving on to irregular verbs.' },
           { kind: 'table', title: { pt: 'Verbos regulares', en: 'Regular verbs' }, head: ['Pessoa', 'falar', 'comer', 'abrir'], rows: [
             ['eu', 'falei', 'comi', 'abri'],
             ['tu', 'falaste', 'comeste', 'abriste'],
@@ -23,6 +25,7 @@ export const lessons: Lesson[] = [
           ] },
           { kind: 'tip', pt: 'pt-PT: "falámos" (passado, com acento) ≠ "falamos" (presente). No Brasil escreve-se "falamos" para os dois.', en: 'pt-PT: "falámos" (past, with accent) ≠ "falamos" (present). In Brazil both are written "falamos".' },
           { kind: 'tip', pt: 'Atenção à ortografia: chegar → cheguei, ficar → fiquei, começar → comecei.', en: 'Watch the spelling: chegar → cheguei, ficar → fiquei, começar → comecei.' },
+          { kind: 'tip', pt: 'Erro comum: escrever "eu falei" como "eu falo" no passado, ou esquecer o acento em "nós falámos". O acento não é um detalhe: é o que distingue o passado do presente por escrito.', en: 'Common mistake: writing "eu falei" like "eu falo" in the past, or forgetting the accent in "nós falámos". The accent is not a minor detail: it is what tells the past apart from the present in writing.' },
           { kind: 'verb', verb: 'falar', tenses: ['presente', 'perfeito'] },
           { kind: 'verb', verb: 'comer', tenses: ['perfeito'] },
           { kind: 'verb', verb: 'partir', tenses: ['perfeito'] },
@@ -114,12 +117,14 @@ export const lessons: Lesson[] = [
     emoji: '🌀',
     title: { pt: 'Verbos irregulares I', en: 'Irregular verbs I' },
     summary: { pt: 'Ser e ir (iguais!), ter, estar, fazer, dar, ver, vir.', en: 'Ser and ir (identical!), ter, estar, fazer, dar, ver, vir.' },
+    objectives: { pt: 'Depois desta lição vais conseguir usar corretamente os verbos irregulares mais frequentes no pretérito perfeito — ser, ir, ter, estar, fazer, dar, ver e vir —, perceber pelo contexto se "fui" ou "foi" vêm de ser ou de ir, e contar o que fizeste e onde estiveste num fim de semana.', en: 'After this lesson you will be able to correctly use the most frequent irregular verbs in the simple past — ser, ir, ter, estar, fazer, dar, ver and vir —, tell from context whether "fui" or "foi" comes from ser or ir, and recount what you did and where you were over a weekend.' },
     sections: [
       {
         id: 'grammar',
         title: { pt: 'Gramática', en: 'Grammar' },
         blocks: [
           { kind: 'heading', pt: 'Ser e ir: as mesmas formas', en: 'Ser and ir: the same forms' },
+          { kind: 'text', pt: 'Uma curiosidade do português: no pretérito perfeito, os verbos ser e ir têm exatamente as mesmas formas. "Fui", "foste", "foi", "fomos", "foram" servem tanto para "ser" como para "ir". Isto pode parecer estranho, mas o contexto da frase quase sempre deixa claro qual é o verbo: se há um destino ("fui a Lisboa"), é o verbo ir; se descreve como algo era ("foi ótimo"), é o verbo ser.', en: 'A quirk of Portuguese: in the simple past, the verbs ser and ir share exactly the same forms. "Fui", "foste", "foi", "fomos", "foram" serve both "to be" and "to go". This may seem strange, but the context of the sentence almost always makes it clear which verb it is: if there is a destination ("fui a Lisboa"), it is the verb ir; if it describes what something was like ("foi ótimo"), it is the verb ser.' },
           { kind: 'table', head: ['Pessoa', 'ser / ir'], rows: [
             ['eu', 'fui'], ['tu', 'foste'], ['ele / ela / você', 'foi'], ['nós', 'fomos'], ['eles / elas / vocês', 'foram'],
           ] },
@@ -130,6 +135,7 @@ export const lessons: Lesson[] = [
             { pt: 'Foi um dia difícil. (ser)', en: 'It was a hard day.' },
           ] },
           { kind: 'tip', pt: 'O contexto diz se é ser ou ir: "fui a/para" = ir.', en: 'Context tells you if it is ser or ir: "fui a/para" = ir.' },
+          { kind: 'text', pt: 'Além de ser e ir, há um pequeno grupo de verbos muito frequentes que também são irregulares no pretérito perfeito: ter, estar, fazer, dar, ver e vir. As suas formas não seguem o padrão dos verbos regulares e têm de ser memorizadas, mas partilham entre si algumas semelhanças, como o "-ve" de "estive" e "tive". Vais precisar destes verbos em quase todas as conversas sobre o passado, por isso vale a pena repeti-los em voz alta.', en: 'Besides ser and ir, there is a small group of very frequent verbs that are also irregular in the simple past: ter, estar, fazer, dar, ver and vir. Their forms do not follow the pattern of regular verbs and must be memorised, but they share some similarities with each other, such as the "-ve" in "estive" and "tive". You will need these verbs in almost every conversation about the past, so it is worth repeating them out loud.' },
           { kind: 'table', title: { pt: 'Mais irregulares', en: 'More irregulars' }, head: ['Pessoa', 'ter', 'estar', 'fazer', 'dar', 'ver', 'vir'], rows: [
             ['eu', 'tive', 'estive', 'fiz', 'dei', 'vi', 'vim'],
             ['tu', 'tiveste', 'estiveste', 'fizeste', 'deste', 'viste', 'vieste'],
@@ -223,11 +229,13 @@ export const lessons: Lesson[] = [
     emoji: '📖',
     title: { pt: 'O meu fim de semana', en: 'My weekend' },
     summary: { pt: 'Pôr, dizer, trazer, poder, querer, saber. Contar uma história.', en: 'Pôr, dizer, trazer, poder, querer, saber. Telling a story.' },
+    objectives: { pt: 'Depois desta lição vais conseguir usar mais seis verbos irregulares comuns no pretérito perfeito — pôr, dizer, trazer, poder, querer e saber —, ligar frases com palavras como "primeiro", "depois" e "por fim" para contar uma história, e perceber a diferença entre "soube" (fiquei a saber) e outros usos de saber.', en: 'After this lesson you will be able to use six more common irregular verbs in the simple past — pôr, dizer, trazer, poder, querer and saber —, link sentences with words like "primeiro", "depois" and "por fim" to tell a story, and understand the difference between "soube" (I found out) and other uses of saber.' },
     sections: [
       {
         id: 'grammar',
         title: { pt: 'Gramática', en: 'Grammar' },
         blocks: [
+          { kind: 'text', pt: 'Continuamos os verbos irregulares no pretérito perfeito com mais seis verbos muito usados: pôr, dizer, trazer, poder, querer e saber. Repara que muitas destas formas mudam completamente em relação ao infinitivo — "trazer" torna-se "trouxe", "saber" torna-se "soube" — por isso é preciso memorizá-las como um bloco, tal como fizeste com ser, ir e ter. Estes verbos aparecem constantemente quando contamos o que aconteceu, o que dissemos ou o que trouxemos para algum lado.', en: 'We continue with irregular verbs in the simple past, adding six more very common ones: pôr, dizer, trazer, poder, querer and saber. Notice that many of these forms change completely from the infinitive — "trazer" becomes "trouxe", "saber" becomes "soube" — so they need to be memorised as a block, just like you did with ser, ir and ter. These verbs come up constantly when telling what happened, what was said, or what was brought somewhere.' },
           { kind: 'table', title: { pt: 'Irregulares II', en: 'Irregulars II' }, head: ['Pessoa', 'pôr', 'dizer', 'trazer', 'poder', 'querer', 'saber'], rows: [
             ['eu', 'pus', 'disse', 'trouxe', 'pude', 'quis', 'soube'],
             ['tu', 'puseste', 'disseste', 'trouxeste', 'pudeste', 'quiseste', 'soubeste'],
@@ -237,6 +245,7 @@ export const lessons: Lesson[] = [
           ] },
           { kind: 'tip', pt: '"Trouxe" pronuncia-se "trou-sse" (x = ss). "Pôde" (passado) tem acento; "pode" é presente.', en: '"Trouxe" is pronounced "trou-sse" (x = ss). "Pôde" (past) has an accent; "pode" is present.' },
           { kind: 'tip', pt: '"Soube" muitas vezes significa "found out": Soube a notícia ontem.', en: '"Soube" often means "found out": I found out the news yesterday.' },
+          { kind: 'tip', pt: 'Erro comum: conjugar "trazer" como um verbo regular ("trazi"). A forma correta é sempre "trouxe", "trouxeste", "trouxe", "trouxemos", "trouxeram".', en: 'Common mistake: conjugating "trazer" as a regular verb ("trazi"). The correct form is always "trouxe", "trouxeste", "trouxe", "trouxemos", "trouxeram".' },
           { kind: 'verb', verb: 'dizer', tenses: ['perfeito'] },
           { kind: 'verb', verb: 'trazer', tenses: ['perfeito'] },
           { kind: 'verb', verb: 'pôr', tenses: ['perfeito'] },
@@ -328,12 +337,14 @@ export const lessons: Lesson[] = [
     emoji: '📖',
     title: { pt: 'Uma biografia', en: 'A biography' },
     summary: { pt: 'Contar a vida de alguém: nascer, crescer, casar-se, reformar-se; em 1990, aos 20 anos, há dez anos.', en: 'Telling someone’s life story: to be born, grow up, get married, retire; in 1990, at 20, ten years ago.' },
+    objectives: { pt: 'Depois desta lição vais conseguir contar a biografia de uma pessoa em português — nascer, crescer, casar-se, ter filhos, reformar-se e morrer —, situar esses acontecimentos no tempo com "em 1990", "aos 20 anos" e "há dez anos", e escrever ou falar sobre a vida de alguém famoso ou de um familiar.', en: 'After this lesson you will be able to tell someone’s biography in Portuguese — to be born, grow up, get married, have children, retire and die —, place those events in time with "em 1990", "aos 20 anos" and "há dez anos", and write or talk about the life of a famous person or a family member.' },
     sections: [
       {
         id: 'learn',
         title: { pt: 'As etapas da vida', en: 'Life stages' },
         blocks: [
           { kind: 'text', pt: 'Para contar a vida de uma pessoa usamos o pretérito perfeito: são ações acabadas, em datas concretas.', en: 'To tell someone’s life story we use the simple past: finished actions at specific dates.' },
+          { kind: 'text', pt: 'Uma biografia é normalmente uma sequência de marcos: nascer, crescer, estudar, mudar-se, casar-se, ter filhos, reformar-se e, por fim, morrer. Muitos destes verbos são pronominais em português — "casar-se", "mudar-se", "reformar-se" — o que significa que levam sempre um pronome reflexo ("casei-me", "mudou-se"). Aprender este pequeno grupo de verbos permite-te contar a história de qualquer pessoa, real ou famosa, de forma natural.', en: 'A biography is usually a sequence of milestones: to be born, grow up, study, move, get married, have children, retire and, finally, die. Many of these verbs are pronominal in Portuguese — "casar-se", "mudar-se", "reformar-se" — meaning they always carry a reflexive pronoun ("casei-me", "mudou-se"). Learning this small group of verbs lets you tell anyone’s story, real or famous, naturally.' },
           { kind: 'table', title: { pt: 'Verbos da vida', en: 'Life verbs' }, head: ['Infinitivo', 'eu', 'ele / ela', 'English'], rows: [
             ['nascer', 'nasci', 'nasceu', 'to be born'],
             ['crescer', 'cresci', 'cresceu', 'to grow up'],
@@ -354,6 +365,7 @@ export const lessons: Lesson[] = [
         id: 'grammar',
         title: { pt: 'Datas no passado', en: 'Dates in the past' },
         blocks: [
+          { kind: 'text', pt: 'Para dar uma biografia mais precisa, precisamos de expressões que situem os acontecimentos no tempo. Em português usamos preposições diferentes consoante o tipo de informação: "em" para anos e meses, "aos" para a idade que a pessoa tinha, e "há" para dizer há quanto tempo algo aconteceu, contando a partir de agora. Escolher a preposição certa é essencial para que a frase faça sentido.', en: 'To make a biography more precise, we need expressions that place events in time. In Portuguese we use different prepositions depending on the type of information: "em" for years and months, "aos" for the age the person was, and "há" to say how long ago something happened, counting from now. Choosing the right preposition is essential for the sentence to make sense.' },
           { kind: 'table', head: ['Expressão', 'Exemplo', 'English'], rows: [
             ['em + ano', 'Nasci em 1990.', 'I was born in 1990.'],
             ['nos anos 80', 'Cresceu nos anos 80.', 'He grew up in the 80s.'],
@@ -370,6 +382,7 @@ export const lessons: Lesson[] = [
             { pt: 'Os meus avós reformaram-se há cinco anos.', en: 'My grandparents retired five years ago.' },
           ] },
           { kind: 'tip', pt: 'Os anos leem-se assim: 1990 = mil novecentos e noventa; 2015 = dois mil e quinze.', en: 'Years are read like this: 1990 = mil novecentos e noventa; 2015 = dois mil e quinze.' },
+          { kind: 'tip', pt: 'Erro comum: usar "em" com idades, como "em 20 anos" para dizer a idade da pessoa. Para idade usa-se sempre "aos": "aos 20 anos", nunca "em 20 anos".', en: 'Common mistake: using "em" with ages, like "em 20 anos" to say how old someone was. For age you always use "aos": "aos 20 anos", never "em 20 anos".' },
         ],
       },
       {

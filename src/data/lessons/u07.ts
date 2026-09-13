@@ -8,12 +8,14 @@ export const lessons: Lesson[] = [
     emoji: '🏙️',
     title: { pt: 'Lugares na cidade', en: 'Places in the city' },
     summary: { pt: 'O verbo ir e as contrações com preposições.', en: 'The verb ir and contractions with prepositions.' },
+    objectives: { pt: 'Depois desta lição vais conseguir conjugar o verbo ir no presente, dizer para onde vais usando "ir a" e "ir para", e combinar as preposições em, de, a e por com os artigos definidos para falar de lugares na cidade.', en: 'After this lesson you will be able to conjugate the verb ir in the present tense, say where you are going using "ir a" and "ir para", and combine the prepositions em, de, a and por with the definite articles to talk about places in the city.' },
     sections: [
       {
         id: 'learn',
         title: { pt: 'Aprender', en: 'Learn' },
         blocks: [
           { kind: 'text', pt: 'Na cidade há muitos lugares: o banco, a farmácia, o supermercado, a estação… Vamos aprender a dizer onde vamos.', en: 'In the city there are many places: the bank, the pharmacy, the supermarket, the station… Let us learn to say where we are going.' },
+          { kind: 'text', pt: 'O verbo "ir" é um dos verbos mais usados em português e é totalmente irregular — não segue nenhum padrão das conjugações em -ar, -er ou -ir, por isso tens de decorar as formas uma a uma. Usa-se para falar de movimento para um lugar, tal como em inglês "to go", mas também para formar o futuro próximo (por exemplo "vou comer" = "I am going to eat"). Repara que "vou", "vais" e "vai" soam parecido mas mudam com a pessoa.', en: 'The verb "ir" (to go) is one of the most used verbs in Portuguese and it is completely irregular — it does not follow any of the -ar, -er or -ir patterns, so you have to learn the forms one by one. It is used to talk about movement to a place, just like English "to go", but also to form the near future (for example "vou comer" = "I am going to eat"). Notice that "vou", "vais" and "vai" sound similar but change with the person.' },
           { kind: 'table', title: { pt: 'O verbo ir (presente)', en: 'The verb ir (present)' }, head: ['pessoa', 'ir'], rows: [
             ['eu', 'vou'], ['tu', 'vais'], ['ele/ela/você', 'vai'], ['nós', 'vamos'], ['eles/elas/vocês', 'vão'],
           ] },
@@ -34,6 +36,7 @@ export const lessons: Lesson[] = [
         title: { pt: 'Gramática: contrações', en: 'Grammar: contractions' },
         blocks: [
           { kind: 'text', pt: 'As preposições em, de, a e por juntam-se aos artigos definidos.', en: 'The prepositions em, de, a and por join with the definite articles.' },
+          { kind: 'text', pt: 'Em português, quando uma preposição vem imediatamente antes de "o", "a", "os" ou "as", as duas palavras contraem-se numa só: "em" + "o" torna-se "no", "de" + "a" torna-se "da", e assim por diante. Isto não é opcional — dizer "em o café" em vez de "no café" soa muito estranho a um falante nativo. Tens de aprender estas contrações de cor, porque aparecem em quase todas as frases sobre lugares e movimento.', en: 'In Portuguese, when a preposition comes right before "o", "a", "os" or "as", the two words contract into one: "em" + "o" becomes "no", "de" + "a" becomes "da", and so on. This is not optional — saying "em o café" instead of "no café" sounds very odd to a native speaker. You need to learn these contractions by heart, because they show up in almost every sentence about places and movement.' },
           { kind: 'table', head: ['', 'o', 'a', 'os', 'as'], rows: [
             ['em', 'no', 'na', 'nos', 'nas'],
             ['de', 'do', 'da', 'dos', 'das'],
@@ -50,6 +53,7 @@ export const lessons: Lesson[] = [
             { pt: 'Eles andam pela praça.', en: 'They walk around the square.' },
           ] },
           { kind: 'tip', pt: '"À" tem acento grave: a + a = à. Pronuncia-se com um "a" aberto.', en: '"À" has a grave accent: a + a = à. It is pronounced with an open "a".' },
+          { kind: 'tip', pt: 'Erro comum: confundir "à" (a + a, com acento) com "há" (do verbo haver, sem preposição). "Vou à praia" mas "Há uma praia perto daqui".', en: 'Common mistake: confusing "à" (a + a, with an accent) with "há" (from the verb haver, no preposition). "Vou à praia" (I go to the beach) but "Há uma praia perto daqui" (There is a beach near here).' },
         ],
       },
       {
@@ -121,6 +125,7 @@ export const lessons: Lesson[] = [
     emoji: '🧭',
     title: { pt: 'Direções', en: 'Directions' },
     summary: { pt: 'Pedir e dar direções na rua.', en: 'Asking for and giving directions in the street.' },
+    objectives: { pt: 'Depois desta lição vais conseguir pedir e perceber direções na rua, usar as formas de imperativo formal (siga, vire, atravesse) e descrever onde algo fica usando expressões de localização como "ao lado de", "em frente de" e "entre".', en: 'After this lesson you will be able to ask for and understand directions in the street, use the formal imperative forms (siga, vire, atravesse) and describe where something is using location expressions like "ao lado de", "em frente de" and "entre".' },
     sections: [
       {
         id: 'learn',
@@ -134,6 +139,7 @@ export const lessons: Lesson[] = [
             { pt: 'É longe?', en: 'Is it far?' },
             { pt: 'É muito perto, a cinco minutos a pé.', en: 'It is very close, five minutes on foot.' },
           ] },
+          { kind: 'text', pt: 'Para dar instruções na rua, o português usa o imperativo — a forma de mandar ou pedir. Quando falas com alguém que não conheces bem (formal, "o senhor/a senhora"), o imperativo tem a mesma forma que o presente do conjuntivo: "siga", "vire", "atravesse". Estas instruções são curtas e diretas, sem sujeito, tal como em inglês ("Turn left", não "You turn left"). É essencial reconhecê-las quando alguém te dá direções na rua.', en: 'To give instructions in the street, Portuguese uses the imperative — the form for commands or requests. When speaking to someone you do not know well (formal, "o senhor/a senhora"), the imperative has the same form as the present subjunctive: "siga", "vire", "atravesse". These instructions are short and direct, with no subject, just like in English ("Turn left", not "You turn left"). It is essential to recognise them when someone gives you directions in the street.' },
           { kind: 'table', title: { pt: 'Dar direções', en: 'Giving directions' }, head: ['português', 'English'], rows: [
             ['Siga em frente.', 'Go straight ahead.'],
             ['Vire à direita.', 'Turn right.'],
@@ -153,6 +159,7 @@ export const lessons: Lesson[] = [
         id: 'grammar',
         title: { pt: 'Localização', en: 'Location' },
         blocks: [
+          { kind: 'text', pt: 'Para dizer onde um lugar fica em relação a outro, o português usa expressões formadas com "de": "ao lado de", "perto de", "longe de", "em frente de". Note que "de" aqui também contrai com o artigo, tal como aprendeste antes — por isso dizemos "perto do banco" (perto de + o) ou "perto da praia" (perto de + a). O verbo "ficar" é muito usado neste contexto, com o sentido de "estar situado" (não "to stay"): "A farmácia fica ao lado do banco" quer dizer onde a farmácia está localizada.', en: 'To say where one place is in relation to another, Portuguese uses expressions built with "de": "ao lado de" (next to), "perto de" (near), "longe de" (far from), "em frente de" (opposite). Note that "de" here also contracts with the article, just as you learned earlier — so we say "perto do banco" (perto de + o) or "perto da praia" (perto de + a). The verb "ficar" is very common in this context, meaning "to be located" (not "to stay"): "A farmácia fica ao lado do banco" tells you where the pharmacy is situated.' },
           { kind: 'table', head: ['português', 'English'], rows: [
             ['ao lado de', 'next to'],
             ['em frente de / em frente a', 'opposite / in front of'],
@@ -173,6 +180,7 @@ export const lessons: Lesson[] = [
           { kind: 'verb', verb: 'atravessar', tenses: ['presente'] },
           { kind: 'verb', verb: 'subir', tenses: ['presente'] },
           { kind: 'verb', verb: 'descer', tenses: ['presente'] },
+          { kind: 'tip', pt: 'Erro comum: dizer "fica" quando queres dizer "stay" (ficar em casa) ou usar "está" para localização fixa de edifícios. Para edifícios e lugares fixos, prefere-se "fica": "O museu fica na praça."', en: 'Common mistake: mixing up "fica" (used for a fixed location, "the museum is on the square") with "fica" meaning "to stay" (ficar em casa = to stay home). For buildings and fixed places, "fica" for location is the natural choice: "O museu fica na praça."' },
         ],
       },
       {
@@ -255,6 +263,7 @@ export const lessons: Lesson[] = [
     emoji: '🚋',
     title: { pt: 'Os transportes', en: 'Transport' },
     summary: { pt: 'Autocarro, comboio, metro, elétrico e andar de.', en: 'Bus, train, metro, tram and andar de.' },
+    objectives: { pt: 'Depois desta lição vais conseguir nomear os principais meios de transporte em português europeu, distinguir "andar de", "ir de" e "apanhar", e comprar um bilhete e perguntar sobre horários numa bilheteira.', en: 'After this lesson you will be able to name the main means of transport in European Portuguese, tell apart "andar de", "ir de" and "apanhar", and buy a ticket and ask about timetables at a ticket office.' },
     sections: [
       {
         id: 'learn',
@@ -288,6 +297,7 @@ export const lessons: Lesson[] = [
             { pt: 'Um bilhete de ida e volta, por favor.', en: 'A return ticket, please.' },
           ] },
           { kind: 'tip', pt: 'Em Portugal diz-se "apanhar o autocarro". No Brasil diz-se "pegar o ônibus", mas em Portugal "pegar" soa estranho.', en: 'In Portugal you say "apanhar o autocarro". In Brazil they say "pegar o ônibus", but in Portugal "pegar" sounds odd.' },
+          { kind: 'tip', pt: 'Erro comum: usar "pegar" para "catch" em Portugal. Embora seja normal no Brasil, em Portugal "pegar" pode até soar rude — usa sempre "apanhar" para transportes.', en: 'Common mistake: using "pegar" for "to catch" in Portugal. Although it is normal in Brazil, in Portugal "pegar" can even sound rude — always use "apanhar" for transport.' },
           { kind: 'verb', verb: 'andar', tenses: ['presente'] },
           { kind: 'verb', verb: 'apanhar', tenses: ['presente'] },
           { kind: 'verb', verb: 'chegar', tenses: ['presente'] },

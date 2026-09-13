@@ -17,4 +17,7 @@ export const units: Unit[] = [
   { n: 14, level: 'A2', emoji: '✈️', title: { pt: 'Viagens', en: 'Travel' } },
   { n: 15, level: 'A2', emoji: '💼', title: { pt: 'Trabalho e estudos', en: 'Work and studies' } },
   { n: 16, level: 'A2', emoji: '🏆', title: { pt: 'Revisão final', en: 'Final review' } },
+  { n: 17, level: 'A2', emoji: '🧩', title: { pt: 'Pronomes combinados', en: 'Combined pronouns & connectors' } },
+  { n: 18, level: 'A2', emoji: '🌀', title: { pt: 'O Conjuntivo', en: 'The subjunctive' } },
+  { n: 19, level: 'A2', emoji: '📯', title: { pt: 'Voz passiva e revisão geral', en: 'Passive voice & general review' } },
 ]

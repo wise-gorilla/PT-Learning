@@ -11,12 +11,21 @@ export const lessons: Lesson[] = [
       pt: 'Pronomes pessoais, o verbo ser e chamar-se.',
       en: 'Subject pronouns, the verb ser and chamar-se.',
     },
+    objectives: {
+      pt: 'Depois desta lição vais conseguir usar os pronomes pessoais em português, apresentar-te com o verbo ser, dizer o teu nome com chamar-se e perceber quando podes omitir o pronome.',
+      en: 'After this lesson you will be able to use Portuguese subject pronouns, introduce yourself with the verb ser, say your name with chamar-se and understand when you can drop the pronoun.',
+    },
     sections: [
       {
         id: 'grammar',
         title: { pt: 'Gramática', en: 'Grammar' },
         blocks: [
           { kind: 'heading', pt: 'Pronomes pessoais', en: 'Subject pronouns' },
+          {
+            kind: 'text',
+            pt: 'Antes de conjugar verbos, precisas de conhecer os pronomes que indicam quem faz a ação: eu, tu, ele/ela, nós, eles/elas. Em português europeu há também "você", usado para tratar alguém com um pouco de distância ou respeito, sem ser tão formal como "o senhor". Repara que "vocês" serve tanto para o plural de "tu" como de "você".',
+            en: 'Before conjugating verbs, you need the pronouns that show who is doing the action: eu, tu, ele/ela, nós, eles/elas. European Portuguese also has "você", used to address someone with a bit of distance or respect, without being as formal as "o senhor". Note that "vocês" works as the plural of both "tu" and "você".',
+          },
           {
             kind: 'table',
             head: ['Pronome', 'English', 'Nota'],
@@ -39,6 +48,11 @@ export const lessons: Lesson[] = [
             en: 'In Portuguese, we often drop the pronoun, because the verb already shows the person: "Sou o João." (I am João.)',
           },
           { kind: 'heading', pt: 'O verbo ser', en: 'The verb ser (to be)' },
+          {
+            kind: 'text',
+            pt: '"Ser" é um dos verbos mais importantes do português e é totalmente irregular — não segue nenhum padrão previsível, por isso tens mesmo de decorar as formas. Usa-se para identidade, profissão, nacionalidade e características permanentes: quem és, o que fazes, de onde és.',
+            en: '"Ser" is one of the most important Portuguese verbs and is completely irregular — it does not follow any predictable pattern, so you really have to memorize the forms. It is used for identity, profession, nationality and permanent characteristics: who you are, what you do, where you are from.',
+          },
           { kind: 'verb', verb: 'ser', tenses: ['presente'] },
           {
             kind: 'examples',
@@ -52,11 +66,21 @@ export const lessons: Lesson[] = [
             ],
           },
           { kind: 'heading', pt: 'Chamar-se', en: 'Chamar-se (to be called)' },
+          {
+            kind: 'text',
+            pt: '"Chamar-se" é um verbo reflexo: a ação volta para a própria pessoa, como em "lavar-se" (to wash oneself). Literalmente significa "chamar-se a si próprio", por isso a tradução direta é "to call oneself", mas em português usamo-lo para perguntar e dizer o nome de alguém.',
+            en: '"Chamar-se" is a reflexive verb: the action comes back to the person doing it, like "lavar-se" (to wash oneself). It literally means "to call oneself", so its direct translation is "to call oneself", but in Portuguese we use it to ask and say someone\'s name.',
+          },
           { kind: 'verb', verb: 'chamar-se', tenses: ['presente'] },
           {
             kind: 'tip',
             pt: 'Em Portugal, o pronome vem depois do verbo: "Chamo-me Ana." No Brasil diz-se "Me chamo Ana" — em Portugal isso soa errado!',
             en: 'In Portugal, the pronoun comes after the verb: "Chamo-me Ana." In Brazil people say "Me chamo Ana" — in Portugal that sounds wrong!',
+          },
+          {
+            kind: 'tip',
+            pt: 'Erro comum: colocar o pronome antes do verbo como no Brasil ("Me chamo…"). Em Portugal, escreve sempre "Chamo-me…", "Chama-se…", "Chamamo-nos…".',
+            en: 'Common mistake: putting the pronoun before the verb as in Brazil ("Me chamo…"). In Portugal, always write "Chamo-me…", "Chama-se…", "Chamamo-nos…".',
           },
           {
             kind: 'examples',
@@ -169,6 +193,10 @@ export const lessons: Lesson[] = [
       pt: 'Países, nacionalidades e línguas. Masculino e feminino.',
       en: 'Countries, nationalities and languages. Masculine and feminine.',
     },
+    objectives: {
+      pt: 'Depois desta lição vais conseguir dizer de onde és e a tua nacionalidade, falar sobre as línguas que falas e onde moras, e formar corretamente o masculino e o feminino das nacionalidades.',
+      en: 'After this lesson you will be able to say where you are from and your nationality, talk about the languages you speak and where you live, and correctly form the masculine and feminine of nationalities.',
+    },
     sections: [
       {
         id: 'learn',
@@ -225,8 +253,18 @@ export const lessons: Lesson[] = [
             pt: 'Nacionalidades e línguas escrevem-se com letra minúscula: "português", não "Português".',
             en: 'Nationalities and languages are written in lower case: "português", not "Português".',
           },
+          {
+            kind: 'text',
+            pt: 'Dois verbos regulares muito úteis aqui são "falar" (to speak) e "morar" (to live, reside). São verbos da 1.ª conjugação (terminam em -ar), por isso seguem um padrão regular que vais encontrar em muitos outros verbos.',
+            en: 'Two very useful regular verbs here are "falar" (to speak) and "morar" (to live, reside). They are 1st-conjugation verbs (ending in -ar), so they follow a regular pattern you will find in many other verbs.',
+          },
           { kind: 'verb', verb: 'falar', tenses: ['presente'] },
           { kind: 'verb', verb: 'morar', tenses: ['presente'] },
+          {
+            kind: 'tip',
+            pt: 'Erro comum: dizer "Eu moro em Portugal" com o verbo errado, como "Eu vivo" fora de contexto informal. "Morar" e "viver" são ambos corretos, mas "morar" é mais comum para dizer onde é a tua casa.',
+            en: 'Common mistake: mixing up "morar" and "viver". Both are correct for "to live", but "morar" is more common specifically for where your home is.',
+          },
         ],
       },
       {
@@ -323,11 +361,20 @@ export const lessons: Lesson[] = [
       pt: 'Números de 0 a 100, a idade com "ter" e perguntas.',
       en: 'Numbers 0 to 100, age with "ter" and questions.',
     },
+    objectives: {
+      pt: 'Depois desta lição vais conseguir contar de 0 a 100 em português europeu, dizer e perguntar a idade com o verbo ter, e fazer perguntas simples com "como", "onde", "quantos" e "quem".',
+      en: 'After this lesson you will be able to count from 0 to 100 in European Portuguese, say and ask age using the verb ter, and form simple questions with "como", "onde", "quantos" and "quem".',
+    },
     sections: [
       {
         id: 'numbers',
         title: { pt: 'Números', en: 'Numbers' },
         blocks: [
+          {
+            kind: 'text',
+            pt: 'Os números são essenciais para o dia a dia: idades, preços, moradas, números de telefone. O português europeu tem algumas formas diferentes do português do Brasil, por isso presta atenção às notas abaixo — vais ouvir estas diferenças em Portugal.',
+            en: 'Numbers are essential for everyday life: ages, prices, addresses, phone numbers. European Portuguese has some forms that differ from Brazilian Portuguese, so pay attention to the notes below — you will hear these differences in Portugal.',
+          },
           {
             kind: 'table',
             title: { pt: '0 – 20', en: '0 – 20' },
@@ -397,7 +444,17 @@ export const lessons: Lesson[] = [
               { pt: 'Nós temos quarenta anos.', en: 'We are forty.' },
             ],
           },
+          {
+            kind: 'tip',
+            pt: 'Erro comum: traduzir diretamente do inglês e dizer "Eu sou trinta anos". Em português a idade usa sempre "ter": "Eu tenho trinta anos."',
+            en: 'Common mistake: translating directly from English and saying "Eu sou trinta anos". In Portuguese, age always uses "ter": "Eu tenho trinta anos."',
+          },
           { kind: 'heading', pt: 'Palavras interrogativas', en: 'Question words' },
+          {
+            kind: 'text',
+            pt: 'Para pedir informação, precisas de palavras interrogativas. Elas vêm normalmente no início da frase e não mudam de forma, exceto "quantos/quantas", que concorda com o género da coisa que perguntas.',
+            en: 'To ask for information, you need question words. They usually come at the start of the sentence and do not change form, except "quantos/quantas", which agrees with the gender of the thing you are asking about.',
+          },
           {
             kind: 'table',
             head: ['Português', 'English', 'Exemplo'],
@@ -503,11 +560,20 @@ export const lessons: Lesson[] = [
       pt: 'Números até um milhão, primeiro a décimo, euros e cêntimos, preços, telefones e anos.',
       en: 'Numbers up to a million, first to tenth, euros and cents, prices, phone numbers and years.',
     },
+    objectives: {
+      pt: 'Depois desta lição vais conseguir dizer números grandes até um milhão, usar os ordinais de primeiro a décimo, falar de dinheiro em euros e cêntimos, e perguntar e dizer preços em situações do dia a dia.',
+      en: 'After this lesson you will be able to say big numbers up to a million, use ordinal numbers from first to tenth, talk about money in euros and cents, and ask and give prices in everyday situations.',
+    },
     sections: [
       {
         id: 'numbers',
         title: { pt: 'Números grandes', en: 'Big numbers' },
         blocks: [
+          {
+            kind: 'text',
+            pt: 'Depois de chegares a cem, os números portugueses ganham género: as centenas concordam com o nome que acompanham (masculino ou feminino), enquanto "mil" e "milhão" seguem regras próprias. Aprender bem estas regras ajuda-te a dizer anos, preços e quantidades grandes sem hesitar.',
+            en: 'Once you get past a hundred, Portuguese numbers take on gender: the hundreds agree with the noun they accompany (masculine or feminine), while "mil" and "milhão" follow their own rules. Learning these rules well helps you say years, prices and large quantities without hesitating.',
+          },
           {
             kind: 'table',
             title: { pt: '100 – 1 000 000', en: '100 – 1,000,000' },
@@ -553,6 +619,11 @@ export const lessons: Lesson[] = [
         id: 'ordinals',
         title: { pt: 'Ordinais', en: 'Ordinal numbers' },
         blocks: [
+          {
+            kind: 'text',
+            pt: 'Os números ordinais (primeiro, segundo, terceiro…) indicam a posição ou ordem de algo, não a quantidade. Ao contrário dos números normais, têm sempre forma masculina e feminina, e concordam com o nome que descrevem — por isso "o primeiro dia" mas "a primeira semana".',
+            en: 'Ordinal numbers (first, second, third…) show the position or order of something, not the quantity. Unlike regular numbers, they always have a masculine and feminine form, and they agree with the noun they describe — so "o primeiro dia" but "a primeira semana".',
+          },
           {
             kind: 'table',
             head: ['Nº', 'Masculino', 'Feminino', 'English'],
@@ -608,6 +679,11 @@ export const lessons: Lesson[] = [
             kind: 'tip',
             pt: 'Em Portugal diz-se "cêntimos". "Centavos" é brasileiro.',
             en: 'In Portugal say "cêntimos". "Centavos" is Brazilian.',
+          },
+          {
+            kind: 'tip',
+            pt: 'Erro comum: usar vírgula e ponto ao contrário do costume em Portugal, escrevendo "2.50" em vez de "2,50 €". Lembra-te: em Portugal a vírgula separa os cêntimos.',
+            en: 'Common mistake: swapping the comma and dot from Portuguese convention, writing "2.50" instead of "2,50 €". Remember: in Portugal the comma separates the cents.',
           },
           { kind: 'verb', verb: 'custar', tenses: ['presente'] },
           {

@@ -11,6 +11,10 @@ export const lessons: Lesson[] = [
       pt: 'Aprende o alfabeto e os sons especiais do português de Portugal.',
       en: 'Learn the alphabet and the special sounds of European Portuguese.',
     },
+    objectives: {
+      pt: 'Depois desta lição vais conseguir recitar o alfabeto português e dizer o nome de cada letra, reconhecer os sons especiais (vogais reduzidas, sons nasais, "lh", "nh" e o "s" à moda de Lisboa) e ler palavras simples com a pronúncia correta de Portugal.',
+      en: 'After this lesson you will be able to recite the Portuguese alphabet and name each letter, recognise the special sounds (reduced vowels, nasal sounds, "lh", "nh" and the Lisbon-style "s") and read simple words with the correct European Portuguese pronunciation.',
+    },
     sections: [
       {
         id: 'learn',
@@ -58,6 +62,11 @@ export const lessons: Lesson[] = [
             kind: 'tip',
             pt: 'O H no início da palavra não se pronuncia: "hotel" diz-se "otel".',
             en: 'H at the start of a word is silent: "hotel" sounds like "otel".',
+          },
+          {
+            kind: 'tip',
+            pt: 'Erro comum: pensar que o alfabeto se lê como em inglês. Em português, "E" chama-se "é" e "I" chama-se "i" (como em "olá"), não "ai" como em inglês.',
+            en: 'Common mistake: assuming the alphabet is read like in English. In Portuguese, "E" is called "é" and "I" is called "i" (like in "olá"), not "eye" as in English.',
           },
         ],
       },
@@ -211,6 +220,10 @@ export const lessons: Lesson[] = [
       pt: 'Cumprimentos e despedidas para cada hora do dia.',
       en: 'Greetings and goodbyes for every time of day.',
     },
+    objectives: {
+      pt: 'Depois desta lição vais conseguir cumprimentar alguém e escolher a fórmula certa consoante a hora do dia, perguntar e responder "como estás?", e despedir-te de forma natural em várias situações do dia a dia.',
+      en: 'After this lesson you will be able to greet someone and pick the right greeting for the time of day, ask and answer "how are you?", and say goodbye naturally in a range of everyday situations.',
+    },
     sections: [
       {
         id: 'learn',
@@ -261,6 +274,11 @@ export const lessons: Lesson[] = [
             kind: 'tip',
             pt: 'Em Portugal diz-se "Até à próxima" e "Tchau". "Oi" é muito brasileiro — em Portugal usa-se "Olá".',
             en: 'In Portugal people say "Até à próxima" and "Tchau". "Oi" is very Brazilian — in Portugal use "Olá".',
+          },
+          {
+            kind: 'tip',
+            pt: 'Erro comum: usar "boa noite" logo depois do almoço, só porque em inglês "good evening" pode começar cedo. Em português, "boa tarde" dura até escurecer.',
+            en: 'Common mistake: saying "boa noite" right after lunch, by analogy with English "good evening" starting early. In Portuguese, "boa tarde" lasts until it gets dark.',
           },
         ],
       },
@@ -390,6 +408,10 @@ export const lessons: Lesson[] = [
       pt: 'Formal ou informal? E as palavras mágicas: por favor, obrigado, desculpe.',
       en: 'Formal or informal? And the magic words: please, thank you, sorry.',
     },
+    objectives: {
+      pt: 'Depois desta lição vais conseguir escolher entre "tu", "você", "o senhor" e "a senhora" consoante com quem falas, dizer "obrigado/obrigada" corretamente segundo o teu género, e usar as palavras de cortesia (por favor, desculpe, com licença) em situações do dia a dia.',
+      en: 'After this lesson you will be able to choose between "tu", "você", "o senhor" and "a senhora" depending on who you are talking to, say "obrigado/obrigada" correctly according to your own gender, and use polite words (please, sorry, excuse me) in everyday situations.',
+    },
     sections: [
       {
         id: 'grammar',
@@ -421,6 +443,11 @@ export const lessons: Lesson[] = [
             kind: 'tip',
             pt: 'No Brasil, "você" é normal para todos. Em Portugal, "tu" é muito comum entre amigos.',
             en: 'In Brazil, "você" is normal for everyone. In Portugal, "tu" is very common among friends.',
+          },
+          {
+            kind: 'tip',
+            pt: 'Erro comum: usar "você" com um professor, um patrão ou uma pessoa mais velha, pensando que é a forma "segura". Em Portugal, isso pode soar rude — usa "o senhor"/"a senhora" ou evita o pronome.',
+            en: 'Common mistake: using "você" with a teacher, a boss, or an older person, thinking it is the "safe" option. In Portugal this can sound rude — use "o senhor"/"a senhora" or drop the pronoun.',
           },
         ],
       },
@@ -559,6 +586,10 @@ export const lessons: Lesson[] = [
       pt: 'Frases para quando não percebes: pedir para repetir, falar mais devagar e soletrar o nome.',
       en: 'Phrases for when you do not understand: asking to repeat, to speak more slowly and spelling your name.',
     },
+    objectives: {
+      pt: 'Depois desta lição vais conseguir dizer que não percebes ou não sabes, pedir a alguém para repetir ou falar mais devagar, perguntar como se diz ou escreve uma palavra, e soletrar o teu nome usando os nomes das letras.',
+      en: 'After this lesson you will be able to say that you do not understand or do not know, ask someone to repeat or speak more slowly, ask how a word is said or spelled, and spell your own name using the names of the letters.',
+    },
     sections: [
       {
         id: 'learn',
@@ -600,6 +631,11 @@ export const lessons: Lesson[] = [
               { pt: 'Não sei. Sou estrangeiro.', en: 'I don’t know. I am a foreigner.' },
               { pt: 'Fala inglês? — Sim, um pouco.', en: 'Do you speak English? — Yes, a little.' },
             ],
+          },
+          {
+            kind: 'text',
+            pt: 'O verbo "poder" (can, may) é essencial para pedidos educados: "Pode repetir?", "Pode falar mais devagar?". É um verbo irregular, por isso vale a pena decorar as formas do presente. Usa-se sempre seguido de outro verbo no infinitivo.',
+            en: 'The verb "poder" (can, may) is essential for polite requests: "Pode repetir?", "Pode falar mais devagar?". It is an irregular verb, so it is worth memorising the present tense forms. It is always followed by another verb in the infinitive.',
           },
           { kind: 'verb', verb: 'poder', tenses: ['presente'] },
         ],
@@ -656,6 +692,11 @@ export const lessons: Lesson[] = [
             kind: 'tip',
             pt: 'Com desconhecidos usa "Pode…?" e "Fala…?" (formal). Com amigos usa "Podes…?" e "Falas…?".',
             en: 'With strangers use "Pode…?" and "Fala…?" (formal). With friends use "Podes…?" and "Falas…?".',
+          },
+          {
+            kind: 'tip',
+            pt: 'Erro comum: dizer "estou aprendendo" em vez de "estou a aprender". Em Portugal, o gerúndio (-ndo) é raro; usa-se sempre "estar a + infinitivo" para ações em curso.',
+            en: 'Common mistake: saying "estou aprendendo" instead of "estou a aprender". In European Portuguese, the gerund (-ndo) is rare; use "estar a + infinitive" for actions in progress.',
           },
         ],
       },

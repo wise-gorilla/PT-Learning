@@ -8,6 +8,7 @@ export const lessons: Lesson[] = [
     emoji: '🗣️',
     title: { pt: 'Verbos regulares', en: 'Regular verbs' },
     summary: { pt: 'Os verbos em -ar, -er e -ir no presente.', en: 'Verbs ending in -ar, -er and -ir in the present.' },
+    objectives: { pt: 'Depois desta lição vais conseguir conjugar verbos regulares em -ar, -er e -ir no presente, falar sobre o teu dia a dia (trabalho, estudos, onde vives) e perceber a diferença entre "tu" e "você" em Portugal.', en: 'After this lesson you will be able to conjugate regular -ar, -er and -ir verbs in the present tense, talk about your daily life (work, studies, where you live) and understand the difference between "tu" and "você" in Portugal.' },
     sections: [
       {
         id: 'learn',
@@ -114,6 +115,7 @@ export const lessons: Lesson[] = [
     emoji: '🕒',
     title: { pt: 'Horas, dias e meses', en: 'Time, days and months' },
     summary: { pt: 'Dizer as horas, os dias da semana, os meses e as datas.', en: 'Telling time, days of the week, months and dates.' },
+    objectives: { pt: 'Depois desta lição vais conseguir perguntar e dizer as horas, nomear os dias da semana e os meses do ano, e falar sobre datas e planos usando o horário de 24 horas típico de Portugal.', en: 'After this lesson you will be able to ask and tell the time, name the days of the week and the months of the year, and talk about dates and plans using the 24-hour clock typical in Portugal.' },
     sections: [
       {
         id: 'learn',
@@ -138,6 +140,7 @@ export const lessons: Lesson[] = [
         id: 'days',
         title: { pt: 'Dias e meses', en: 'Days and months' },
         blocks: [
+          { kind: 'text', pt: 'Em português, os dias úteis da semana usam-se com "-feira" no fim: segunda-feira, terça-feira, etc. Só o sábado e o domingo têm nomes próprios, sem "-feira". Na fala do dia a dia é comum abreviar: "segunda", "terça", "quarta"…', en: 'In Portuguese, the weekdays end in "-feira": segunda-feira, terça-feira, etc. Only Saturday and domingo have their own names, without "-feira". In everyday speech people often shorten them: "segunda", "terça", "quarta"…' },
           { kind: 'table', title: { pt: 'Os dias da semana', en: 'The days of the week' }, head: ['português', 'English'], rows: [
             ['segunda-feira', 'Monday'],
             ['terça-feira', 'Tuesday'],
@@ -148,6 +151,7 @@ export const lessons: Lesson[] = [
             ['domingo', 'Sunday'],
           ] },
           { kind: 'text', pt: 'Os dias e os meses escrevem-se com letra minúscula. Dizemos "na segunda-feira" mas "no sábado" e "no domingo".', en: 'Days and months are written in lowercase. We say "na segunda-feira" but "no sábado" and "no domingo".' },
+          { kind: 'text', pt: 'Os meses do ano também se escrevem sempre com letra minúscula em português, ao contrário do inglês. Para dizer datas usamos "dia" + número + "de" + mês: "dia 5 de maio".', en: 'The months of the year are also always written with a lowercase letter in Portuguese, unlike in English. To say a date we use "dia" + number + "de" + month: "dia 5 de maio".' },
           { kind: 'table', title: { pt: 'Os meses', en: 'The months' }, head: ['português', 'English'], rows: [
             ['janeiro', 'January'], ['fevereiro', 'February'], ['março', 'March'], ['abril', 'April'],
             ['maio', 'May'], ['junho', 'June'], ['julho', 'July'], ['agosto', 'August'],
@@ -241,6 +245,7 @@ export const lessons: Lesson[] = [
     emoji: '🛏️',
     title: { pt: 'A minha rotina', en: 'My routine' },
     summary: { pt: 'Verbos reflexos e advérbios de frequência.', en: 'Reflexive verbs and frequency adverbs.' },
+    objectives: { pt: 'Depois desta lição vais conseguir descrever a tua rotina diária usando verbos reflexos como "levantar-se" e "deitar-se", colocar corretamente o pronome antes ou depois do verbo, e dizer com que frequência fazes as coisas.', en: 'After this lesson you will be able to describe your daily routine using reflexive verbs like "levantar-se" and "deitar-se", correctly place the pronoun before or after the verb, and say how often you do things.' },
     sections: [
       {
         id: 'learn',
@@ -265,6 +270,7 @@ export const lessons: Lesson[] = [
         id: 'frequency',
         title: { pt: 'Frequência', en: 'Frequency' },
         blocks: [
+          { kind: 'text', pt: 'Os advérbios de frequência dizem-nos com que regularidade algo acontece, do "sempre" (100%) ao "nunca" (0%). Colocam-se normalmente antes do verbo principal ou no início da frase.', en: 'Frequency adverbs tell us how regularly something happens, from "sempre" (always, 100%) to "nunca" (never, 0%). They are usually placed before the main verb or at the start of the sentence.' },
           { kind: 'table', head: ['português', 'English'], rows: [
             ['sempre', 'always'],
             ['normalmente', 'usually'],
@@ -355,6 +361,7 @@ export const lessons: Lesson[] = [
     emoji: '🔗',
     title: { pt: 'Quando, porque, mas', en: 'When, because, but' },
     summary: { pt: 'Ligar frases com conectores e falar do tempo com preposições.', en: 'Linking sentences with connectors and talking about time with prepositions.' },
+    objectives: { pt: 'Depois desta lição vais conseguir ligar ideias com conectores como "mas", "porque" e "por isso", concordar ou discordar com "eu também" e "eu também não", e usar as preposições certas para falar de horas, dias, meses e duração.', en: 'After this lesson you will be able to link ideas with connectors like "mas", "porque" and "por isso", agree or disagree with "eu também" and "eu também não", and use the right prepositions to talk about times, days, months and duration.' },
     sections: [
       {
         id: 'connectors',
@@ -385,6 +392,7 @@ export const lessons: Lesson[] = [
         id: 'time',
         title: { pt: 'Preposições de tempo', en: 'Time prepositions' },
         blocks: [
+          { kind: 'text', pt: 'As preposições de tempo em português nem sempre correspondem diretamente ao inglês, por isso é preciso memorizá-las com exemplos. Repara sobretudo na diferença entre "em" (meses e anos), "a/à/às" (horas) e "ao/à" (hábitos regulares, como "ao sábado").', en: 'Time prepositions in Portuguese do not always map directly onto English, so it is best to learn them with examples. Pay special attention to the difference between "em" (months and years), "a/à/às" (clock times) and "ao/à" (regular habits, like "ao sábado").' },
           { kind: 'table', head: ['preposição', 'uso', 'exemplo'], rows: [
             ['em', 'meses, anos, estações', 'em março, em 2024, no verão'],
             ['a / à / às', 'horas', 'à uma, às oito'],

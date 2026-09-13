@@ -11,11 +11,20 @@ export const lessons: Lesson[] = [
       pt: 'Os membros da família e os possessivos.',
       en: 'Family members and possessives.',
     },
+    objectives: {
+      pt: 'Depois desta lição vais conseguir nomear os membros da tua família, usar os possessivos (o meu, a minha, os teus, as nossas…) para falar deles e perguntar a alguém sobre a família dessa pessoa.',
+      en: 'After this lesson you will be able to name your family members, use possessives (o meu, a minha, os teus, as nossas…) to talk about them, and ask someone about their family.',
+    },
     sections: [
       {
         id: 'learn',
         title: { pt: 'Aprender', en: 'Learn' },
         blocks: [
+          {
+            kind: 'text',
+            pt: 'Em português, os nomes de família têm normalmente uma forma masculina e uma forma feminina, muito parecidas: "o filho" / "a filha", "o irmão" / "a irmã". Aprende os dois juntos, porque vais precisar de saber qual usar consoante a pessoa de quem falas.',
+            en: 'In Portuguese, family words usually have a masculine and a feminine form that look similar: "o filho" / "a filha" (son/daughter), "o irmão" / "a irmã" (brother/sister). Learn both together, since you will need to pick the right one depending on who you are talking about.',
+          },
           {
             kind: 'table',
             title: { pt: 'A família', en: 'The family' },
@@ -42,6 +51,11 @@ export const lessons: Lesson[] = [
             kind: 'tip',
             pt: 'Avô (ô fechado) = grandfather; avó (ó aberto) = grandmother. Ouve bem a diferença!',
             en: 'Avô (closed ô) = grandfather; avó (open ó) = grandmother. Listen carefully to the difference!',
+          },
+          {
+            kind: 'tip',
+            pt: 'Erro comum: dizer "o meu irmã" ou "a minha irmão". O possessivo tem de concordar com a palavra: "o meu irmão", "a minha irmã".',
+            en: 'Common mistake: saying "o meu irmã" or "a minha irmão". The possessive must agree with the noun: "o meu irmão" (my brother), "a minha irmã" (my sister).',
           },
         ],
       },
@@ -181,6 +195,10 @@ export const lessons: Lesson[] = [
       pt: 'Descrever pessoas: aparência e personalidade, concordância dos adjetivos, dele e dela.',
       en: 'Describing people: appearance and personality, adjective agreement, dele and dela.',
     },
+    objectives: {
+      pt: 'Depois desta lição vais conseguir descrever a aparência e a personalidade de alguém, fazer o adjetivo concordar em género e número com o nome, e usar "dele" e "dela" para dizer "his" e "her" sem confusão.',
+      en: 'After this lesson you will be able to describe someone’s appearance and personality, make adjectives agree in gender and number with the noun, and use "dele" and "dela" to say "his" and "her" without confusion.',
+    },
     sections: [
       {
         id: 'grammar',
@@ -215,6 +233,11 @@ export const lessons: Lesson[] = [
             en: '"Seu/sua" can be confusing (your? his? her?). In Portugal, for "his" and "her" we often use "dele" and "dela" after the noun: "o carro dele" (his car), "a casa dela" (her house).',
           },
           {
+            kind: 'tip',
+            pt: 'Erro comum: usar "seu carro" a pensar em "his car" e ser mal-entendido como "your car". Para evitar confusão, prefere "o carro dele" / "o carro dela".',
+            en: 'Common mistake: using "seu carro" meaning "his car" and being misunderstood as "your car". To avoid confusion, prefer "o carro dele" / "o carro dela".',
+          },
+          {
             kind: 'examples',
             items: [
               { pt: 'O Rui é alto e magro.', en: 'Rui is tall and slim.' },
@@ -233,6 +256,11 @@ export const lessons: Lesson[] = [
         id: 'learn',
         title: { pt: 'Descrições', en: 'Descriptions' },
         blocks: [
+          {
+            kind: 'text',
+            pt: 'Para descrever pessoas precisas de adjetivos de aparência (alto, baixo, gordo…) e de personalidade (simpático, trabalhador, tímido…). Cada palavra tem normalmente um contrário — aprendê-los em pares ajuda a lembrar e a discutir vantagens e defeitos.',
+            en: 'To describe people you need adjectives for appearance (tall, short, fat…) and for personality (nice, hard-working, shy…). Each word usually has an opposite — learning them in pairs helps you remember and talk about pros and cons.',
+          },
           {
             kind: 'table',
             title: { pt: 'Aparência e personalidade', en: 'Appearance and personality' },
@@ -342,11 +370,20 @@ export const lessons: Lesson[] = [
       pt: 'As cores e a sua concordância. Descrever coisas e pessoas.',
       en: 'Colours and how they agree. Describing things and people.',
     },
+    objectives: {
+      pt: 'Depois desta lição vais conseguir nomear as cores em português europeu, fazê-las concordar em género e número com o nome que descrevem, e usar "claro" e "escuro" para variar tons quando descreves objetos, roupa ou pessoas.',
+      en: 'After this lesson you will be able to name colours in European Portuguese, make them agree in gender and number with the noun they describe, and use "claro" and "escuro" to vary shades when describing objects, clothes or people.',
+    },
     sections: [
       {
         id: 'learn',
         title: { pt: 'Aprender', en: 'Learn' },
         blocks: [
+          {
+            kind: 'text',
+            pt: 'As cores funcionam como adjetivos: concordam com o nome em género e número. Muitas terminam em -o/-a (branco/branca), mas algumas não mudam (azul, verde) e outras são invariáveis (cor-de-rosa, cor de laranja).',
+            en: 'Colours behave like adjectives: they agree with the noun in gender and number. Many end in -o/-a (branco/branca), but some do not change form (azul, verde), and a few are completely invariable (cor-de-rosa, cor de laranja).',
+          },
           {
             kind: 'table',
             title: { pt: 'As cores', en: 'Colours' },
@@ -369,6 +406,11 @@ export const lessons: Lesson[] = [
             kind: 'tip',
             pt: 'Em Portugal diz-se "castanho" (no Brasil, "marrom") e "cinzento" (no Brasil, "cinza"). "Cor-de-rosa" e "cor de laranja" não mudam.',
             en: 'In Portugal say "castanho" (in Brazil, "marrom") and "cinzento" (in Brazil, "cinza"). "Cor-de-rosa" and "cor de laranja" never change.',
+          },
+          {
+            kind: 'tip',
+            pt: 'Erro comum: esquecer o plural das cores em -l, como "azul". No plural é "azuis", não "azuls": "olhos azuis".',
+            en: 'Common mistake: forgetting the plural of colours ending in -l, like "azul". The plural is "azuis", not "azuls": "olhos azuis" (blue eyes).',
           },
           {
             kind: 'examples',
@@ -485,6 +527,10 @@ export const lessons: Lesson[] = [
       pt: 'Pronomes depois de preposições: para mim, de ti, comigo, connosco, dele e dela.',
       en: 'Pronouns after prepositions: para mim, de ti, comigo, connosco, dele and dela.',
     },
+    objectives: {
+      pt: 'Depois desta lição vais conseguir usar os pronomes corretos depois de preposições (para mim, de ti, comigo, connosco, dele, dela), dizer que gostas de alguém com "gostar de", e distinguir "para mim" de "para eu + infinitivo".',
+      en: 'After this lesson you will be able to use the correct pronouns after prepositions (para mim, de ti, comigo, connosco, dele, dela), say you like someone with "gostar de", and tell "para mim" apart from "para eu + infinitive".',
+    },
     sections: [
       {
         id: 'grammar',
@@ -513,6 +559,11 @@ export const lessons: Lesson[] = [
             kind: 'tip',
             pt: 'Em Portugal escreve-se "connosco" (com dois n). "Conosco" é a forma do Brasil. "Consigo" e "para si" são formais e muito usados em Portugal.',
             en: 'In Portugal it is spelled "connosco" (double n). "Conosco" is the Brazilian form. "Consigo" and "para si" are formal and very common in Portugal.',
+          },
+          {
+            kind: 'tip',
+            pt: 'Erro comum: dizer "para eu" ou "com eu" em vez de "para mim" e "comigo". Depois de uma preposição simples, "eu" e "tu" têm de mudar para "mim" e "ti" (exceto no caso especial "para eu + infinitivo").',
+            en: 'Common mistake: saying "para eu" or "com eu" instead of "para mim" and "comigo". After a simple preposition, "eu" and "tu" must change to "mim" and "ti" (except in the special case "para eu + infinitive").',
           },
           {
             kind: 'examples',

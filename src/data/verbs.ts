@@ -31,6 +31,27 @@ function arFix(stem: string): string {
   return stem
 }
 
+/** presente do conjuntivo from the eu-form of the presente indicativo */
+function presConjOf(presenteEu: string, cls: 'ar' | 'er' | 'ir'): string[] {
+  const stem = presenteEu.slice(0, -1)
+  if (cls === 'ar') {
+    const s = arFix(stem)
+    return [s + 'e', s + 'es', s + 'e', s + 'emos', s + 'em']
+  }
+  return [stem + 'a', stem + 'as', stem + 'a', stem + 'amos', stem + 'am']
+}
+
+/** imperfeito/futuro do conjuntivo from the eles-form of the pretérito perfeito (always ends -ram) */
+function impFutConjOf(elesPerfeito: string, cls: 'ar' | 'er' | 'ir'): { impConj: string[]; futConj: string[] } {
+  const stem2 = elesPerfeito.slice(0, -3)
+  const accentChar = cls === 'ar' ? 'á' : cls === 'er' ? 'ê' : 'í'
+  const accented = stem2.slice(0, -1) + accentChar
+  return {
+    impConj: [stem2 + 'sse', stem2 + 'sses', stem2 + 'sse', accented + 'ssemos', stem2 + 'ssem'],
+    futConj: [stem2 + 'r', stem2 + 'res', stem2 + 'r', stem2 + 'rmos', stem2 + 'rem'],
+  }
+}
+
 function build(inf: string, over: Forms): Forms {
   const cls = inf.slice(-2) as 'ar' | 'er' | 'ir'
   const stem = inf.slice(0, -2)
@@ -52,7 +73,11 @@ function build(inf: string, over: Forms): Forms {
     }
     imperativo = [presente[2], s + vow, s + vow + 'mos', s + vow + 'm']
   }
-  return { presente, perfeito, imperfeito, futuro, condicional, imperativo }
+  const presConj = over.presConj ?? presConjOf(presente[0], cls)
+  const derived = impFutConjOf(perfeito[4], cls)
+  const impConj = over.impConj ?? derived.impConj
+  const futConj = over.futConj ?? derived.futConj
+  return { presente, perfeito, imperfeito, futuro, condicional, imperativo, presConj, impConj, futConj }
 }
 
 const noS = (w: string) => w.replace(/s$/, '')
@@ -70,6 +95,9 @@ function reflexive(base: string, f: Forms): Forms {
     imperativo: f.imperativo!.map((w, i) =>
       i === 0 ? `${w}-te` : i === 2 ? `${noS(w)}-nos` : `${w}-se`,
     ),
+    presConj: encl(f.presConj!),
+    impConj: encl(f.impConj!),
+    futConj: encl(f.futConj!),
   }
 }
 
@@ -79,6 +107,7 @@ function v(
   ex: [string, string],
   over: Forms = {},
   irregular = false,
+  participle?: string,
 ): Verb {
   const refl = inf.endsWith('-se')
   const base = refl ? inf.slice(0, -3) : inf
@@ -86,6 +115,7 @@ function v(
   if (refl) forms = reflexive(base, forms)
   const verb: Verb = { inf, en, forms, ex: { pt: ex[0], en: ex[1] } }
   if (irregular) verb.irregular = true
+  if (participle) verb.participle = participle
   return verb
 }
 
@@ -95,54 +125,84 @@ export const verbs: Verb[] = [
     perfeito: ['fui', 'foste', 'foi', 'fomos', 'foram'],
     imperfeito: ['era', 'eras', 'era', 'éramos', 'eram'],
     imperativo: ['sê', 'seja', 'sejamos', 'sejam'],
-  }, true),
+    presConj: ['seja', 'sejas', 'seja', 'sejamos', 'sejam'],
+    impConj: ['fosse', 'fosses', 'fosse', 'fôssemos', 'fossem'],
+    futConj: ['for', 'fores', 'for', 'formos', 'forem'],
+  }, true, 'sido'),
   v('estar', 'to be (temporary)', ['Hoje estou cansado.', 'Today I am tired.'], {
     presente: ['estou', 'estás', 'está', 'estamos', 'estão'],
     perfeito: ['estive', 'estiveste', 'esteve', 'estivemos', 'estiveram'],
     imperativo: ['está', 'esteja', 'estejamos', 'estejam'],
+    presConj: ['esteja', 'estejas', 'esteja', 'estejamos', 'estejam'],
+    impConj: ['estivesse', 'estivesses', 'estivesse', 'estivéssemos', 'estivessem'],
+    futConj: ['estiver', 'estiveres', 'estiver', 'estivermos', 'estiverem'],
   }, true),
   v('ter', 'to have', ['Tenho dois irmãos.', 'I have two brothers.'], {
     presente: ['tenho', 'tens', 'tem', 'temos', 'têm'],
     perfeito: ['tive', 'tiveste', 'teve', 'tivemos', 'tiveram'],
     imperfeito: ['tinha', 'tinhas', 'tinha', 'tínhamos', 'tinham'],
+    presConj: ['tenha', 'tenhas', 'tenha', 'tenhamos', 'tenham'],
+    impConj: ['tivesse', 'tivesses', 'tivesse', 'tivéssemos', 'tivessem'],
+    futConj: ['tiver', 'tiveres', 'tiver', 'tivermos', 'tiverem'],
   }, true),
   v('haver', 'there to be; to have (auxiliary)', ['Há um café perto daqui.', 'There is a café near here.'], {
     presente: ['hei', 'hás', 'há', 'havemos', 'hão'],
     perfeito: ['houve', 'houveste', 'houve', 'houvemos', 'houveram'],
     imperativo: ['há', 'haja', 'hajamos', 'hajam'],
+    presConj: ['haja', 'hajas', 'haja', 'hajamos', 'hajam'],
+    impConj: ['houvesse', 'houvesses', 'houvesse', 'houvéssemos', 'houvessem'],
+    futConj: ['houver', 'houveres', 'houver', 'houvermos', 'houverem'],
   }, true),
   v('ir', 'to go', ['Vou ao supermercado.', 'I am going to the supermarket.'], {
     presente: ['vou', 'vais', 'vai', 'vamos', 'vão'],
     perfeito: ['fui', 'foste', 'foi', 'fomos', 'foram'],
     imperfeito: ['ia', 'ias', 'ia', 'íamos', 'iam'],
     imperativo: ['vai', 'vá', 'vamos', 'vão'],
+    presConj: ['vá', 'vás', 'vá', 'vamos', 'vão'],
+    impConj: ['fosse', 'fosses', 'fosse', 'fôssemos', 'fossem'],
+    futConj: ['for', 'fores', 'for', 'formos', 'forem'],
   }, true),
   v('vir', 'to come', ['Ela vem de Braga.', 'She comes from Braga.'], {
     presente: ['venho', 'vens', 'vem', 'vimos', 'vêm'],
     perfeito: ['vim', 'vieste', 'veio', 'viemos', 'vieram'],
     imperfeito: ['vinha', 'vinhas', 'vinha', 'vínhamos', 'vinham'],
-  }, true),
+    presConj: ['venha', 'venhas', 'venha', 'venhamos', 'venham'],
+    impConj: ['viesse', 'viesses', 'viesse', 'viéssemos', 'viessem'],
+    futConj: ['vier', 'vieres', 'vier', 'viermos', 'vierem'],
+  }, true, 'vindo'),
   v('fazer', 'to do; to make', ['O que fazes ao fim de semana?', 'What do you do at the weekend?'], {
     presente: ['faço', 'fazes', 'faz', 'fazemos', 'fazem'],
     perfeito: ['fiz', 'fizeste', 'fez', 'fizemos', 'fizeram'],
     futuro: ['farei', 'farás', 'fará', 'faremos', 'farão'],
     condicional: ['faria', 'farias', 'faria', 'faríamos', 'fariam'],
-  }, true),
+    presConj: ['faça', 'faças', 'faça', 'façamos', 'façam'],
+    impConj: ['fizesse', 'fizesses', 'fizesse', 'fizéssemos', 'fizessem'],
+    futConj: ['fizer', 'fizeres', 'fizer', 'fizermos', 'fizerem'],
+  }, true, 'feito'),
   v('dizer', 'to say; to tell', ['Ele diz sempre a verdade.', 'He always tells the truth.'], {
     presente: ['digo', 'dizes', 'diz', 'dizemos', 'dizem'],
     perfeito: ['disse', 'disseste', 'disse', 'dissemos', 'disseram'],
     futuro: ['direi', 'dirás', 'dirá', 'diremos', 'dirão'],
     condicional: ['diria', 'dirias', 'diria', 'diríamos', 'diriam'],
-  }, true),
+    presConj: ['diga', 'digas', 'diga', 'digamos', 'digam'],
+    impConj: ['dissesse', 'dissesses', 'dissesse', 'disséssemos', 'dissessem'],
+    futConj: ['disser', 'disseres', 'disser', 'dissermos', 'disserem'],
+  }, true, 'dito'),
   v('dar', 'to give', ['Dou um presente à minha mãe.', 'I give a present to my mother.'], {
     presente: ['dou', 'dás', 'dá', 'damos', 'dão'],
     perfeito: ['dei', 'deste', 'deu', 'demos', 'deram'],
     imperativo: ['dá', 'dê', 'demos', 'deem'],
+    presConj: ['dê', 'dês', 'dê', 'deemos', 'deem'],
+    impConj: ['desse', 'desses', 'desse', 'déssemos', 'dessem'],
+    futConj: ['der', 'deres', 'der', 'dermos', 'derem'],
   }, true),
   v('ver', 'to see', ['Vemos televisão à noite.', 'We watch TV in the evening.'], {
     presente: ['vejo', 'vês', 'vê', 'vemos', 'veem'],
     perfeito: ['vi', 'viste', 'viu', 'vimos', 'viram'],
-  }, true),
+    presConj: ['veja', 'vejas', 'veja', 'vejamos', 'vejam'],
+    impConj: ['visse', 'visses', 'visse', 'víssemos', 'vissem'],
+    futConj: ['vir', 'vires', 'vir', 'virmos', 'virem'],
+  }, true, 'visto'),
   v('pôr', 'to put', ['Põe a mesa, por favor.', 'Set the table, please.'], {
     presente: ['ponho', 'pões', 'põe', 'pomos', 'põem'],
     perfeito: ['pus', 'puseste', 'pôs', 'pusemos', 'puseram'],
@@ -150,20 +210,32 @@ export const verbs: Verb[] = [
     futuro: ['porei', 'porás', 'porá', 'poremos', 'porão'],
     condicional: ['poria', 'porias', 'poria', 'poríamos', 'poriam'],
     imperativo: ['põe', 'ponha', 'ponhamos', 'ponham'],
-  }, true),
+    presConj: ['ponha', 'ponhas', 'ponha', 'ponhamos', 'ponham'],
+    impConj: ['pusesse', 'pusesses', 'pusesse', 'puséssemos', 'pusessem'],
+    futConj: ['puser', 'puseres', 'puser', 'pusermos', 'puserem'],
+  }, true, 'posto'),
   v('poder', 'can; to be able to', ['Posso abrir a janela?', 'Can I open the window?'], {
     presente: ['posso', 'podes', 'pode', 'podemos', 'podem'],
     perfeito: ['pude', 'pudeste', 'pôde', 'pudemos', 'puderam'],
+    presConj: ['possa', 'possas', 'possa', 'possamos', 'possam'],
+    impConj: ['pudesse', 'pudesses', 'pudesse', 'pudéssemos', 'pudessem'],
+    futConj: ['puder', 'puderes', 'puder', 'pudermos', 'puderem'],
   }, true),
   v('querer', 'to want', ['Queria um café, por favor.', 'I would like a coffee, please.'], {
     presente: ['quero', 'queres', 'quer', 'queremos', 'querem'],
     perfeito: ['quis', 'quiseste', 'quis', 'quisemos', 'quiseram'],
     imperativo: ['quer', 'queira', 'queiramos', 'queiram'],
+    presConj: ['queira', 'queiras', 'queira', 'queiramos', 'queiram'],
+    impConj: ['quisesse', 'quisesses', 'quisesse', 'quiséssemos', 'quisessem'],
+    futConj: ['quiser', 'quiseres', 'quiser', 'quisermos', 'quiserem'],
   }, true),
   v('saber', 'to know (facts); can (skill)', ['Sabes onde fica a estação?', 'Do you know where the station is?'], {
     presente: ['sei', 'sabes', 'sabe', 'sabemos', 'sabem'],
     perfeito: ['soube', 'soubeste', 'soube', 'soubemos', 'souberam'],
     imperativo: ['sabe', 'saiba', 'saibamos', 'saibam'],
+    presConj: ['saiba', 'saibas', 'saiba', 'saibamos', 'saibam'],
+    impConj: ['soubesse', 'soubesses', 'soubesse', 'soubéssemos', 'soubessem'],
+    futConj: ['souber', 'souberes', 'souber', 'soubermos', 'souberem'],
   }, true),
   v('conhecer', 'to know (people, places)', ['Conheço bem Lisboa.', 'I know Lisbon well.'], {
     presente: ['conheço', 'conheces', 'conhece', 'conhecemos', 'conhecem'],
@@ -173,11 +245,15 @@ export const verbs: Verb[] = [
     perfeito: ['trouxe', 'trouxeste', 'trouxe', 'trouxemos', 'trouxeram'],
     futuro: ['trarei', 'trarás', 'trará', 'traremos', 'trarão'],
     condicional: ['traria', 'trarias', 'traria', 'traríamos', 'trariam'],
+    impConj: ['trouxesse', 'trouxesses', 'trouxesse', 'trouxéssemos', 'trouxessem'],
+    futConj: ['trouxer', 'trouxeres', 'trouxer', 'trouxermos', 'trouxerem'],
   }, true),
   v('sair', 'to go out; to leave', ['Saio de casa às oito.', 'I leave home at eight.'], {
     presente: ['saio', 'sais', 'sai', 'saímos', 'saem'],
     perfeito: ['saí', 'saíste', 'saiu', 'saímos', 'saíram'],
     imperfeito: ['saía', 'saías', 'saía', 'saíamos', 'saíam'],
+    impConj: ['saísse', 'saísses', 'saísse', 'saíssemos', 'saíssem'],
+    futConj: ['sair', 'saíres', 'sair', 'sairmos', 'saírem'],
   }, true),
   v('ler', 'to read', ['Leio o jornal todos os dias.', 'I read the newspaper every day.'], {
     presente: ['leio', 'lês', 'lê', 'lemos', 'leem'],
@@ -229,10 +305,10 @@ export const verbs: Verb[] = [
   v('comer', 'to eat', ['Comemos peixe ao almoço.', 'We eat fish at lunch.']),
   v('beber', 'to drink', ['Bebo água com gás.', 'I drink sparkling water.']),
   v('aprender', 'to learn', ['Estou a aprender português.', 'I am learning Portuguese.']),
-  v('escrever', 'to write', ['Escrevo um e-mail ao meu chefe.', 'I write an email to my boss.']),
+  v('escrever', 'to write', ['Escrevo um e-mail ao meu chefe.', 'I write an email to my boss.'], {}, false, 'escrito'),
   v('correr', 'to run', ['Corro no parque de manhã.', 'I run in the park in the morning.']),
   v('viver', 'to live', ['Vivemos em Lisboa há dois anos.', 'We have lived in Lisbon for two years.']),
-  v('abrir', 'to open', ['A loja abre às nove.', 'The shop opens at nine.']),
+  v('abrir', 'to open', ['A loja abre às nove.', 'The shop opens at nine.'], {}, false, 'aberto'),
   v('partir', 'to leave; to break', ['O avião parte às seis.', 'The plane leaves at six.']),
   v('decidir', 'to decide', ['Decidimos ficar em casa.', 'We decided to stay at home.']),
   v('dever', 'must; should; to owe', ['Deves descansar mais.', 'You should rest more.']),

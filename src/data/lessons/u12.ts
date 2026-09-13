@@ -8,6 +8,7 @@ export const lessons: Lesson[] = [
     emoji: '👗',
     title: { pt: 'Roupa e lojas', en: 'Clothes and shops' },
     summary: { pt: 'Roupa, tamanhos, lojas, experimentar, custar e pagar.', en: 'Clothes, sizes, shops, trying on, costing and paying.' },
+    objectives: { pt: 'Depois desta lição vais conseguir falar sobre roupa e tamanhos, perguntar preços, pedir para experimentar uma peça numa loja e pagar com cartão ou multibanco em Portugal.', en: 'After this lesson you will be able to talk about clothes and sizes, ask about prices, ask to try something on in a shop, and pay by card or debit card in Portugal.' },
     sections: [
       {
         id: 'learn',
@@ -26,6 +27,7 @@ export const lessons: Lesson[] = [
           ] },
           { kind: 'tip', pt: 'pt-PT vs pt-BR: camisola (PT) = suéter/blusa (BR); calças (PT) = calça (BR); casa de banho, não banheiro; t-shirt, não camiseta.', en: 'pt-PT vs pt-BR: camisola (PT) = suéter (BR); calças (PT, plural) = calça (BR); in Portugal say t-shirt, not camiseta.' },
           { kind: 'heading', pt: 'As lojas', en: 'Shops' },
+          { kind: 'text', pt: 'Em Portugal ainda há muitas lojas pequenas e especializadas, ao lado dos centros comerciais e supermercados. Cada tipo de loja vende um grupo de produtos: vais ao talho para comprar carne, à padaria para pão e à farmácia para medicamentos. Saber o nome certo da loja ajuda-te a perguntar "Onde é...?" e a ser entendido rapidamente.', en: 'In Portugal there are still many small, specialised shops alongside shopping centres and supermarkets. Each type of shop sells one group of products: you go to the talho for meat, the padaria for bread and the farmácia for medicine. Knowing the right name for the shop helps you ask "Where is...?" and be understood quickly.' },
           { kind: 'table', head: ['Loja', 'O que se compra', 'English'], rows: [
             ['a padaria', 'pão', 'bakery'],
             ['o talho', 'carne', 'butcher'],
@@ -41,11 +43,13 @@ export const lessons: Lesson[] = [
         id: 'grammar',
         title: { pt: 'Verbos úteis', en: 'Useful verbs' },
         blocks: [
+          { kind: 'text', pt: 'Estes três verbos são essenciais para fazer compras. Experimentar e pagar são verbos regulares em -ar, por isso seguem o padrão normal do presente e do perfeito. Custar é quase sempre usado na terceira pessoa (custa/custam), porque o sujeito é sempre a coisa que tem um preço, nunca uma pessoa.', en: 'These three verbs are essential for shopping. Experimentar and pagar are regular -ar verbs, so they follow the normal pattern in the present and the perfeito. Custar is almost always used in the third person (custa/custam), because the subject is always the thing that has a price, never a person.' },
           { kind: 'verb', verb: 'experimentar', tenses: ['presente', 'perfeito'] },
           { kind: 'verb', verb: 'custar', tenses: ['presente'] },
           { kind: 'verb', verb: 'pagar', tenses: ['presente', 'perfeito'] },
           { kind: 'text', pt: 'Custar concorda com a coisa: A camisa custa 20 euros. Os sapatos custam 50 euros.', en: 'Custar agrees with the thing: The shirt costs 20 euros. The shoes cost 50 euros.' },
           { kind: 'tip', pt: 'Pagar no passado: paguei (com u!).', en: 'Pagar in the past: paguei (with a u!).' },
+          { kind: 'tip', pt: 'Erro comum: dizer "custa" para todas as coisas, mesmo no plural. Se o sujeito é plural (os sapatos, as calças), o verbo tem de ir para o plural também: os sapatos custam, não os sapatos custa.', en: 'Common mistake: using "custa" for everything, even plural subjects. If the subject is plural (the shoes, the trousers), the verb must be plural too: os sapatos custam, not os sapatos custa.' },
         ],
       },
       {
@@ -130,12 +134,14 @@ export const lessons: Lesson[] = [
     emoji: '⚖️',
     title: { pt: 'Mais barato, melhor!', en: 'Cheaper, better!' },
     summary: { pt: 'Comparativos e superlativos: mais… do que, tão… como, o melhor, -íssimo.', en: 'Comparatives and superlatives: more… than, as… as, the best, -íssimo.' },
+    objectives: { pt: 'Depois desta lição vais conseguir comparar preços, tamanhos e qualidade usando "mais... do que", "menos... do que" e "tão... como", reconhecer os comparativos irregulares (melhor, pior, maior, menor) e usar superlativos como "-íssimo" para dizer que algo é extremamente caro, bom ou pequeno.', en: 'After this lesson you will be able to compare prices, sizes and quality using "mais... do que", "menos... do que" and "tão... como", recognise irregular comparatives (melhor, pior, maior, menor), and use superlatives like "-íssimo" to say something is extremely expensive, good or small.' },
     sections: [
       {
         id: 'grammar',
         title: { pt: 'Gramática', en: 'Grammar' },
         blocks: [
           { kind: 'heading', pt: 'Comparativos', en: 'Comparatives' },
+          { kind: 'text', pt: 'Para comparar duas coisas em português usamos três estruturas simples. "Mais... (do) que" mostra superioridade (mais caro do que), "menos... (do) que" mostra inferioridade (menos caro do que), e "tão... como" mostra igualdade (tão caro como). O "do" antes de "que" é opcional na fala, mas é bom saber usá-lo. Alguns adjetivos muito comuns têm formas de comparativo irregulares, que tens de aprender de cor em vez de usar "mais".', en: 'To compare two things in Portuguese we use three simple structures. "Mais... (do) que" shows superiority (more expensive than), "menos... (do) que" shows inferiority (less expensive than), and "tão... como" shows equality (as expensive as). The "do" before "que" is optional in speech, but good to know. A few very common adjectives have irregular comparative forms, which you must learn by heart instead of using "mais".' },
           { kind: 'table', head: ['Estrutura', 'Exemplo', 'English'], rows: [
             ['mais … (do) que', 'O casaco é mais caro do que a camisola.', 'The coat is more expensive than the jumper.'],
             ['menos … (do) que', 'A saia é menos cara do que o vestido.', 'The skirt is less expensive than the dress.'],
@@ -148,7 +154,9 @@ export const lessons: Lesson[] = [
             ['pequeno', 'menor / mais pequeno', 'o menor / o mais pequeno'],
           ] },
           { kind: 'tip', pt: 'Nunca digas "mais bom" ou "mais grande"! Em pt-PT "mais pequeno" é muito comum e correto.', en: 'Never say "mais bom" or "mais grande"! In pt-PT "mais pequeno" is very common and correct.' },
+          { kind: 'tip', pt: 'Erro comum: usar "mais" com os adjetivos irregulares. Diz-se "melhor" e "pior", nunca "mais bom" ou "mais mau".', en: 'Common mistake: using "mais" with the irregular adjectives. Say "melhor" and "pior", never "mais bom" or "mais mau".' },
           { kind: 'heading', pt: 'Superlativos', en: 'Superlatives' },
+          { kind: 'text', pt: 'O superlativo relativo ("o mais... de") diz que algo é o número um dentro de um grupo: a loja mais barata do bairro. O superlativo absoluto acrescenta o sufixo -íssimo/-íssima ao adjetivo para dizer "extremamente", sem comparar com nada: caríssimo = extremamente caro. É uma forma muito usada na fala do dia a dia em Portugal.', en: 'The relative superlative ("the most... in") says something is number one within a group: the cheapest shop in the neighbourhood. The absolute superlative adds the suffix -íssimo/-íssima to the adjective to mean "extremely", without comparing to anything: caríssimo = extremely expensive. It is very commonly used in everyday spoken pt-PT.' },
           { kind: 'examples', items: [
             { pt: 'Esta é a loja mais barata do bairro.', en: 'This is the cheapest shop in the neighbourhood.' },
             { pt: 'O Colombo é o maior centro comercial de Lisboa.', en: 'Colombo is the biggest shopping centre in Lisbon.' },
@@ -231,6 +239,7 @@ export const lessons: Lesson[] = [
     emoji: '🛒',
     title: { pt: 'Compro-o!', en: 'I will buy it!' },
     summary: { pt: 'Pronomes o/a/os/as e lhe/lhes com a colocação de pt-PT.', en: 'Pronouns o/a/os/as and lhe/lhes with pt-PT placement.' },
+    objectives: { pt: 'Depois desta lição vais conseguir substituir nomes por pronomes de complemento direto (o, a, os, as) e indireto (lhe, lhes), colocá-los corretamente antes ou depois do verbo como se faz em Portugal, e usar as formas especiais lo/la e no/na conforme a terminação do verbo.', en: 'After this lesson you will be able to replace nouns with direct object pronouns (o, a, os, as) and indirect object pronouns (lhe, lhes), place them correctly before or after the verb the way it is done in Portugal, and use the special forms lo/la and no/na depending on the verb ending.' },
     sections: [
       {
         id: 'grammar',
@@ -238,6 +247,7 @@ export const lessons: Lesson[] = [
         blocks: [
           { kind: 'heading', pt: 'Complemento direto: o, a, os, as', en: 'Direct object: o, a, os, as' },
           { kind: 'text', pt: 'Em vez de repetir a coisa, usamos um pronome: Compro o casaco → Compro-o.', en: 'Instead of repeating the thing, we use a pronoun: I buy the coat → I buy it.' },
+          { kind: 'text', pt: 'O pronome de complemento direto substitui o objeto do verbo e concorda em género e número com ele: "o" para masculino singular, "a" para feminino singular, "os" e "as" para o plural. A grande diferença entre pt-PT e pt-BR está na posição: em Portugal, na frase afirmativa normal, o pronome vai depois do verbo, ligado por um hífen (Compro-o). Mas em certos contextos — negação, perguntas com palavra interrogativa, e palavras como "já", "também" ou "só" — o pronome salta para antes do verbo, sem hífen.', en: 'The direct object pronoun replaces the object of the verb and agrees with it in gender and number: "o" for masculine singular, "a" for feminine singular, "os" and "as" for the plural. The big difference between pt-PT and pt-BR is position: in Portugal, in a normal affirmative sentence, the pronoun goes after the verb, joined with a hyphen (Compro-o). But in certain contexts — negation, questions with a question word, and words like "já", "também" or "só" — the pronoun jumps to before the verb, without a hyphen.' },
           { kind: 'table', title: { pt: 'Onde fica o pronome?', en: 'Where does the pronoun go?' }, head: ['Regra', 'Exemplo', 'English'], rows: [
             ['normal: depois do verbo com hífen', 'Compro-o.', 'I buy it.'],
             ['negativa (não, nunca): antes', 'Não o compro.', 'I do not buy it.'],
@@ -249,6 +259,7 @@ export const lessons: Lesson[] = [
           { kind: 'tip', pt: 'Com -r/-s/-z, a letra cai e há acento: comprar + o → comprá-lo; vender + a → vendê-la; compramos + os → compramo-los.', en: 'With -r/-s/-z the letter drops and an accent appears: comprá-lo, vendê-la, compramo-los.' },
           { kind: 'tip', pt: 'pt-BR: "Eu o compro". pt-PT: "Compro-o". Em Portugal, o pronome vai normalmente depois do verbo!', en: 'pt-BR: "Eu o compro". pt-PT: "Compro-o". In Portugal the pronoun normally goes after the verb!' },
           { kind: 'heading', pt: 'Complemento indireto: lhe, lhes', en: 'Indirect object: lhe, lhes' },
+          { kind: 'text', pt: '"Lhe" e "lhes" substituem "a" + pessoa: a quem se dá, mostra ou diz alguma coisa. "Lhe" é singular (a ele, a ela, a si) e "lhes" é plural (a eles, a elas, a vocês). Seguem as mesmas regras de posição do complemento direto: normalmente depois do verbo, mas antes dele com "não" e outras palavras negativas ou restritivas.', en: '"Lhe" and "lhes" replace "a" + person: the person you give, show or tell something to. "Lhe" is singular (to him, to her, to you) and "lhes" is plural (to them, to you pl.). They follow the same position rules as the direct object pronoun: normally after the verb, but before it with "não" and other negative or restrictive words.' },
           { kind: 'examples', items: [
             { pt: 'Dou-lhe o talão. (a ele / a ela / a si)', en: 'I give him/her/you the receipt.' },
             { pt: 'Não lhe disse o preço.', en: 'I did not tell him the price.' },
@@ -258,8 +269,10 @@ export const lessons: Lesson[] = [
             { pt: 'Eles vendem-nos no mercado. (os ovos)', en: 'They sell them at the market. (the eggs)' },
             { pt: 'Já o experimentei. (o casaco)', en: 'I already tried it on. (the coat)' },
           ] },
+          { kind: 'text', pt: 'Comprar e vender são os verbos mais úteis para praticar tudo isto, porque quase sempre têm um objeto direto (a coisa comprada ou vendida) que podes substituir por um pronome.', en: 'Comprar and vender are the most useful verbs to practise all of this, because they almost always have a direct object (the thing bought or sold) that you can replace with a pronoun.' },
           { kind: 'verb', verb: 'comprar', tenses: ['presente', 'perfeito'] },
           { kind: 'verb', verb: 'vender', tenses: ['presente'] },
+          { kind: 'tip', pt: 'Erro comum: esquecer o hífen ou colocá-lo do lado errado. Nunca se escreve "Compro o" nem "o Compro" — é sempre "Compro-o" (afirmativa) ou "Não o compro" (negativa).', en: 'Common mistake: forgetting the hyphen or putting the pronoun in the wrong place. Never write "Compro o" or "o Compro" — it is always "Compro-o" (affirmative) or "Não o compro" (negative).' },
         ],
       },
       {
@@ -341,11 +354,13 @@ export const lessons: Lesson[] = [
     emoji: '🎉',
     title: { pt: 'Festas e tradições', en: 'Festivities and traditions' },
     summary: { pt: 'Natal, Páscoa, Santos Populares, Carnaval e aniversários. Dar e oferecer presentes com lhe/lhes.', en: 'Christmas, Easter, Santos Populares, Carnival and birthdays. Giving presents with lhe/lhes.' },
+    objectives: { pt: 'Depois desta lição vais conseguir falar sobre as principais festas e tradições portuguesas ao longo do ano, desejar boas festas na altura certa, e dizer a quem dás ou ofereces um presente usando lhe/lhes.', en: 'After this lesson you will be able to talk about the main Portuguese festivities and traditions throughout the year, wish people well at the right time of year, and say who you give or offer a present to using lhe/lhes.' },
     sections: [
       {
         id: 'learn',
         title: { pt: 'Festas portuguesas', en: 'Portuguese festivities' },
         blocks: [
+          { kind: 'text', pt: 'Portugal tem um calendário de festas muito marcado, com tradições próprias que valem a pena conhecer. Cada época do ano tem a sua comida típica e os seus costumes: o Natal com o bacalhau e o bolo-rei, a Páscoa com as amêndoas, e o mês de junho com as sardinhas assadas nas ruas. Saber quando e como se festeja ajuda-te a participar e a perceber conversas sobre planos e tradições.', en: 'Portugal has a very distinctive festival calendar, with its own traditions worth knowing. Each time of year has its typical food and customs: Christmas with salt cod and bolo-rei, Easter with sugared almonds, and June with sardines grilled in the streets. Knowing when and how each festivity is celebrated helps you join in and follow conversations about plans and traditions.' },
           { kind: 'table', title: { pt: 'O calendário das festas', en: 'The festival calendar' }, head: ['Festa', 'Quando', 'Tradição'], rows: [
             ['o Natal', '25 de dezembro', 'bacalhau na Consoada (dia 24), bolo-rei, presentes'],
             ['a Passagem de Ano', '31 de dezembro', '12 passas à meia-noite'],
@@ -389,6 +404,7 @@ export const lessons: Lesson[] = [
             { pt: 'Na Páscoa os padrinhos dão o folar aos afilhados.', en: 'At Easter godparents give the folar to their godchildren.' },
           ] },
           { kind: 'tip', pt: '"Fazer anos" é muito pt-PT: Hoje faço 30 anos! = Today I turn 30!', en: '"Fazer anos" is very pt-PT: Hoje faço 30 anos! = Today I turn 30!' },
+          { kind: 'tip', pt: 'Erro comum: dizer "Eu tenho 30 anos hoje" para o aniversário. Para dizer que fazes anos hoje, usa "Faço anos hoje" ou "É hoje o meu aniversário", não "tenho anos".', en: 'Common mistake: saying "Eu tenho 30 anos hoje" for a birthday. To say your birthday is today, use "Faço anos hoje" or "É hoje o meu aniversário", not "tenho anos".' },
         ],
       },
       {

@@ -8,6 +8,7 @@ export const lessons: Lesson[] = [
     emoji: '🛋️',
     title: { pt: 'A minha casa', en: 'My home' },
     summary: { pt: 'Divisões, móveis e o verbo haver (há).', en: 'Rooms, furniture and the verb haver (há).' },
+    objectives: { pt: 'Depois desta lição vais conseguir nomear as divisões e os móveis de uma casa, usar "há" para dizer o que existe num sítio (há um sofá, há duas camas) e descrever a tua própria casa ou apartamento em frases simples.', en: 'After this lesson you will be able to name the rooms and furniture of a home, use "há" to say what there is in a place (há um sofá, há duas camas), and describe your own home in simple sentences.' },
     sections: [
       {
         id: 'learn',
@@ -114,12 +115,14 @@ export const lessons: Lesson[] = [
     emoji: '👉',
     title: { pt: 'Este, esse, aquele', en: 'This, that, that over there' },
     summary: { pt: 'Os demonstrativos e as contrações neste, nesse, naquele.', en: 'Demonstratives and the contractions neste, nesse, naquele.' },
+    objectives: { pt: 'Depois desta lição vais conseguir escolher entre este, esse e aquele consoante a distância da pessoa ou coisa, usar isto, isso e aquilo quando não sabes o nome de um objeto e formar as contrações com "em" e "de" (neste, nessa, daquele...) para falar de onde estão as coisas.', en: 'After this lesson you will be able to choose between este, esse and aquele depending on distance, use isto, isso and aquilo when you do not know the name of an object, and form the contractions with "em" and "de" (neste, nessa, daquele...) to say where things are.' },
     sections: [
       {
         id: 'grammar',
         title: { pt: 'Gramática', en: 'Grammar' },
         blocks: [
           { kind: 'text', pt: 'Em português há três distâncias: perto de mim (este), perto de ti (esse) e longe de nós (aquele).', en: 'In Portuguese there are three distances: near me (este), near you (esse) and far from both of us (aquele).' },
+          { kind: 'text', pt: 'Os demonstrativos concordam sempre em género e número com o substantivo que acompanham: "este sofá" (masculino singular) mas "estas cadeiras" (feminino plural). Escolhemos a forma não pela distância real em metros, mas pela relação com quem fala: "este" é o meu espaço, "esse" é o espaço da pessoa com quem falo, e "aquele" é um terceiro espaço, longe de ambos. É por isso que ao telefone dizemos muitas vezes "esse" para nos referirmos ao sítio onde está o outro falante. Repara também que existem formas neutras — isto, isso, aquilo — que nunca mudam, porque não se referem a um substantivo específico.', en: 'Demonstratives always agree in gender and number with the noun they go with: "este sofá" (masculine singular) but "estas cadeiras" (feminine plural). We pick the form not by real distance in metres, but by the relationship to the speaker: "este" is my space, "esse" is the space of the person I am talking to, and "aquele" is a third space, far from both of us. That is why on the phone we often say "esse" to refer to where the other speaker is. Notice too that there are neutral forms — isto, isso, aquilo — which never change, because they do not refer to a specific noun.' },
           { kind: 'table', head: ['', 'masc.', 'fem.', 'masc. pl.', 'fem. pl.', 'neutro'], rows: [
             ['aqui (near me)', 'este', 'esta', 'estes', 'estas', 'isto'],
             ['aí (near you)', 'esse', 'essa', 'esses', 'essas', 'isso'],
@@ -141,6 +144,7 @@ export const lessons: Lesson[] = [
         title: { pt: 'Contrações', en: 'Contractions' },
         blocks: [
           { kind: 'text', pt: 'Os demonstrativos juntam-se às preposições "em" e "de".', en: 'Demonstratives join with the prepositions "em" and "de".' },
+          { kind: 'text', pt: 'Tal como "a" + "o" se torna "ao", os demonstrativos contraem-se obrigatoriamente com "em" e "de": nunca dizemos "em este" ou "de aquele", mas sim "neste" e "daquele". A contração com "em" serve para dizer onde algo está (neste prédio, nessa estante, naquela casa) e a contração com "de" serve para falar de posse, origem ou gosto (gosto deste sofá, desta casa). É uma regra fixa, sem exceções, por isso vale a pena memorizar as seis formas de cada preposição em vez de as construir de cada vez.', en: 'Just as "a" + "o" becomes "ao", demonstratives always contract with "em" and "de": we never say "em este" or "de aquele", only "neste" and "daquele". The contraction with "em" is used to say where something is (neste prédio, nessa estante, naquela casa), and the contraction with "de" is used for possession, origin or preference (gosto deste sofá, desta casa). It is a fixed rule with no exceptions, so it is worth memorising the six forms for each preposition rather than building them each time.' },
           { kind: 'table', head: ['', 'este', 'esse', 'aquele', 'isto', 'isso', 'aquilo'], rows: [
             ['em', 'neste', 'nesse', 'naquele', 'nisto', 'nisso', 'naquilo'],
             ['de', 'deste', 'desse', 'daquele', 'disto', 'disso', 'daquilo'],
@@ -153,6 +157,7 @@ export const lessons: Lesson[] = [
             { pt: 'Não gosto daquilo.', en: 'I do not like that.' },
           ] },
           { kind: 'tip', pt: 'Pronúncia: "este" [êsht] e "esse" [êss]. Em Portugal, o "e" final quase não se ouve!', en: 'Pronunciation: "este" [ehsht] and "esse" [ehss]. In Portugal, the final "e" is barely heard!' },
+          { kind: 'tip', pt: 'Erro comum: dizer "em este prédio" ou "de aquele sofá" em vez de usar a contração. Lembra-te: "em" e "de" fundem-se sempre com este/esse/aquele — neste, desse, daquele.', en: 'Common mistake: saying "em este prédio" or "de aquele sofá" instead of using the contraction. Remember: "em" and "de" always fuse with este/esse/aquele — neste, desse, daquele.' },
         ],
       },
       {
@@ -233,12 +238,14 @@ export const lessons: Lesson[] = [
     emoji: '🧹',
     title: { pt: 'Estou a limpar!', en: 'I am cleaning!' },
     summary: { pt: 'Estar a + infinitivo, tarefas domésticas e descrever um apartamento.', en: 'Estar a + infinitive, house chores and describing a flat.' },
+    objectives: { pt: 'Depois desta lição vais conseguir dizer o que estás a fazer neste momento com "estar a" + infinitivo, falar sobre tarefas domésticas como limpar, lavar a loiça e arrumar, e perceber anúncios de casas com termos como T1, T2, rés-do-chão e andar.', en: 'After this lesson you will be able to say what you are doing right now with "estar a" + infinitive, talk about household chores like cleaning, washing dishes and tidying up, and understand flat descriptions with terms like T1, T2, ground floor and andar.' },
     sections: [
       {
         id: 'grammar',
         title: { pt: 'Gramática: estar a + infinitivo', en: 'Grammar: estar a + infinitive' },
         blocks: [
           { kind: 'text', pt: 'Para dizer o que estamos a fazer AGORA, em Portugal usamos "estar a" + infinitivo.', en: 'To say what we are doing RIGHT NOW, in Portugal we use "estar a" + infinitive.' },
+          { kind: 'text', pt: 'Esta construção chama-se presente contínuo e serve para descrever uma ação em curso neste preciso momento, ao contrário do presente simples (limpo, cozinho), que descreve hábitos ou factos gerais. Para a formar, conjugamos o verbo "estar" na pessoa certa e juntamos "a" mais o infinitivo do verbo principal, que nunca muda: estou a limpar, estás a cozinhar, ela está a lavar a loiça. Só o verbo "estar" se conjuga; o segundo verbo fica sempre no infinitivo, seja qual for a pessoa.', en: 'This construction is called the present continuous and it describes an action happening right at this moment, unlike the simple present (limpo, cozinho), which describes habits or general facts. To form it, we conjugate the verb "estar" in the right person and add "a" plus the infinitive of the main verb, which never changes: estou a limpar, estás a cozinhar, ela está a lavar a loiça. Only "estar" is conjugated; the second verb always stays in the infinitive, whatever the person.' },
           { kind: 'table', head: ['pessoa', 'estar', '+ a + infinitivo'], rows: [
             ['eu', 'estou', 'a limpar'],
             ['tu', 'estás', 'a cozinhar'],
@@ -266,6 +273,7 @@ export const lessons: Lesson[] = [
         title: { pt: 'Descrever um apartamento', en: 'Describing a flat' },
         blocks: [
           { kind: 'text', pt: 'Nos anúncios de casas em Portugal, T1, T2, T3 quer dizer o número de quartos. Um T2 tem dois quartos e uma sala.', en: 'In Portuguese property ads, T1, T2, T3 means the number of bedrooms. A T2 has two bedrooms and a living room.' },
+          { kind: 'text', pt: 'Além do "T", os anúncios usam um vocabulário próprio para descrever o edifício: em que piso fica o apartamento, se tem elevador e garagem, e se já vem com móveis. É importante saber ler estas abreviaturas e palavras porque aparecem em quase todos os anúncios de arrendamento ou compra de casa em Portugal, tanto online como em jornais.', en: 'Besides the "T" number, ads use their own vocabulary to describe the building: which floor the flat is on, whether it has a lift and a garage, and whether it comes furnished. It is important to know these abbreviations and words because they appear in almost every rental or purchase ad in Portugal, both online and in newspapers.' },
           { kind: 'table', head: ['português', 'English'], rows: [
             ['o rés-do-chão', 'ground floor'],
             ['o primeiro andar', 'first floor'],
@@ -357,12 +365,14 @@ export const lessons: Lesson[] = [
     emoji: '🔑',
     title: { pt: 'Arrendar casa', en: 'Renting a flat' },
     summary: { pt: 'Ler anúncios, telefonar ao senhorio e fazer perguntas sobre um apartamento.', en: 'Reading ads, calling the landlord and asking questions about a flat.' },
+    objectives: { pt: 'Depois desta lição vais conseguir ler e perceber um anúncio de arrendamento em português, distinguir renda, caução e condomínio, telefonar a um senhorio para pedir informações e fazer perguntas com "há" e "tem" sobre um apartamento.', en: 'After this lesson you will be able to read and understand a rental ad in Portuguese, tell apart rent, deposit and building fees, phone a landlord to ask for information, and ask questions with "há" and "tem" about a flat.' },
     sections: [
       {
         id: 'ads',
         title: { pt: 'Os anúncios', en: 'The ads' },
         blocks: [
           { kind: 'text', pt: 'Em Portugal, os apartamentos classificam-se pelo número de quartos: T0 (estúdio), T1 (um quarto), T2 (dois quartos), T3…', en: 'In Portugal, flats are classified by the number of bedrooms: T0 (studio), T1 (one bedroom), T2 (two bedrooms), T3…' },
+          { kind: 'text', pt: 'Os anúncios de arrendamento são escritos de forma muito compacta, com muitas abreviaturas e sem verbos ligados por artigos: "ARRENDA-SE T2 mobilado, 3.º andar c/ elevador" quer dizer que alguém está a arrendar um T2 mobilado no terceiro andar com elevador. "C/" é abreviatura de "com" e "s/" de "sem". Aprender este vocabulário ajuda-te a perceber rapidamente as condições mais importantes — preço, localização e mobília — antes de sequer telefonares.', en: 'Rental ads are written in a very compact style, full of abbreviations and without connecting articles: "ARRENDA-SE T2 mobilado, 3.º andar c/ elevador" means someone is renting out a furnished two-bedroom flat on the third floor with a lift. "C/" is short for "com" (with) and "s/" for "sem" (without). Learning this vocabulary helps you quickly understand the key conditions — price, location and furnishing — before you even make a phone call.' },
           { kind: 'examples', items: [
             { pt: 'ARRENDA-SE T2 mobilado, 3.º andar c/ elevador, varanda. Renda: 950 €. Caução: 2 meses.', en: 'FOR RENT: furnished two-bedroom flat, 3rd floor with lift, balcony. Rent: €950. Deposit: 2 months.' },
             { pt: 'T1 no rés-do-chão, sem móveis, perto do metro. Condomínio incluído.', en: 'One-bedroom flat on the ground floor, unfurnished, near the metro. Building fees included.' },

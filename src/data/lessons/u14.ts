@@ -8,6 +8,7 @@ export const lessons: Lesson[] = [
     emoji: '🧳',
     title: { pt: 'No aeroporto e na estação', en: 'At the airport and station' },
     summary: { pt: 'Vocabulário de viagem e o futuro simples.', en: 'Travel vocabulary and the simple future.' },
+    objectives: { pt: 'Depois desta lição vais conseguir usar o vocabulário essencial do aeroporto e da estação, e formar e usar o futuro simples para falar de planos e eventos por vir.', en: 'After this lesson you will be able to use essential airport and station vocabulary, and form and use the simple future to talk about plans and upcoming events.' },
     sections: [
       {
         id: 'learn',
@@ -122,6 +123,7 @@ export const lessons: Lesson[] = [
     emoji: '🏨',
     title: { pt: 'No hotel', en: 'At the hotel' },
     summary: { pt: 'Reservar um quarto e pedir com educação: o condicional.', en: 'Booking a room and asking politely: the conditional.' },
+    objectives: { pt: 'Depois desta lição vais conseguir reservar um quarto de hotel, formar o condicional, e usá-lo para fazer pedidos educados e expressar desejos.', en: 'After this lesson you will be able to book a hotel room, form the conditional, and use it to make polite requests and express wishes.' },
     sections: [
       {
         id: 'learn',
@@ -232,12 +234,14 @@ export const lessons: Lesson[] = [
     emoji: '🗺️',
     title: { pt: 'Por ou para?', en: 'Por or para?' },
     summary: { pt: 'Por vs para, pelo/pela e pedir informações com educação.', en: 'Por vs para, pelo/pela and asking for information politely.' },
+    objectives: { pt: 'Depois desta lição vais conseguir distinguir por e para nos seus usos mais comuns, formar as contrações pelo/pela/pelos/pelas, e pedir informações e direções com educação.', en: 'After this lesson you will be able to distinguish por and para in their most common uses, form the contractions pelo/pela/pelos/pelas, and politely ask for information and directions.' },
     sections: [
       {
         id: 'grammar',
         title: { pt: 'Gramática', en: 'Grammar' },
         blocks: [
           { kind: 'heading', pt: 'Por e para', en: 'Por and para' },
+          { kind: 'text', pt: 'Por e para traduzem-se ambos como "for" ou "by" em inglês, mas em português têm usos bem distintos. Para aponta para um destino, um objetivo, um destinatário ou um prazo. Por indica um percurso, uma causa, um preço/troca ou uma duração/frequência. Não há uma regra única em inglês para escolher entre os dois, por isso o melhor é memorizar os padrões mais comuns.', en: 'Por and para both translate as "for" or "by" in English, but in Portuguese they have quite distinct uses. Para points to a destination, a goal, a recipient or a deadline. Por indicates a route, a cause, a price/exchange or a duration/frequency. There is no single English rule to choose between them, so it is best to memorise the most common patterns.' },
           { kind: 'table', head: ['PARA', 'POR'], rows: [
             ['destino: Vou para Lisboa.', 'através de: Passo por Coimbra.'],
             ['objetivo: Estudo para aprender.', 'causa: Obrigado pela ajuda.'],
@@ -245,6 +249,7 @@ export const lessons: Lesson[] = [
             ['prazo: para sexta-feira', 'duração/frequência: duas vezes por dia'],
           ] },
           { kind: 'heading', pt: 'Contrações com por', en: 'Contractions with por' },
+          { kind: 'text', pt: 'Tal como "de" e "em" se contraem com o artigo (do, na...), "por" também se contrai sempre com o artigo definido, dando pelo, pela, pelos, pelas. Nunca se escreve "por o" ou "por a".', en: 'Just like "de" and "em" contract with the article (do, na...), "por" also always contracts with the definite article, giving pelo, pela, pelos, pelas. You never write "por o" or "por a".' },
           { kind: 'table', head: ['por +', '=', 'Exemplo'], rows: [
             ['o', 'pelo', 'Passeámos pelo parque.'],
             ['a', 'pela', 'Obrigada pela informação.'],
@@ -348,6 +353,7 @@ export const lessons: Lesson[] = [
     emoji: '📮',
     title: { pt: 'Correios, banco e telefonemas', en: 'Post office, bank and phone calls' },
     summary: { pt: 'Enviar uma encomenda nos CTT, levantar dinheiro, ligar e deixar recado.', en: 'Sending a parcel at the CTT, withdrawing money, calling and leaving a message.' },
+    objectives: { pt: 'Depois desta lição vais conseguir tratar de assuntos nos correios e no banco, atender e fazer um telefonema em português, e escrever uma mensagem curta e informal.', en: 'After this lesson you will be able to handle business at the post office and bank, answer and make a phone call in Portuguese, and write a short, informal message.' },
     sections: [
       {
         id: 'services',
@@ -375,6 +381,7 @@ export const lessons: Lesson[] = [
         id: 'phone',
         title: { pt: 'Ao telefone', en: 'On the phone' },
         blocks: [
+          { kind: 'text', pt: 'Uma conversa ao telefone segue um guião bastante fixo em português: atender, identificar quem fala, pedir para falar com alguém e, se essa pessoa não estiver, deixar recado. Estas frases são muito formulaicas, por isso vale a pena decorá-las tal como estão.', en: 'A phone conversation follows a fairly fixed script in Portuguese: answering, identifying who is speaking, asking to speak to someone and, if that person is not available, leaving a message. These phrases are very formulaic, so it is worth learning them exactly as they are.' },
           { kind: 'table', head: ['Português', 'English'], rows: [
             ['Estou? / Está lá?', 'Hello? (answering)'],
             ['Quem fala?', 'Who is speaking?'],

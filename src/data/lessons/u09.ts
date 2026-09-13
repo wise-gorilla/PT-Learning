@@ -8,6 +8,7 @@ export const lessons: Lesson[] = [
     emoji: '⚽',
     title: { pt: 'Hobbies e desportos', en: 'Hobbies and sports' },
     summary: { pt: 'Fazer, jogar vs tocar, gostar de + infinitivo.', en: 'Fazer, jogar vs tocar, gostar de + infinitive.' },
+    objectives: { pt: 'Depois desta lição vais conseguir falar sobre os teus hobbies e desportos favoritos, escolher corretamente entre jogar, tocar e fazer, e dizer o que gostas de fazer usando gostar de + infinitivo.', en: 'After this lesson you will be able to talk about your favourite hobbies and sports, choose correctly between jogar, tocar and fazer, and say what you like doing using gostar de + infinitive.' },
     sections: [
       {
         id: 'learn',
@@ -30,6 +31,7 @@ export const lessons: Lesson[] = [
         title: { pt: 'Gramática', en: 'Grammar' },
         blocks: [
           { kind: 'heading', pt: 'Jogar ou tocar?', en: 'Jogar or tocar?' },
+          { kind: 'text', pt: 'Em português há três verbos onde o inglês só usa "to play": jogar, tocar e fazer. Usamos jogar para jogos e desportos com regras e adversário, como futebol ou cartas. Usamos tocar apenas para instrumentos musicais. E usamos fazer para atividades que não têm bem um "jogo", como ioga, surf ou ginástica. A escolha certa depende do substantivo que vem a seguir, não do sentido geral de "praticar".', en: 'Portuguese has three verbs where English only uses "to play": jogar, tocar and fazer. Use jogar for games and sports with rules and an opponent, like football or cards. Use tocar only for musical instruments. And use fazer for activities that are not really a "game", like yoga, surfing or gym workouts. The right choice depends on the noun that follows, not on the general sense of "doing an activity".' },
           { kind: 'table', head: ['Verbo', 'Uso', 'Exemplo'], rows: [
             ['jogar', 'jogos e desportos / games and sports', 'jogar futebol, jogar às cartas'],
             ['tocar', 'instrumentos / instruments', 'tocar piano, tocar guitarra'],
@@ -39,6 +41,8 @@ export const lessons: Lesson[] = [
           { kind: 'verb', verb: 'jogar', tenses: ['presente'] },
           { kind: 'heading', pt: 'Gostar de + infinitivo', en: 'Gostar de + infinitive' },
           { kind: 'text', pt: 'Depois de gostar usamos sempre "de": Gosto de nadar. De + o = do, de + a = da.', en: 'After gostar we always use "de": I like to swim. De + o = do, de + a = da.' },
+          { kind: 'tip', pt: 'Dica: se tiveres dúvidas entre jogar, tocar e fazer, pensa primeiro no substantivo. "Guitarra" e "piano" só combinam com tocar; "futebol" e "cartas" só combinam com jogar.', en: 'Tip: if you are unsure between jogar, tocar and fazer, think of the noun first. "Guitarra" and "piano" only go with tocar; "futebol" and "cartas" only go with jogar.' },
+          { kind: 'tip', pt: 'Erro comum: dizer "toco futebol" ou "jogo piano". Estes verbos não são intercambiáveis mesmo que em inglês se use sempre "to play".', en: 'Common mistake: saying "toco futebol" or "jogo piano". These verbs are not interchangeable even though English always uses "to play".' },
           { kind: 'tip', pt: 'Em Portugal diz-se "futebol" e "equipa". No Brasil diz-se "time".', en: 'In Portugal people say "futebol" and "equipa" (team). In Brazil they say "time".' },
         ],
       },
@@ -119,6 +123,7 @@ export const lessons: Lesson[] = [
     emoji: '☀️',
     title: { pt: 'O tempo e as estações', en: 'Weather and seasons' },
     summary: { pt: 'Está calor, faz sol, está a chover. Saber vs conhecer.', en: 'It is hot, it is sunny, it is raining. Saber vs conhecer.' },
+    objectives: { pt: 'Depois desta lição vais conseguir descrever o tempo e as estações do ano em português, distinguir corretamente saber de conhecer, e falar sobre o clima de Portugal numa conversa simples.', en: 'After this lesson you will be able to describe the weather and the seasons in Portuguese, correctly tell saber and conhecer apart, and talk about Portugal\'s climate in a simple conversation.' },
     sections: [
       {
         id: 'learn',
@@ -149,6 +154,7 @@ export const lessons: Lesson[] = [
         title: { pt: 'Gramática', en: 'Grammar' },
         blocks: [
           { kind: 'heading', pt: 'Saber ou conhecer?', en: 'Saber or conhecer?' },
+          { kind: 'text', pt: 'O inglês usa "to know" para tudo, mas o português distingue dois tipos de conhecimento. Usa-se saber para factos e informação concretos ("Sei onde é a praia") e também, seguido de infinitivo, para capacidades aprendidas ("Sei nadar" = I can swim). Usa-se conhecer para pessoas, lugares ou obras que já experimentaste ou visitaste, no sentido de estar familiarizado com eles. Uma boa pergunta para decidir: se conseguires substituir por "estar familiarizado com", é conhecer; se for um facto ou uma capacidade, é saber.', en: 'English uses "to know" for everything, but Portuguese distinguishes two kinds of knowledge. Use saber for concrete facts and information ("Sei onde é a praia") and also, followed by an infinitive, for learned abilities ("Sei nadar" = I can swim). Use conhecer for people, places or works you have already experienced or visited, in the sense of being familiar with them. A good test: if you can replace it with "be familiar with", it is conhecer; if it is a fact or an ability, it is saber.' },
           { kind: 'table', head: ['Verbo', 'Uso', 'Exemplo'], rows: [
             ['saber', 'factos, informação / facts', 'Sei onde é a praia.'],
             ['saber + infinitivo', 'capacidade / ability', 'Sei nadar.'],
@@ -157,6 +163,7 @@ export const lessons: Lesson[] = [
           { kind: 'verb', verb: 'saber', tenses: ['presente'] },
           { kind: 'verb', verb: 'conhecer', tenses: ['presente'] },
           { kind: 'tip', pt: 'Cuidado: "Sei nadar" = I can swim (sei fazer). Não digas "posso nadar" para capacidade.', en: 'Careful: "Sei nadar" = I can swim (I know how). Do not say "posso nadar" for ability.' },
+          { kind: 'tip', pt: 'Erro comum: usar conhecer com infinitivo, como "Conheço nadar". Para capacidades usa-se sempre saber + infinitivo.', en: 'Common mistake: using conhecer with an infinitive, like "Conheço nadar". For abilities always use saber + infinitive.' },
         ],
       },
       {
@@ -228,6 +235,7 @@ export const lessons: Lesson[] = [
     emoji: '🎬',
     title: { pt: 'Planos e convites', en: 'Plans and invitations' },
     summary: { pt: 'Ir + infinitivo e convites: Queres ir ao cinema? Combinado!', en: 'Ir + infinitive and invitations: Want to go to the cinema? Deal!' },
+    objectives: { pt: 'Depois desta lição vais conseguir falar de planos futuros com ir + infinitivo, fazer e responder a convites em português, e combinar um encontro com um amigo dizendo a hora e o local.', en: 'After this lesson you will be able to talk about future plans with ir + infinitive, make and respond to invitations in Portuguese, and arrange to meet a friend by saying the time and place.' },
     sections: [
       {
         id: 'grammar',
@@ -257,6 +265,7 @@ export const lessons: Lesson[] = [
         id: 'learn',
         title: { pt: 'Convites', en: 'Invitations' },
         blocks: [
+          { kind: 'text', pt: 'Convidar alguém em português tem um pequeno ritual: propor algo, o outro aceita ou recusa com educação, e combinam-se os detalhes. Repara que "apetece-te" é muito usado para perguntar se alguém tem vontade de fazer algo, e que recusar sem dar uma razão soa mal — por isso "Não posso, desculpa" ou "Fica para a próxima" são formas simpáticas de dizer que não.', en: 'Inviting someone in Portuguese follows a small ritual: you propose something, the other person politely accepts or declines, and then you sort out the details. Notice that "apetece-te" is very common for asking if someone feels like doing something, and that declining without a reason sounds rude — so "Não posso, desculpa" or "Fica para a próxima" are friendly ways to say no.' },
           { kind: 'table', head: ['Português', 'English'], rows: [
             ['Queres ir ao cinema?', 'Do you want to go to the cinema?'],
             ['Apetece-te ir à praia?', 'Do you fancy going to the beach?'],
@@ -267,6 +276,7 @@ export const lessons: Lesson[] = [
             ['A que horas?', 'At what time?'],
           ] },
           { kind: 'tip', pt: '"Apetece-me" é muito português (pt-PT). Significa "tenho vontade de".', en: '"Apetece-me" is very European Portuguese. It means "I feel like".' },
+          { kind: 'tip', pt: 'Erro comum: recusar um convite apenas com "Não." em português soa muito seco. Acrescenta sempre "desculpa" ou uma explicação, como "Não posso, tenho de trabalhar."', en: 'Common mistake: declining an invitation with just "Não." sounds very blunt in Portuguese. Always add "desculpa" or a reason, like "Não posso, tenho de trabalhar."' },
         ],
       },
       {
@@ -346,6 +356,7 @@ export const lessons: Lesson[] = [
     emoji: '💭',
     title: { pt: 'Na minha opinião…', en: 'In my opinion…' },
     summary: { pt: 'Opiniões e sentimentos: acho que, concordo, adoro, Que pena!, muito/tão, advérbios em -mente.', en: 'Opinions and feelings: I think, I agree, I love, What a pity!, very/so, -mente adverbs.' },
+    objectives: { pt: 'Depois desta lição vais conseguir dar a tua opinião e reagir à de outras pessoas, expressar gostos e sentimentos fortes, usar exclamações comuns como "Que pena!", e formar advérbios em -mente para descrever como algo é feito.', en: 'After this lesson you will be able to give your opinion and react to other people\'s, express strong likes and feelings, use common exclamations like "Que pena!", and form -mente adverbs to describe how something is done.' },
     sections: [
       {
         id: 'learn',
@@ -386,6 +397,7 @@ export const lessons: Lesson[] = [
         title: { pt: 'Gramática', en: 'Grammar' },
         blocks: [
           { kind: 'heading', pt: 'Intensificadores', en: 'Intensifiers' },
+          { kind: 'text', pt: 'Os intensificadores são palavras curtas que colocamos antes de um adjetivo para dizer "quanto". Em português, ao contrário do inglês, cada um tem um grau diferente: pouco reduz, bastante e muito aumentam moderadamente, tão dá ênfase emocional (numa exclamação), e demasiado indica excesso, um problema. Escolher o intensificador certo muda o tom da frase — "é pouco interessante" é uma crítica suave, mas "é demasiado caro" é quase uma queixa.', en: 'Intensifiers are short words placed before an adjective to say "how much". Unlike English, each Portuguese one carries a different degree: pouco reduces, bastante and muito increase moderately, tão adds emotional emphasis (in an exclamation), and demasiado signals excess, a problem. Choosing the right intensifier changes the tone of the sentence — "é pouco interessante" is a mild criticism, while "é demasiado caro" is almost a complaint.' },
           { kind: 'table', head: ['Palavra', 'Exemplo', 'English'], rows: [
             ['muito', 'O filme é muito bom.', 'The film is very good.'],
             ['pouco', 'O livro é pouco interessante.', 'The book is not very interesting.'],
@@ -404,6 +416,8 @@ export const lessons: Lesson[] = [
             ['normal', 'normalmente', 'usually'],
           ] },
           { kind: 'tip', pt: 'Atenção: bom → bem (não "bomente"). Ele joga bem.', en: 'Careful: bom → bem (not "bomente"). He plays well.' },
+          { kind: 'tip', pt: 'Dica: para formar o advérbio, pensa sempre primeiro na forma feminina do adjetivo, mesmo que estejas a falar de algo masculino: rápido → rápida → rapidamente.', en: 'Tip: to form the adverb, always think of the feminine form of the adjective first, even if you are talking about something masculine: rápido → rápida → rapidamente.' },
+          { kind: 'tip', pt: 'Erro comum: dizer "muito bastante" ou "tão demasiado", juntando dois intensificadores. Usa apenas um de cada vez antes do adjetivo.', en: 'Common mistake: saying "muito bastante" or "tão demasiado", stacking two intensifiers together. Use only one at a time before the adjective.' },
         ],
       },
       {

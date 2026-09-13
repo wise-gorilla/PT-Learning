@@ -129,4 +129,7 @@ export const TENSE_LABELS: Record<string, { pt: string; en: string }> = {
   futuro: { pt: 'Futuro', en: 'Future' },
   condicional: { pt: 'Condicional', en: 'Conditional (would)' },
   imperativo: { pt: 'Imperativo', en: 'Imperative (commands)' },
+  presConj: { pt: 'Presente do Conjuntivo', en: 'Present subjunctive' },
+  impConj: { pt: 'Imperfeito do Conjuntivo', en: 'Imperfect subjunctive' },
+  futConj: { pt: 'Futuro do Conjuntivo', en: 'Future subjunctive' },
 }
