@@ -1,1 +1,1 @@
-export default defineEventHandler(() => readProgress(useDb()))
+export default defineEventHandler(async () => readProgress(await useDb()))

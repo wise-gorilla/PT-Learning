@@ -11,11 +11,23 @@ async function submit() {
   error.value = ''
   try {
     await $fetch('/api/login', { method: 'POST', body: { pin: pin.value } })
-    useState('authed').value = true
-    await navigateTo('/')
   } catch (e: any) {
-    error.value = e?.statusCode === 429 ? 'Demasiadas tentativas. Espera um minuto. · Too many attempts, wait a minute.' : 'PIN errado · Wrong PIN'
+    const code = e?.statusCode ?? e?.status
+    error.value =
+      code === 429
+        ? 'Demasiadas tentativas. Espera um minuto. · Too many attempts, wait a minute.'
+        : code === 401
+          ? 'PIN errado · Wrong PIN'
+          : `Erro do servidor (${code ?? 'rede'}) · Server error (${code ?? 'network'})`
     pin.value = ''
+    busy.value = false
+    return
+  }
+  useState('authed').value = true
+  try {
+    await navigateTo('/')
+  } catch {
+    error.value = 'Não foi possível carregar o progresso. · Could not load your progress.'
   } finally {
     busy.value = false
   }

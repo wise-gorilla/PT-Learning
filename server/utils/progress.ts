@@ -1,4 +1,4 @@
-import type { DatabaseSync } from 'node:sqlite'
+import type { Db, Stmt } from './db'
 
 export interface ProgressState {
   lessons: Record<string, { completed: boolean; bestScore: number; visited: number; attempts: number; answered?: number }>
@@ -15,8 +15,8 @@ export interface ProgressState {
 
 const num = (v: unknown) => (Number.isFinite(Number(v)) ? Math.round(Number(v)) : 0)
 
-export function readProgress(db: DatabaseSync): ProgressState {
-  const meta = Object.fromEntries((db.prepare('SELECT key, value FROM meta').all() as { key: string; value: string }[]).map((r) => [r.key, r.value]))
+export async function readProgress(db: Db): Promise<ProgressState> {
+  const meta = Object.fromEntries((await db.all<{ key: string; value: string }>('SELECT key, value FROM meta')).map((r) => [r.key, r.value]))
   const s: ProgressState = {
     lessons: {},
     xp: num(meta.xp),
@@ -28,37 +28,35 @@ export function readProgress(db: DatabaseSync): ProgressState {
     settings: meta.settings ? JSON.parse(meta.settings) : {},
     empty: !meta.saved,
   }
-  for (const r of db.prepare('SELECT * FROM lessons').all() as any[])
-    s.lessons[r.id] = { completed: !!r.completed, bestScore: r.best_score, visited: r.visited, attempts: r.attempts, answered: r.answered }
-  for (const r of db.prepare('SELECT * FROM words').all() as any[]) s.words[r.id] = { box: r.box, due: r.due }
-  for (const r of db.prepare('SELECT * FROM mistakes').all() as any[]) s.mistakes[r.key] = { n: r.n, ok: r.ok }
-  for (const r of db.prepare('SELECT * FROM activity').all() as any[]) s.activity[r.day] = { xp: r.xp, items: r.items }
+  const [lessons, words, mistakes, activity] = await Promise.all([
+    db.all('SELECT * FROM lessons'),
+    db.all('SELECT * FROM words'),
+    db.all('SELECT * FROM mistakes'),
+    db.all('SELECT * FROM activity'),
+  ])
+  for (const r of lessons) s.lessons[r.id] = { completed: !!r.completed, bestScore: num(r.best_score), visited: num(r.visited), attempts: num(r.attempts), answered: num(r.answered) }
+  for (const r of words) s.words[r.id] = { box: num(r.box), due: num(r.due) }
+  for (const r of mistakes) s.mistakes[r.key] = { n: num(r.n), ok: num(r.ok) }
+  for (const r of activity) s.activity[r.day] = { xp: num(r.xp), items: num(r.items) }
   return s
 }
 
 /** Replace everything with the given state, atomically. */
-export function writeProgress(db: DatabaseSync, s: ProgressState) {
-  db.exec('BEGIN')
-  try {
-    for (const t of ['lessons', 'words', 'mistakes', 'activity', 'meta']) db.exec(`DELETE FROM ${t}`)
-    const L = db.prepare('INSERT INTO lessons (id, completed, best_score, visited, attempts, answered) VALUES (?,?,?,?,?,?)')
-    for (const [id, l] of Object.entries(s.lessons ?? {})) L.run(id, l.completed ? 1 : 0, num(l.bestScore), num(l.visited), num(l.attempts), num(l.answered))
-    const W = db.prepare('INSERT INTO words VALUES (?,?,?)')
-    for (const [id, w] of Object.entries(s.words ?? {})) W.run(id, num(w.box), num(w.due))
-    const M = db.prepare('INSERT INTO mistakes VALUES (?,?,?)')
-    for (const [k, m] of Object.entries(s.mistakes ?? {})) M.run(k, num(m.n), num(m.ok))
-    const A = db.prepare('INSERT INTO activity VALUES (?,?,?)')
-    for (const [d, a] of Object.entries(s.activity ?? {})) A.run(d, num(a.xp), num(a.items))
-    const K = db.prepare('INSERT INTO meta VALUES (?,?)')
-    K.run('saved', '1')
-    K.run('xp', String(num(s.xp)))
-    K.run('streak_count', String(num(s.streak?.count)))
-    K.run('streak_last', String(s.streak?.last ?? ''))
-    K.run('last_lesson', s.lastLesson ?? '')
-    K.run('settings', JSON.stringify(s.settings ?? {}))
-    db.exec('COMMIT')
-  } catch (e) {
-    db.exec('ROLLBACK')
-    throw e
-  }
+export async function writeProgress(db: Db, s: ProgressState) {
+  const q: Stmt[] = ['lessons', 'words', 'mistakes', 'activity', 'meta'].map((t) => ({ sql: `DELETE FROM ${t}` }))
+  for (const [id, l] of Object.entries(s.lessons ?? {}))
+    q.push({ sql: 'INSERT INTO lessons (id, completed, best_score, visited, attempts, answered) VALUES (?,?,?,?,?,?)', args: [id, l.completed ? 1 : 0, num(l.bestScore), num(l.visited), num(l.attempts), num(l.answered)] })
+  for (const [id, w] of Object.entries(s.words ?? {})) q.push({ sql: 'INSERT INTO words VALUES (?,?,?)', args: [id, num(w.box), num(w.due)] })
+  for (const [k, m] of Object.entries(s.mistakes ?? {})) q.push({ sql: 'INSERT INTO mistakes VALUES (?,?,?)', args: [k, num(m.n), num(m.ok)] })
+  for (const [d, a] of Object.entries(s.activity ?? {})) q.push({ sql: 'INSERT INTO activity VALUES (?,?,?)', args: [d, num(a.xp), num(a.items)] })
+  const meta: [string, string][] = [
+    ['saved', '1'],
+    ['xp', String(num(s.xp))],
+    ['streak_count', String(num(s.streak?.count))],
+    ['streak_last', String(s.streak?.last ?? '')],
+    ['last_lesson', s.lastLesson ?? ''],
+    ['settings', JSON.stringify(s.settings ?? {})],
+  ]
+  for (const [k, v] of meta) q.push({ sql: 'INSERT INTO meta VALUES (?,?)', args: [k, v] })
+  await db.transaction(q)
 }

@@ -21,5 +21,8 @@ export default defineNuxtConfig({
     appPin: '8035',
     sessionSecret: 'pt-learning-change-me',
     dbPath: './data/progress.sqlite',
+    // hosted libSQL (Turso) for serverless hosts like Vercel: NUXT_TURSO_URL / NUXT_TURSO_TOKEN (or TURSO_DATABASE_URL / TURSO_AUTH_TOKEN)
+    tursoUrl: '',
+    tursoToken: '',
   },
 })
