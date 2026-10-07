@@ -20,7 +20,10 @@ const built = computed(() => {
   let k = 0
   for (const c of chars) {
     if (c === ' ') out.push(' ')
-    else out.push(chosen.value[k] !== undefined ? letters.find((l) => l.id === chosen.value[k++])!.c : '_')
+    else {
+      const id = chosen.value[k++]
+      out.push(id !== undefined ? (letters.find((l) => l.id === id)?.c ?? '_') : '_')
+    }
   }
   return out
 })
