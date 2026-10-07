@@ -32,7 +32,19 @@ const comps = { mc: MultipleChoice, fill: FillBlank, match: MatchPairs, order: W
 const scored = (e: Exercise) => e.type !== 'flash'
 
 const list = ref<Exercise[]>([...props.exercises])
-const idx = ref(0)
+// resume where you left off: `answered` is the % of exercises already done (100 = finished, so start over)
+const saved = props.lessonId ? (p.lessons[props.lessonId]?.answered ?? 0) : 0
+const idx = ref(saved > 0 && saved < 100 ? Math.min(list.value.length - 1, Math.round((saved / 100) * list.value.length)) : 0)
+/** furthest exercise reached: you can step back to review earlier ones, but not jump ahead of it */
+const furthest = ref(idx.value)
+const reviewing = computed(() => idx.value < furthest.value)
+function goTo(i: number) {
+  if (i > furthest.value || i === idx.value || finished.value) return
+  feedback.value = null
+  sub.value = 0
+  idx.value = i
+  runKey.value++
+}
 const runKey = ref(0)
 const feedback = ref<{ ok: boolean; solution?: string } | null>(null)
 const results = ref<boolean[]>([])
@@ -50,6 +62,11 @@ const stars = computed(() => (score.value >= 90 ? 3 : score.value >= 70 ? 2 : sc
 
 function onAnswer(ok: boolean, solution?: string) {
   const e = current.value
+  if (reviewing.value) {
+    // reviewing an earlier exercise: show the result but don't score it again
+    feedback.value = { ok, solution }
+    return
+  }
   if (e.type === 'flash' || e.type === 'memory' || e.type === 'match') {
     if (scored(e)) results.value.push(ok)
     if (ok) p.addXp(e.type === 'flash' ? 2 : 5)
@@ -75,9 +92,15 @@ function next() {
   if (!feedback.value) return
   feedback.value = null
   sub.value = 0
+  if (reviewing.value) {
+    idx.value++
+    runKey.value++
+    return
+  }
   if (props.lessonId && list.value.length === props.exercises.length) p.noteProgress(props.lessonId, ((idx.value + 1) / list.value.length) * 100)
   if (idx.value < list.value.length - 1) {
     idx.value++
+    furthest.value = idx.value
     runKey.value++
   } else {
     finished.value = true
@@ -94,6 +117,7 @@ function restart(onlyWrong: boolean) {
   wrong.value = []
   results.value = []
   idx.value = 0
+  furthest.value = 0
   combo.value = 0
   runKey.value++
   finished.value = false
@@ -113,10 +137,22 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
   <div class="mx-auto max-w-2xl">
     <div v-if="!finished && current">
       <div class="mb-4 flex items-center gap-3">
-        <div class="h-4 flex-1 overflow-hidden rounded-full bg-stone-200 dark:bg-stone-800">
-          <div class="h-full rounded-full bg-gradient-to-r from-verde to-lime-500 transition-all duration-500" :style="{ width: ((idx + sub) / list.length) * 100 + '%' }" />
+        <div class="flex h-4 flex-1 gap-0.5">
+          <button
+            v-for="(_, i) in list"
+            :key="i"
+            type="button"
+            class="relative h-full flex-1 overflow-hidden rounded-full bg-stone-200 dark:bg-stone-800"
+            :class="[i < furthest || i === idx ? 'cursor-pointer' : 'cursor-default', i === idx ? 'ring-2 ring-verde ring-offset-1' : '']"
+            :title="i < furthest ? 'Rever · Review' : ''"
+            :disabled="i > furthest"
+            @click="goTo(i)"
+          >
+            <span class="absolute inset-y-0 left-0 rounded-full bg-gradient-to-r from-verde to-lime-500 transition-all duration-500" :style="{ width: (i < furthest ? 100 : i === furthest ? sub * 100 : 0) + '%' }" />
+          </button>
         </div>
         <span class="text-sm font-bold text-stone-500">{{ idx + 1 }}/{{ list.length }}</span>
+        <span v-if="reviewing" class="rounded-full bg-sky-500 px-2 py-0.5 text-sm font-bold text-white">👀 Rever</span>
         <span v-if="combo >= 3" class="pop rounded-full bg-orange-500 px-2 py-0.5 text-sm font-bold text-white">🔥 x{{ combo }}</span>
       </div>
 

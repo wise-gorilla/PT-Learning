@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import AccentKeys from '../components/AccentKeys.vue'
 import { computed, ref } from 'vue'
 import { dictionary } from '../data'
 import { speak, shuffle, check } from '../utils'
@@ -142,7 +143,8 @@ function answer(knew: boolean) {
         </template>
 
         <form v-if="isTyped && !flipped" class="mt-4 w-full" @submit.prevent="submitTyped">
-          <input v-model="typed" class="input text-center" placeholder="em português…" autofocus autocomplete="off" />
+          <input v-model="typed" class="input text-center" placeholder="em português…" autofocus autocomplete="off" autocapitalize="off" spellcheck="false" />
+          <AccentKeys />
         </form>
 
         <!-- answer -->

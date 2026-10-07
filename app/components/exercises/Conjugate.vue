@@ -3,6 +3,7 @@ import { ref, computed, onMounted } from 'vue'
 import type { Exercise } from '../../types'
 import { verbMap } from '../../data/verbs'
 import { check, PERSONS, IMP_PERSONS, TENSE_LABELS, type Verdict } from '../../utils'
+import AccentKeys from '../AccentKeys.vue'
 import { useProgress } from '../../stores/progress'
 
 const props = defineProps<{ ex: Extract<Exercise, { type: 'conj' }> }>()
@@ -44,6 +45,7 @@ function submit() {
           :class="verdicts ? (verdicts[i] === 'correct' ? '!border-verde' : verdicts[i] === 'accent' ? '!border-ouro' : '!border-vermelho') : ''" />
         <span v-if="verdicts && verdicts[i] !== 'correct'" class="w-32 shrink-0 font-bold text-verde">{{ forms[i] }}</span>
       </div>
+      <AccentKeys :disabled="!!verdicts" />
       <button type="submit" class="btn-primary mt-3 w-full" :disabled="!!verdicts">Verificar · Check</button>
     </form>
   </div>
