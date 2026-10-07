@@ -136,7 +136,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
 <template>
   <div class="mx-auto max-w-2xl">
     <div v-if="!finished && current">
-      <div class="mb-4 flex items-center gap-3">
+      <div class="relative mb-9 flex items-center gap-3">
         <div class="flex h-4 flex-1 gap-0.5">
           <button
             v-for="(_, i) in list"
@@ -151,9 +151,9 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
             <span class="absolute inset-y-0 left-0 rounded-full bg-gradient-to-r from-verde to-lime-500 transition-all duration-500" :style="{ width: (i < furthest ? 100 : i === furthest ? sub * 100 : 0) + '%' }" />
           </button>
         </div>
-        <span class="text-sm font-bold text-stone-500">{{ idx + 1 }}/{{ list.length }}</span>
-        <span v-if="reviewing" class="rounded-full bg-sky-500 px-2 py-0.5 text-sm font-bold text-white">👀 Rever</span>
-        <span v-if="combo >= 3" class="pop rounded-full bg-orange-500 px-2 py-0.5 text-sm font-bold text-white">🔥 x{{ combo }}</span>
+        <span class="min-w-[3.5rem] text-right text-sm font-bold tabular-nums text-stone-500">{{ idx + 1 }}/{{ list.length }}</span>
+        <span v-if="reviewing" class="absolute -bottom-8 left-0 rounded-full bg-sky-500 px-2 py-0.5 text-sm font-bold text-white">👀 Rever</span>
+        <span v-if="combo >= 3" class="pop absolute -bottom-8 right-0 rounded-full bg-orange-500 px-2 py-0.5 text-sm font-bold text-white">🔥 x{{ combo }}</span>
       </div>
 
       <div class="card p-5 sm:p-7">
